@@ -1,0 +1,10 @@
+/backend/node_modules
+/frontend/node_modules
+/backend/.env
+/frontend/.env
+/backend/config
+/node_modules
+/.DS_Store
+/bakcend/.DS_Store
+/backend/test/.DS_Store
+/backend/src/.DS_Store
