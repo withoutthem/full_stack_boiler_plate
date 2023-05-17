@@ -14,7 +14,6 @@ import router from './routes';
 import { corsOption } from './config/cors';
 import { sessionOption } from './config/session';
 import errorHandler from './middleware/error_handler';
-import {passportConfig} from './passport';
 import reqLogger from './middleware/req_logger'; 
 
 require('dotenv').config();
@@ -23,7 +22,6 @@ const app:Express = express();
 
 app.use(reqLogger)
 
-passportConfig();
 app.use(cors(corsOption)); // cors
 app.use(express.json()) // body parser (json)
 app.use(express.urlencoded({extended: false})); // body parser (form)

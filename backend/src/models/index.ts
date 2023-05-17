@@ -6,7 +6,7 @@ import { ErrorClass } from "../types/ErrorClass";
 
 const env = process.env.NODE_ENV || 'development';
 const dbConfig = require('../config/config.json')[env];
-const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.password, {...dbConfig, logging: console.log});
+const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.password, {...dbConfig, logging: false});
 
 //importmodule : pure
 export const importModule = async (modulePath:string) =>{
@@ -43,7 +43,6 @@ export const associateModel = async(modelsDir:string, file:string) =>{
 // models List
 const basename = path.basename(__filename)
 export const modelsOrder:string[] = fs.readdirSync(__dirname).filter(fileName => fileName !== basename)
-
 // main function 
 export const initializeAllModels = async (modelsOrder:string[])=>{ 
   try{

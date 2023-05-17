@@ -1,3 +1,0 @@
-[2023-05-16 07:40:49] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/join, Body: undefined}
-[2023-05-16 07:40:49] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호 형식에 맞지 않습니다 IP: ::1, Method: POST, URL: /api/auth/join, Body: {"nickname":"admin","password":"admin!","email":"admin@admin.com"}}
-[2023-05-16 07:40:59] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/join, Body: undefined}

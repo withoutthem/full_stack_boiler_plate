@@ -1,46 +1,38 @@
-import {Model, DataTypes} from 'sequelize';
+import { Model, DataTypes } from 'sequelize';
+
 
 //Interface 생성 
 export interface InterfaceUser {
-  id: number;
-  email? : string;
-  nickname : string;
-  password : string;
-  provider? : string;
-  snsId? : string;
+  id: string;
+  email?: string;
+  nickname: string;
+  password: string;
+  roles: string;
+  rank: string;
 }
 
 //Interface를 implements해서 User Model 생성 
 class User extends Model implements InterfaceUser {
-  public id!: number;
+  public id!: string;
   public email?: string;
   public nickname!: string;
   public password!: string;
-  public provider?: string;
-  public snsId?: string;
+  public roles!: string;
+  public rank!: string;
 
   // 모델의 외부 관계 정리
   static associate(db:any){
-    db.User.hasMany(db.Post,{foreignKey : 'userId', sourceKey : 'id'})
-    db.User.belongsToMany(db.User, { // 팔로워
-      foreignKey : 'follwingId',
-      as : 'Follwers',
-      through : 'Follow'
-    })
-    db.User.belongsToMany(db.User, { //팔로잉
-      foreignKey : 'follwerId',
-      as : 'Followings',
-      through : 'Follow'
-    })
+    db.User.hasOne(db.UserInfo, {foreignKey : 'user_id', sourceKey: 'id'})
+    db.User.belongsTo(db.Privilege, {foreignKey : 'roles', sourceKey: 'roles_type'})
   } 
 }
 
 //Schema의 속성 상세 표현
 export const modelAttributes = {
   id : {
-    type :DataTypes.INTEGER,
+    type :DataTypes.UUID,
     primaryKey : true,
-    autoIncrement : true
+    defaultValue : DataTypes.UUIDV4
   },
   email : {
     type : DataTypes.STRING(40),
@@ -56,12 +48,12 @@ export const modelAttributes = {
     type : DataTypes.STRING(150),
     allowNull : false,
   },
-  provider : {
-    type : DataTypes.ENUM('local', 'kakao'),
-    allowNull : true,
-    default : 'local'
+  roles : {
+    type : DataTypes.STRING(30),
+    allowNull : false,
+    defaultValue : 'family'
   },
-  snsId : {
+  rank : {
     type : DataTypes.STRING(30),
     allowNull : true
   }
@@ -70,7 +62,7 @@ export const modelAttributes = {
 // table Options
 export const modelOptions = {
   timestamps :true,
-  underscored : false, 
+  underscored : true, 
   modelName : 'User',
   tableName : 'users',
   paranoid : true, // soft delete
