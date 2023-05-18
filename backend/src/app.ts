@@ -10,7 +10,7 @@ import passport from 'passport';
 import {Express} from 'express';
 
 //modules 
-import router from './routes';
+import mainRouter from './routes';
 import { corsOption } from './config/cors';
 import { sessionOption } from './config/session';
 import errorHandler from './middleware/error_handler';
@@ -21,8 +21,7 @@ require('dotenv').config();
 const app:Express = express();
 
 app.use(reqLogger)
-
-app.use(cors(corsOption)); // cors
+app.use(cors()); // cors
 app.use(express.json()) // body parser (json)
 app.use(express.urlencoded({extended: false})); // body parser (form)
 app.use(cookieParser(process.env.COOKIE_SECRET)); // cookie parser
@@ -32,7 +31,7 @@ app.use(passport.session()); // connect.sid 라는 이름으로 세션쿠키가 
 
 app.use(express.static(path.join(__dirname, '../public'))) // static middleware
 
-router(app); // api main router
+mainRouter(app); // api main router
 
 app.use(errorHandler) //error Handler
 

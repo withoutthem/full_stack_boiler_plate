@@ -14,5 +14,5 @@ export const dbConnect = async (): Promise<void> => {
   }
   catch(err){
     console.log(`DB연결 에러 : ${err} at ${__filename}`);
-  }
+  } 
 };

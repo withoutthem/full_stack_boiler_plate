@@ -59,9 +59,11 @@ export const modelOptions = {
   underscored: true,
   modelName: 'Privilege',
   tableName: 'privileges',
+  fileName: 'privilege.ts',
   paranoid: false, // soft delete
   charset: 'utf8',
   collate: 'utf8_general_ci',
+  timestamps : false
 }
 
 export default Privilege;

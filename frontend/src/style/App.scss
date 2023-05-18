@@ -1,0 +1,12 @@
+.link{color:#fff; text-decoration: none; margin-right:30px;} 
+
+// admin panel
+.admin_panel{padding:20px;}
+.button_zone{margin-bottom:30px;}
+.button_zone button{margin-right:20px; padding:0px 10px;}
+.input_zone{margin:20px;}
+.input_zone input{display:flex;margin-bottom:20px;} 
+.tb_col{display:flex; width:100%; position:relative; justify-content: center; align-items: center;}
+.tb_col.head{font-weight:bold; font-size:14px;}
+.tb_row{font-size:11px; padding:0px 10px; width:120px; height:70px; word-break:break-all; display:flex; justify-content: center; align-items: center; border:1px solid #000;}
+.tb_col .delete_button{position: absolute; right:0; }

@@ -4,9 +4,10 @@ export const corsOption = {
           callback(null, true)
       }
       else{
-          callback(new Error('Not allowed by CORS maybe'))
+          callback(new Error('Not allowed by CORS maybe 씨부럴'))
       }
   },
+  methods : ['GET', 'POST'],
   credentials: true,  // true시 설정 내용을 응답헤더에 추가해 줌
   optionSuccessStatus : 200
 }

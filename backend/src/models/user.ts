@@ -65,6 +65,7 @@ export const modelOptions = {
   underscored : true, 
   modelName : 'User',
   tableName : 'users',
+  fileName : 'user.ts',
   paranoid : true, // soft delete
   charset : 'utf8',
   collate : 'utf8_general_ci'

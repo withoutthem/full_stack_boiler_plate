@@ -2,8 +2,11 @@ import {Express} from 'express';
 import path from 'path';
 import logger from '../utils/logger';
 
+import adminRouter from './admin_router';
+
 const mainRouter = (app :Express):void=>{
-  app.use('/', ()=>{})
+  
+  app.use('/api/admin', adminRouter);
 
   //404 To Front Router
   app.get('*', (req,res) =>{

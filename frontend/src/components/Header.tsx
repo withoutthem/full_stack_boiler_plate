@@ -11,7 +11,7 @@ const Header = ():React.ReactElement=>{
       <Nav className="me-auto">
         <Link to='/' className='link'>Home</Link>
         <Link to='/404testasdf' className='link'>404test</Link>
-        <Link to='/login' className='link'>login</Link>
+        <Link to='/admin_panel' className='link'>ADMIN PANEL</Link>
       </Nav>
     </Container>
   </Navbar>

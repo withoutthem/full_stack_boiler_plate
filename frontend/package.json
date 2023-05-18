@@ -50,5 +50,5 @@
     "node-mocks-http": "^1.12.2",
     "supertest": "^6.3.3"
   },
-  "proxy": "http://localhost:4589"
+  "proxy": "http://localhost:4589/"
 }
