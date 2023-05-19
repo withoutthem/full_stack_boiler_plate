@@ -52,8 +52,7 @@ const DataPanel = ():React.ReactElement=>{
 
   return (
     <div className="data_panel">
-      datapanel
-      <div className="h2">{nowViewModel}</div>
+      <h3>{nowViewModel}</h3>
       {nowViewModel === 'user.ts' && <button onClick={()=>{postExampleData(nowViewModel)}} className="example_button">ExampleData Push</button>}
       {
         fileNameList && Object.keys(fileNameList).map((data:string, idx:number)=>{
