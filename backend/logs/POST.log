@@ -1,34 +1,45 @@
-[2023-05-18 04:25:35] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:25:35] WHERE : Error_Handler STATUS : 200 OPTION : Not allowed by CORS maybe 씨부럴 IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:25:35] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:25:35] WHERE : Error_Handler STATUS : 200 OPTION : Not allowed by CORS maybe 씨부럴 IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:25:35] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:25:35] WHERE : Error_Handler STATUS : 200 OPTION : Not allowed by CORS maybe 씨부럴 IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:31:58] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:36:16] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:43:35] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:43:44] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:44:25] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:52:02] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 04:59:45] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:03:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:03:11] WHERE : Error_Handler STATUS : 200 OPTION : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank) VALUES('test@test.com123', 'nicktest', 'asdfadsfa!!!', 'addad', 'sdfasdf')' at line 1 IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["users",{"email":"test@test.com123","nickname":"nicktest","password":"asdfadsfa!!!","roles":"addad","rank":"sdfasdf"}]}
-[2023-05-18 05:03:44] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:06:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:06:23] WHERE : Error_Handler STATUS : 200 OPTION : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank) VALUES ('test@test.com123', 'nicktest', 'asdfadsfa!!!', 'addad', 'sdfasdf'' at line 1 IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["users",{"email":"test@test.com123","nickname":"nicktest","password":"asdfadsfa!!!","roles":"addad","rank":"sdfasdf"}]}
-[2023-05-18 05:07:09] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:07:09] WHERE : Error_Handler STATUS : 200 OPTION : Field 'id' doesn't have a default value IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["users",{"email":"test@test.com123","nickname":"nicktest","password":"asdfadsfa!!!","roles":"addad","rank":"sdfasdf"}]}
-[2023-05-18 05:16:08] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:16:31] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:20:50] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:21:32] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:21:32] WHERE : Error_Handler STATUS : 200 OPTION : Model.create is not a function IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["user.ts",{"email":"witoute@naver.com","nickname":"viivivitet","password":"aiejfisjfds!@#","roles":"tsdts","rank":"test"}]}
-[2023-05-18 05:22:30] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:22:30] WHERE : Error_Handler STATUS : 200 OPTION : Cannot add or update a child row: a foreign key constraint fails (`dt`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roles`) REFERENCES `privileges` (`roles_type`) ON DELETE CASCADE ON UPDATE CASCADE) IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["user.ts",{"email":"witoute@naver.com","nickname":"viivivitet","password":"aiejfisjfds!@#","roles":"tsdts","rank":"test"}]}
-[2023-05-18 05:35:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:36:38] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:36:38] WHERE : Error_Handler STATUS : 200 OPTION : Cannot add or update a child row: a foreign key constraint fails (`dt`.`user_infos`, CONSTRAINT `user_infos_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["user_info.ts",{"name":"asdfafs","age":"134","company":"sdfa","phone_number":"1315315","personal_page":"sadfa","billing_info":"asdfasf"}]}
-[2023-05-18 05:38:57] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:40:46] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:40:50] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/post_data, Body: undefined}
-[2023-05-18 05:40:50] WHERE : Error_Handler STATUS : 200 OPTION : Validation error IP: ::1, Method: POST, URL: /api/admin/post_data, Body: ["user_info.ts",{"user_id":"df17cb14-cd96-4737-bffa-dce17e253782","name":"realName","age":"30","company":"compantest","phone_number":"101031913","personal_page":"sdlfjsdlkfthing","billing_info":"asfkajadfinfo"}]}
+[2023-05-19 03:57:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:57:00] WHERE : Error_Handler STATUS : 200 OPTION : Cannot find module '../models/undefined'
+Require stack:
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/controllers/admin_controller.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/admin_router.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/index.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/app.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/server.ts IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: ["privilege.ts",{"primaryKey":"root"}]}
+[2023-05-19 03:58:14] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:58:14] WHERE : Error_Handler STATUS : 200 OPTION : Cannot find module '../models/undefined'
+Require stack:
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/controllers/admin_controller.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/admin_router.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/index.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/app.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/server.ts IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: ["privilege.ts",{"primaryKey":"vip"}]}
+[2023-05-19 03:58:32] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:58:32] WHERE : Error_Handler STATUS : 200 OPTION : Cannot find module '../models/undefined'
+Require stack:
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/controllers/admin_controller.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/admin_router.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/routes/index.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/app.ts
+- /Users/victorlee/Desktop/sideProject/habits_manager/backend/src/server.ts IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: ["privilege.ts",{"primaryKey":"family"}]}
+[2023-05-19 03:59:07] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:59:09] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:59:10] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:59:10] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:59:10] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 03:59:10] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 04:03:21] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 04:03:21] WHERE : Error_Handler STATUS : 1 OPTION : Invalid status code: 1 IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: ["privilege.ts",{"primaryKey":"roles_type","primaryValue":"gold"}]}
+[2023-05-19 05:01:31] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 05:01:31] WHERE : Error_Handler STATUS : 1 OPTION : Invalid status code: 1 IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: ["privilege.ts",{"primaryKey":"roles_type","primaryValue":"vip"}]}
+[2023-05-19 05:02:47] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 05:25:14] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 05:25:15] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 05:25:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 05:26:09] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:26:45] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:26:47] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:26:55] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:26:56] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:26:57] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-19 06:27:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}

@@ -4,7 +4,7 @@ import { ErrorClass } from './types/ErrorClass';
 export const dbConnect = async (): Promise<void> => {
   try{
     await initializeAllModels(modelsOrder);
-    const connectResult = await sequelize.sync({force:false}); // sync
+    const connectResult = await sequelize.sync({force:true}); // sync
     if(connectResult){
       console.log('db 연결 성공');
     }

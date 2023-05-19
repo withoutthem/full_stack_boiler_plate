@@ -35,28 +35,27 @@ const fileImport = async (modelFiles:string[])=>{
 const getModelAttributesWithModelName = (models:any[])=>{
   return models.reduce((acc, model) => {
     const attributes = Object.keys(model.modelAttributes);
-    // const filteredAttributes = attributes.filter(attr => !model.modelAttributes[attr].defaultValue);
     acc[model.modelOptions.fileName] = attributes;
     return acc;
   }, {})
 }
 
-
 //CONTROLLERS
 
-//getTableData
+//getTableData api/admin/data/:id
 export const getTableData = async (req:Request, res:Response, next:NextFunction)=>{
   try{
     const Model:any = await getModelFiles(req.params.id)
-    const result = await Model.default.findAll({})
-    res.send(result)
+    const result = await Model.default.findAll()
+    console.log(result)
+    res.status(200).send(result);
   }
   catch(err){
     next(err)
   }
 }
 
-//getModelList 
+//getModelList : api/admin/get_model_list
 export const getModelList = async (req:Request, res:Response, next:NextFunction)=>{
   try{
     const modelFiles = await getModelFiles();
@@ -72,21 +71,33 @@ export const getModelList = async (req:Request, res:Response, next:NextFunction)
   }
 }
 
-//postModelData TODO:REFACTORING 
-export const postModelData = async (req:Request, res:Response, next:NextFunction) => {
+// deleteTableData api/admin/delete_data
+export const deleteTableData = async (req:Request, res:Response, next:NextFunction)=>{
   try{
-    const data: [string, Record<string, string>] = req.body[1];
-    const fileName = req.body[0];
-    const Model = await import(`../models/${fileName}`)
-    const result = await Model.default.create(data)
-    res.send(result);
+    const Model = await import(`../models/${req.body[0]}`)
+    const primaryKey:string = req.body[1].primaryKey;
+    const primaryValue:string = req.body[1].primaryValue;
+    const result = await Model.default.destroy({where : {[primaryKey] : primaryValue}})
+    res.status(200).send(`delete Success : result : ${result}`);
   }
   catch(err){
-    next(err);
+    next(err)
   }
 }
 
-//deleteModelData
-// export cont deleteModelData = async (req, res, next)=>{
+// postExampleData api/admin/example/:model
+export const postExampleData = async (req:Request, res:Response, next:NextFunction) =>{
+  try{
+    const Model = await import(`../models/${req.params.model}`)
+    const { UserExample } = await import('../../test/testData/example')
+    // console.log(UserExample);
+    const result = await Model.default.bulkCreate(UserExample)
+    console.log(result);
+    if(!result) throw new ErrorClass(false, 'example create failed', 500)
+    res.status(201).send(result)
+  }
+  catch(err){
+    next(err)
+  }
 
-// }
+}
