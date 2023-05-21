@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MainPage from './pages/MainPage';
 import SagongSa from './pages/SagongSa';
 import Admin from './pages/Admin';
+import LoginPage from './pages/LoginPage';
 
 //components
 import Header from './components/Header'
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage></MainPage>}></Route>
         <Route path='/admin_panel' element={<Admin></Admin>}></Route>
+        <Route path='/login' element={<LoginPage></LoginPage>}></Route>
         <Route path='*' element={<SagongSa></SagongSa>}></Route>
       </Routes>
       <Footer></Footer>

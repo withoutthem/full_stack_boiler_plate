@@ -13,6 +13,7 @@ const Header = ():React.ReactElement=>{
         <Link to='/404testasdf' className='link'>404test</Link>
         <Link to='/admin_panel' className='link'>ADMIN PANEL</Link>
       </Nav>
+      <Link to='/login' className='link'>LOGIN</Link>
     </Container>
   </Navbar>
   )

@@ -1,12 +1,14 @@
 @mixin flexCenter {display: flex; justify-content: center; align-items: center;}
 
-.link{color:#fff; text-decoration: none; margin-right:30px;} 
+.navbar .link{color:#fff; text-decoration: none; margin-right:30px;} 
 
 // admin panel
-
 .admin_panel{margin: 20px}
+.admin_panel .table_col {@include flexCenter; position:relative;}
+.admin_panel .table_row {@include flexCenter; border:1px solid #101010; height:60px; font-size:11px; width:100px; flex-grow:0; flex-shrink:0;}
+.admin_panel .delete_button{position:absolute; right:0;}
+.admin_panel .example_button{display:block; margin:20px;}
 
-.table_col {@include flexCenter; position:relative;}
-.table_row {@include flexCenter; border:1px solid #101010; height:60px; font-size:11px; width:100px; flex-grow:0; flex-shrink:0;}
-.delete_button{position:absolute; right:0;}
-.example_button{display:block; margin:20px;}
+//login page
+.login_page{padding:20px;}
+.login_page form input{display:block;}
