@@ -5,6 +5,7 @@ const adminRouter = express();
 
 adminRouter.get('/get_model_list', getModelList);
 adminRouter.get('/data/:id', getTableData);
-adminRouter.post('/delete_data', deleteTableData)
-adminRouter.get('/example/:model', postExampleData)
+adminRouter.post('/delete_data', deleteTableData);
+adminRouter.get('/example/:model', postExampleData);
+
 export default adminRouter;

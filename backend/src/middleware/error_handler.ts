@@ -1,6 +1,6 @@
 import {Response, Request, NextFunction} from 'express'
 import {ErrorClass} from '../types/ErrorClass';
-import logger from '../utils/logger';
+import {logger} from '../utils/logger';
 
 const errorHandler = (error:ErrorClass, req:Request, res:Response, next:NextFunction):void=>{
   if(process.env.NODE_ENV === 'production') (error.message = '');

@@ -11,16 +11,16 @@ export const emailValidator = (email:string):boolean=>{
 // 특수 문자 중 하나 (!@#$%^&*)가 포함되어야 합니다.
 // 알파벳 대소문자, 숫자, 특수 문자 (!@#$%^&*)로만 구성되어야 합니다.
 export const passwordValidator = (password:string):boolean =>{
-  const passwordRegex = /^(?=.*[a-zA-Z0-9!@#$%^&*])(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9!@#$%^&*]{4,15}$/;
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{4,15}$/;;
   return passwordRegex.test(password);
 }
 
-// 최소 한 개의 한글 또는 영문이 포함되어야 합니다.
+// 최소 두 개의 한글 또는 영문이 포함되어야 합니다.
 // 한글이 포함된 경우 완성된 글자여야 하며, ㅁ, ㄱ, ㅏ, ㅊ, ㅂ, ㅛ, ㅠ, ㅢ 등의 글자는 허용되지 않습니다.
 // 특수 문자는 포함되면 안됩니다.
 // 숫자는 포함될 수 있으나, 숫자로만 이루어져서는 안됩니다.
 export const nicknameValidator = (nickname:string):boolean =>{
-  const nicknameRegex = /^(?=.*[가-힣a-zA-Z])[가-힣a-zA-Z\d]*$/;
-  if(nickname.length>=15) return false;
+  const nicknameRegex = /^[가-힣a-zA-Z\d]*$/;
+  if(nickname.length < 2 || nickname.length >= 15) return false;
   return nicknameRegex.test(nickname);
 }

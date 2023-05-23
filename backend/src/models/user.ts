@@ -55,7 +55,8 @@ export const modelAttributes = {
   },
   rank : {
     type : DataTypes.STRING(30),
-    allowNull : true
+    allowNull : true,
+    defaultValue : 'Employee'
   }
 };
 

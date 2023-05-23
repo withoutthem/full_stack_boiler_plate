@@ -47,7 +47,7 @@ export const getTableData = async (req:Request, res:Response, next:NextFunction)
   try{
     const Model:any = await getModelFiles(req.params.id)
     const result = await Model.default.findAll()
-    console.log(result)
+    // console.log(result)
     res.status(200).send(result);
   }
   catch(err){
@@ -92,7 +92,7 @@ export const postExampleData = async (req:Request, res:Response, next:NextFuncti
     const { UserExample } = await import('../../test/testData/example')
     // console.log(UserExample);
     const result = await Model.default.bulkCreate(UserExample)
-    console.log(result);
+    // console.log(result);
     if(!result) throw new ErrorClass(false, 'example create failed', 500)
     res.status(201).send(result)
   }

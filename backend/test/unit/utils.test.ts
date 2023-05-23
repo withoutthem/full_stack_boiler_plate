@@ -1,4 +1,4 @@
-import logger from '../../src/utils/logger';
+import {logger} from '../../src/utils/logger';
 import httpMocks from 'node-mocks-http';
 import {Request, Response} from 'express';
 import fs from 'fs';
@@ -36,6 +36,8 @@ describe('unit validator', ()=>{
     expect(passwordValidator('yeah!upto15char123')).toBe(false)
     expect(passwordValidator('한글abc!')).toBe(false)
     expect(passwordValidator('bAc123!@#')).toBe(true)
+    expect(passwordValidator('dlwnsdn123')).toBe(false);
+    expect(passwordValidator('wnsdn!123')).toBe(true)
   })
   it('nicknameValidator', ()=>{
     expect(nicknameValidator('한글가능')).toBe(true)
