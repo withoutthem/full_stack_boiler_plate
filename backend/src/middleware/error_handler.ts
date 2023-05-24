@@ -2,6 +2,7 @@ import {Response, Request, NextFunction} from 'express'
 import {ErrorClass} from '../types/ErrorClass';
 import {logger} from '../utils/logger';
 
+//NOTE:TEST:OK
 const errorHandler = (error:ErrorClass, req:Request, res:Response, next:NextFunction):void=>{
   if(process.env.NODE_ENV === 'production') (error.message = '');
   logger(req, res, error.message, 'Error_Handler')

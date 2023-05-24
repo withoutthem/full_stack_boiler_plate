@@ -14,30 +14,39 @@ import { dbToUser } from '../utils/db_to_user';
 
 
 
-
+//NOTE:TEST:OK
+//TODO:POSTMAN
 //SIGNUP CONTROLLER
 export const signUpController = async (req:Request, res:Response, next:NextFunction)=>{
   try{
-    generalValidator(req.body.email, req.body.password, req.body.nickname) //general vailidator 
-    if(await User.findOne({where : {email:req.body.email}})) throw new ErrorClass(false, '이미 가입되어있는 이메일이에요.', 400) // duplicated check - email
-    if(await User.findOne({where : {nickname:req.body.nickname}})) throw new ErrorClass(false, '이미 사용중인 닉네임이에요', 400) // duplicated check - nickname
-    const bcryptedPS = await bcrypt.hash(req.body.password, 12); 
-    const result = await User.create({ 
-      email : req.body.email,
-      password : bcryptedPS,
-      nickname : req.body.nickname
+    const {email, password, nickname} = req.body;
+    const isValid = generalValidator(email, password, nickname);
+    if(isValid instanceof ErrorClass) throw isValid;
+    const [existingUserByEmail, existingUserByNickname] = await Promise.all([
+      User.findOne({where:{email}}),
+      User.findOne({where:{nickname}})
+    ]);
+    if (existingUserByEmail) 
+      return res.status(400).json({ stat: false, message: `${email} 은 이미 있는 이메일이에요.`, status:400 });
+    if (existingUserByNickname) 
+      return res.status(400).json({ stat: false, message: `${nickname} 은 이미 있는 닉네임이에요.`, status:400 });
+    const bcryptedPS = await bcrypt.hash(password, 12);
+    const result = await User.create({ email, password:bcryptedPS, nickname });
+    if(!result) throw new ErrorClass(false, '회원 등록 중 오류가 발생했어요.', 500)
+    idLogger(req, res, result.id, 'signUpController', result.email)
+    req.login(result, (err) => {
+      if(err) throw new ErrorClass(false, '세션 생성 중 오류가 발생했어요.', 500);
+      res.status(201).send({stat:true, message:'회원가입에 성공했어요.', data:dbToUser(result), status:201})
     });
-    if(result) {
-      idLogger(req, res, result.id, 'signUpController', result.email)
-      res.send({stat:true, message:'회원가입에 성공했어요', data:result, status:201})
-    }
-    else throw new ErrorClass(false, '회원 등록 중 오류가 발생했어요. : '+ result, 500)
   }
   catch(err){
+    console.error('signUpController Error:', err);
     next(err)
   }
 }
 
+//NOTE:TEST:OK
+//TODO:POSTMAN
 //LOGIN CONTROLLER
 export const loginController = async(req:Request, res:Response, next:NextFunction)=>{
   try{
@@ -56,6 +65,8 @@ export const loginController = async(req:Request, res:Response, next:NextFunctio
   }
 }
 
+//NOTE:TEST:OK
+//TODO:POSTMAN
 //GETMYINFO 
 export const getMyInfo = (req:any, res:Response, next:NextFunction):void=>{
   try{
@@ -71,6 +82,8 @@ export const getMyInfo = (req:any, res:Response, next:NextFunction):void=>{
   }
 }
 
+//NOTE:TEST:OK
+//TODO:POSTMAN
 //LOGOUT CONTROLLER
 export const logoutController = async (req:any, res:Response, next:NextFunction)=>{
   try{

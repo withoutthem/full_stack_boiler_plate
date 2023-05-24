@@ -1,4 +1,5 @@
 module.exports = {
-  testEnvironment: 'node',
+  preset : 'ts-jest',
+  testEnvironment : "node",
   testPathIgnorePatterns: ['/node_modules/', '/test/integration']
-};
+}

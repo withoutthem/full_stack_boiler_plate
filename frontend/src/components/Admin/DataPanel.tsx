@@ -36,11 +36,6 @@ const DataPanel = ():React.ReactElement=>{
     console.log(result.data);
   }
 
-  const postExampleData = async(model:string)=>{
-    const result = await axios.get(`/api/admin/example/${model}`);
-    console.log(result)
-  }
-
   //HOOKS
   useEffect(()=>{
     getListData()
@@ -53,7 +48,6 @@ const DataPanel = ():React.ReactElement=>{
   return (
     <div className="data_panel">
       <h3>{nowViewModel}</h3>
-      {nowViewModel === 'user.ts' && <button onClick={()=>{postExampleData(nowViewModel)}} className="example_button">ExampleData Push</button>}
       {
         fileNameList && Object.keys(fileNameList).map((data:string, idx:number)=>{
           return(
@@ -83,7 +77,7 @@ const DataPanel = ():React.ReactElement=>{
                 {Object.values(col).map((row:any, idx2:number)=>{
                   return (
                     <div className="table_row" key={row ? row.toString()+idx2 : 'null' +idx1 + idx2 + 'table_row'}>
-                      {row ? row.toString() : '0'}
+                      {row && !(row.toString().length>40)? row.toString() : '0'}
                     </div>
                   )
                 })}

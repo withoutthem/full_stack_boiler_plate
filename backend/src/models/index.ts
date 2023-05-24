@@ -8,11 +8,13 @@ const env = process.env.NODE_ENV || 'development';
 const dbConfig = require('../config/config.json')[env];
 const sequelize = new Sequelize(dbConfig.database, dbConfig.username, dbConfig.password, {...dbConfig, logging: false});
 
+//NOTE:TEST:OK
 //importmodule : pure
 export const importModule = async (modulePath:string) =>{
   return await import(modulePath)
 }
 
+//NOTE:TEST:OK
 //getModel : pure
 export const getModel = async(modelsDir:string, file:string)=>{
   const modulePath = path.join(modelsDir, file);

@@ -26,22 +26,21 @@ function App() {
 
   const dispatch = useDispatch();
 
-  const getMyInfo = async ():Promise<void>=>{
-    try{
-      const result:any = await axios.get('/api/auth/get_my_info')
-      console.log(result.data)
-      if(result.data.stat) dispatch(setUserInfo_reducer(result.data.data))
-      else console.log(result)
-    }
-    catch(err){
-      console.log(err)
-    }
-  }
-
   useEffect(()=>{
-    getMyInfo()
-  },[])
+    const getMyInfo = async ():Promise<void>=>{
+      try{
+        const result:any = await axios.get('/api/auth/get_my_info')
+        console.log(result.data)
+        if(result.data.stat) dispatch(setUserInfo_reducer(result.data.data))
+        else console.log(result)
+      }
+      catch(err){
+        console.log(err)
+      }
+    }
 
+    getMyInfo();
+  },[dispatch])
 
   return (
     <div className="all_wrapper">

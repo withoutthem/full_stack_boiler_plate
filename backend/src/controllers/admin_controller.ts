@@ -7,7 +7,6 @@ import { Model } from 'sequelize';
 
 //FUNCTIONS
 
-//TODO:TEST
 const getModelFiles = async(onFile?:string)=>{
   if(onFile){
     const modelFile = await import(path.join(__dirname, '../models', onFile)) 
@@ -16,12 +15,11 @@ const getModelFiles = async(onFile?:string)=>{
   else{
     const modelsDir = path.join(__dirname, '../models');
     const modelFiles = (await fs.promises.readdir(modelsDir)).filter(e => e !== 'index.ts');
-    if(!modelFiles) throw new ErrorClass(false, '모델 파일 없습니다', 501);
+    if(!modelFiles) throw new ErrorClass(false, '모델 파일이 없습니다', 501);
     return modelFiles
   }
 }
 
-//TODO:TEST
 const fileImport = async (modelFiles:string[])=>{
   const ImportedFiles = [];
   for(let i =0 ; i<modelFiles.length; i++){
@@ -31,7 +29,6 @@ const fileImport = async (modelFiles:string[])=>{
   return ImportedFiles
 }
 
-//TODO:TEST
 const getModelAttributesWithModelName = (models:any[])=>{
   return models.reduce((acc, model) => {
     const attributes = Object.keys(model.modelAttributes);
@@ -83,21 +80,4 @@ export const deleteTableData = async (req:Request, res:Response, next:NextFuncti
   catch(err){
     next(err)
   }
-}
-
-// postExampleData api/admin/example/:model
-export const postExampleData = async (req:Request, res:Response, next:NextFunction) =>{
-  try{
-    const Model = await import(`../models/${req.params.model}`)
-    const { UserExample } = await import('../../test/testData/example')
-    // console.log(UserExample);
-    const result = await Model.default.bulkCreate(UserExample)
-    // console.log(result);
-    if(!result) throw new ErrorClass(false, 'example create failed', 500)
-    res.status(201).send(result)
-  }
-  catch(err){
-    next(err)
-  }
-
 }

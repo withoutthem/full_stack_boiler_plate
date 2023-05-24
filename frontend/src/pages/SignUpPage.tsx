@@ -1,8 +1,10 @@
 import {useState, useEffect} from 'react';
-import axios from 'axios';
 import { emailValidator, passwordValidator, nicknameValidator } from '../utils/validator';
+import { useNavigate } from 'react-router-dom';
+import { onSubmitButton_SignUp } from '../controllers/auth_controller';
+import { useDispatch } from 'react-redux';
 
-type InputType = {
+export type InputType = {
   email : string,
   nickname : string,
   password: string,
@@ -10,6 +12,9 @@ type InputType = {
 }
 
 const SignInPage = ():React.ReactElement=>{
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [userInfo, setUserInfo] = useState<InputType>({
     email:'',
@@ -33,18 +38,6 @@ const SignInPage = ():React.ReactElement=>{
     });
   }
 
-  const onSubmitButton = async (e:React.FormEvent, value:InputType):Promise<void>=>{
-    e.preventDefault();
-    try{
-      const result:any = await axios.post('/api/auth/sign_up', value);
-      if(result.stat) console.log(result.message);
-      console.log(result)
-    }
-    catch(err){
-      console.log(err)
-    }
-  }
-
   // const onDuplicatedButton = async ():Promise<void>=>{
   //   const result = await axios.get('/')
   // }
@@ -65,7 +58,7 @@ const SignInPage = ():React.ReactElement=>{
     
   return (
     <div className="sign_up_page">
-      <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton(e, userInfo)}}>
+      <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton_SignUp(e, userInfo, navigate, dispatch)}}>
         email : <input type="email" onChange={(e) => onChangeUserInfo('email', e.target.value)} /> {userInfoValidation.email ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
         <button>이메일중복검사</button>
         nickname : <input type="text" onChange={(e) => onChangeUserInfo('nickname', e.target.value)} /> {userInfoValidation.nickname ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>

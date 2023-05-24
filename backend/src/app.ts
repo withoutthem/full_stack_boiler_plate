@@ -22,6 +22,7 @@ require('dotenv').config();
 const app:Express = express();
 
 app.use(reqLogger)
+//TODO:CORS OPTION FIX
 app.use(cors()); // cors
 app.use(express.json()) // body parser (json)
 app.use(express.urlencoded({extended: false})); // body parser (form)

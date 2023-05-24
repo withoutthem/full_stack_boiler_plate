@@ -61,18 +61,18 @@ describe('generalValidator', ()=>{
   });
   it('invalid email', ()=>{
     (emailValidator as jest.Mock).mockReturnValue(false);
-    expect(() => generalValidator('invalid', 'validPassword')).toThrow(new ErrorClass(false, '이메일 형식에 맞지 않습니다', 400))
+    expect(generalValidator('invalid', 'validPassword')).toEqual(new ErrorClass(false, '이메일 형식에 맞지 않습니다', 400))
   }); 
   it('invalid password', ()=>{
     (emailValidator as jest.Mock).mockReturnValue(true);
     (passwordValidator as jest.Mock).mockReturnValue(false);
-    expect(()=> generalValidator('test@test.com', 'invalidPassword')).toThrow(new ErrorClass(false, '비밀번호 형식에 맞지 않습니다', 400))
+    expect(generalValidator('test@test.com', 'invalidPassword')).toEqual(new ErrorClass(false, '비밀번호 형식에 맞지 않습니다', 400))
   });
   it('invalid nickname', ()=>{
     (emailValidator as jest.Mock).mockReturnValue(true);
     (passwordValidator as jest.Mock).mockReturnValue(true);
     (nicknameValidator as jest.Mock).mockReturnValue(false);
-    expect(()=> generalValidator('test@test.com', 'asdfzxcv!12', 'invalidNickname!@#')).toThrow(new ErrorClass(false, '닉네임이 형식에 맞지 않습니다', 400))
+    expect(generalValidator('test@test.com', 'asdfzxcv!12', 'invalidNickname!@#')).toEqual(new ErrorClass(false, '닉네임이 형식에 맞지 않습니다', 400))
   })
 
 })

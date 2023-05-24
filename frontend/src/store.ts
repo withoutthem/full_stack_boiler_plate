@@ -11,11 +11,11 @@ export type UserInfoStore = {
 const userInfo = createSlice({
   name : 'userInfo',
   initialState : {
-    id : 'none',
-    email : 'none',
-    nickname : 'none',
-    rank : 'none',
-    roles : 'none'
+    id : null,
+    email : null,
+    nickname : null,
+    rank : null,
+    roles : null
   } as UserInfoStore,
   reducers : {
     setUserInfo_reducer(state, action:PayloadAction<UserInfoStore>) {
@@ -35,7 +35,7 @@ const userInfo = createSlice({
   }
 })
 
-export const { setUserInfo_reducer } = userInfo.actions;
+export const { setUserInfo_reducer, deleteUserInfo_reducer } = userInfo.actions;
 
 export default configureStore({
   reducer: {

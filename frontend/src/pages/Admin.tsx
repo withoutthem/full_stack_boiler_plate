@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import DataPanel from "../components/Admin/DataPanel";
 import TestPanel from '../components/Admin/TestPanel';
 
@@ -26,8 +26,6 @@ const Admin = ():React.ReactElement=>{
       <div className="now_panel">
         {panelMap[nowPanel]}
       </div>
-      
-      
     </div>
   )
 }

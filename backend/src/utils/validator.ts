@@ -1,5 +1,7 @@
 import { ErrorClass } from "../types/ErrorClass";
 
+//NOTE:TEST:OK
+
 //이메일 형식에 맞아야 합니다.
 export const emailValidator = (email:string):boolean=>{
   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -27,8 +29,8 @@ export const nicknameValidator = (nickname:string):boolean =>{
 }
 
 export const generalValidator = (email:string, password:string, nickname?:string)=>{
-  if(!emailValidator(email)) throw new ErrorClass(false, '이메일 형식에 맞지 않습니다', 400);
-  if(!passwordValidator(password)) throw new ErrorClass(false, '비밀번호 형식에 맞지 않습니다', 400)
-  if(nickname && !nicknameValidator(nickname)) throw new ErrorClass(false, '닉네임이 형식에 맞지 않습니다', 400)
+  if(!emailValidator(email)) return new ErrorClass(false, '이메일 형식에 맞지 않습니다', 400);
+  if(!passwordValidator(password)) return new ErrorClass(false, '비밀번호 형식에 맞지 않습니다', 400)
+  if(nickname && !nicknameValidator(nickname)) return new ErrorClass(false, '닉네임이 형식에 맞지 않습니다', 400)
   return true
 }
