@@ -1,7 +1,7 @@
 import { ErrorClass } from "../../src/types/ErrorClass";
 import {Request, Response, NextFunction} from 'express';
-import { signUpController, loginController, getMyInfo, logoutController } from "../../src/controllers/auth_controller";
-import { generalValidator } from "../../src/utils/validator";
+import { signUpController, loginController, getMyInfo, logoutController, validateUniqueUserAttributes } from "../../src/controllers/auth_controller";
+import { emailValidator, nicknameValidator, generalValidator } from "../../src/utils/validator";
 import httpMocks from 'node-mocks-http';
 import User from "../../src/models/user";
 import bcrypt from 'bcrypt';
@@ -10,7 +10,9 @@ import passport = require("passport");
 
 jest.mock('../../src/utils/validator', ()=>{
   return {
-    generalValidator : jest.fn()
+    emailValidator : jest.fn(),
+    nicknameValidator : jest.fn(),
+    generalValidator : jest.fn(),
   }
 })
 jest.mock('bcrypt', ()=>{
@@ -40,6 +42,9 @@ describe('signUpController', ()=>{
     res = httpMocks.createResponse();
     next = jest.fn();
     req.login = jest.fn();
+    jest.clearAllMocks();
+  })
+  afterEach(()=>{
     jest.clearAllMocks();
   })
   it('should success signup if all values are valid',async ()=>{
@@ -97,6 +102,9 @@ describe('loginController', ()=>{
     req.login = jest.fn();
     jest.clearAllMocks();
   })
+  afterEach(()=>{
+    jest.clearAllMocks();
+  })
   it('should call passport.authenticate', async()=>{
     (passport.authenticate as jest.Mock).mockImplementation((strategy, callback) => jest.fn())
     await loginController(req,res,next);
@@ -115,6 +123,9 @@ describe('getMyInfo', ()=>{
     req = httpMocks.createRequest();
     res = httpMocks.createResponse();
     next = jest.fn();
+    jest.clearAllMocks();
+  })
+  afterEach(()=>{
     jest.clearAllMocks();
   })
   it('should send userData if req.user exists(Server session activated)', ()=>{
@@ -144,6 +155,9 @@ describe('logoutController', ()=>{
     req.logout = jest.fn()
     jest.clearAllMocks();
   })
+  afterEach(()=>{
+    jest.clearAllMocks();
+  })
   it('should call req.logout', ()=>{
     logoutController(req,res,next);
     expect(req.logout).toBeCalled()
@@ -152,5 +166,54 @@ describe('logoutController', ()=>{
     (req.logout as jest.Mock).mockImplementation(()=> {throw new ErrorClass(false, '', 500)});
     logoutController(req,res,next);
     expect(next).toBeCalledWith(expect.any(ErrorClass));
+  })
+})
+
+
+
+
+
+describe('validateUniqueUserAttributes', ()=>{
+  let req:Request;
+  let res:Response;
+  let next:NextFunction;
+  beforeEach(()=>{
+    req = httpMocks.createRequest();
+    res = httpMocks.createResponse();
+    next = jest.fn();
+    res.send = jest.fn();
+    (emailValidator as jest.Mock).mockReturnValue(true);
+    (nicknameValidator as jest.Mock).mockReturnValue(true);
+    jest.clearAllMocks();
+  })
+  afterEach(()=>{
+    jest.clearAllMocks();
+  })
+  it('should send type validation error if not pass Validator', async ()=>{
+    req.body = {type : 'email', value:'inValidEmail'};
+    (emailValidator as jest.Mock).mockReturnValue(false);
+    await validateUniqueUserAttributes(req,res,next);
+    expect(User.findOne).not.toBeCalled();
+    expect(next).toBeCalledWith(new ErrorClass(false, `유효하지 않은 ${req.body.type} 이에요`, 400))
+  })
+  it('should send 404false if email/nickname is already exists', async ()=>{
+    req.body = {type : 'email', value:'test@test.com'};
+    (User.findOne as jest.Mock).mockResolvedValue(true);
+    await validateUniqueUserAttributes(req,res,next)
+    expect(res.statusCode).toBe(409);
+    expect(res.send).toBeCalledWith({stat:false, message: `이미 있는 ${req.body.type} 이에요`, status:409});
+  })
+  it('should send 200true if email/nickname is doesnt exist', async()=>{
+    req.body = {type : 'nickname', value : 'newNickname'};
+    (User.findOne as jest.Mock).mockResolvedValue(false);
+    await validateUniqueUserAttributes(req,res,next);
+    expect(res.statusCode).toBe(200);
+    expect(res.send).toBeCalledWith({stat:true, message: `사용 가능한 ${req.body.type} 이에요`, status:200})
+  })
+  it('should call nextFunction if something wrong', async ()=>{
+    req.body = {type : 'nickname', value : 'newNickname'};
+    (User.findOne as jest.Mock).mockRejectedValue(new ErrorClass(false, '알 수 없는 에러에요', 404))
+    await validateUniqueUserAttributes(req,res,next);
+    expect(next).toBeCalledWith(new ErrorClass(false, '알 수 없는 에러에요', 404));    
   })
 })

@@ -1,6 +1,47 @@
 @mixin flexCenter {display: flex; justify-content: center; align-items: center;}
+@mixin flexAlign {display:flex; align-items: center;}
+@mixin flexJustify {display:flex; justify-content: center;}
+@mixin absoluteCenter {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
 
-.navbar .link{color:#fff; text-decoration: none; margin-right:30px;} 
+//COMMON
+.ripple_wrap{border-radius:50%; overflow:hidden;}
+.sagongsa{position:relative;}
+.sagongsa img{width:100%;}
+.sagongsa .get_back_button{background:#fff; cursor:pointer; position:absolute; left:20px; top:20px; width:120px; height:80px; border-radius:10px; font-size:20px;}
+.sagongsa .get_back_button:hover{background:#e4e4e4;}
+* {transition:.1s all;}
+
+//header
+.header{padding:0 20px;}
+.auth_sub_header{@include flexAlign; height:36px; justify-content: flex-end;}
+.auth_sub_header .logout_button{cursor:pointer; border:none; background:none; color:rgb(126, 128, 130); font-size:14px; padding:12px;}
+.auth_sub_header .logout_button:hover{background:#f6f6f6;}
+.auth_sub_header a{position:relative; transition:0.3s all; color:rgb(126, 128, 130); font-size:14px; padding:12px;}
+.auth_sub_header a:hover{background:#f6f6f6;}
+.auth_sub_header a::after{content:''; display:inline-block; height:13px; background:#e4e4e4; width:1px; position:absolute; right:0;}
+.auth_sub_header a:last-of-type::after{display:none;}
+.auth_sub_header .header_nickname{font-weight:600; font-size:20px; margin:0 20px;}
+.header .header_gnb{@include flexAlign; width:100%; height:50px; border-top:1px solid #f6f6f6; border-bottom:1px solid #f6f6f6; justify-content: space-between;}
+.header .header_gnb a{color:rgb(24, 26, 28); margin:0 16px; padding:10px; font-weight:600; font-size:18px;}
+.header .header_gnb ul{@include flexAlign;}
+.header .header_gnb ul li{list-style:none;}
+.header .header_gnb ul li a{text-decoration: none;}
+.header .searcher_wrap{@include flexAlign;}
+.header .main_logo_wrap .main_logo{width:240px;}
+.header .searcher {@include flexAlign;height:44px; padding-left:10px; width:500px; border:1px solid rgba(0, 0, 0, 0.1); border-radius:5px;}
+.header .searcher.active {border:2px solid rgb(26, 124, 255)}
+.header .searcher .search_button{border-radius:50%; position:relative; background:transparent; cursor:pointer; border:none; width:40px; height:40px; @include flexCenter;}
+.header .searcher .search_button::before{transition:0.3s all; content:''; width:36px; height:36px; border-radius:50%; opacity:0; background:#e6e6e6; @include absoluteCenter;}
+.header .searcher .search_button:hover::before{opacity:0.4}
+.header .searcher .search_button .search_icon{position:relative; z-index:1; width:20px; height:20px;}
+.header .searcher input.searchInput {transition:all .3s; font-size:15px;flex-grow: 1; border:none; height:30px;}
+.header .searcher input.searchInput:focus-visible {outline:none}
+
+//main page
+.main_page .hero_wrap{@include flexAlign; overflow: hidden;}
+.main_page .hero_wrap .hero_banner{width:70%}
+.main_page .hero_wrap .hero_banner .swiper img{width:100%}
+.main_page .hero_wrap .user_interface{width:30%;}
 
 // admin panel
 .admin_panel{margin: 20px}
@@ -12,3 +53,4 @@
 //login page
 .login_page{padding:20px;}
 .login_page form input{display:block;}
+

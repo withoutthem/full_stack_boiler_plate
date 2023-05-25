@@ -5,8 +5,8 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 
 //css
+import './style/reset.css';
 import './style/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 //pages
 import MainPage from './pages/MainPage';
@@ -14,6 +14,7 @@ import SagongSa from './pages/SagongSa';
 import Admin from './pages/Admin';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
+import Privacy from './pages/Privacy';
 
 //components
 import Header from './components/Header'
@@ -50,6 +51,7 @@ function App() {
         <Route path='/admin_panel' element={<Admin></Admin>}></Route>
         <Route path='/login' element={<LoginPage></LoginPage>}></Route>
         <Route path='/sign_up' element={<SignUpPage></SignUpPage>}></Route>
+        <Route path='/privacy' element={<Privacy></Privacy>}></Route>
         <Route path='*' element={<SagongSa></SagongSa>}></Route>
       </Routes>
       <Footer></Footer>

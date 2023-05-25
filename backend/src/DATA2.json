@@ -1,0 +1,422 @@
+[
+  {
+      "category": "과학",
+      "quiz": "다음 중 가장 큰 행성은 어떤 행성인가요?",
+      "options": ["금성", "화성", "목성", "지구"],
+      "answer": "목성"
+  },
+  {
+      "category": "문화",
+      "quiz": "해바라기는 어떤 나라의 국화인가요?",
+      "options": ["미국", "프랑스", "러시아", "일본"],
+      "answer": "러시아"
+  },
+  {
+      "category": "음악",
+      "quiz": "피아노는 대체로 몇 개의 건반을 가지고 있나요?",
+      "options": ["88개", "76개", "66개", "54개"],
+      "answer": "88개"
+  },
+  {
+      "category": "수학",
+      "quiz": "다음 중 가장 큰 수는 무엇인가요?",
+      "options": ["100", "1000", "10000", "100000"],
+      "answer": "100000"
+  },
+  {
+      "category": "만화",
+      "quiz": "슈퍼맨이 처음으로 등장한 만화는 무엇인가요?",
+      "options": ["디텍티브 코믹스", "스파이더맨", "액션 코믹스", "어벤저스"],
+      "answer": "액션 코믹스"
+  },
+  {
+      "category": "지리",
+      "quiz": "다음 중 가장 긴 강은 어떤 강인가요?",
+      "options": ["나일강", "아마존강", "미시시피강", "양쯔강"],
+      "answer": "나일강"
+  },
+  {
+      "category": "드라마",
+      "quiz": "빅뱅 이론의 주요 캐릭터 중 하나인 셀던 쿠퍼는 어떤 학문을 전공하였나요?",
+      "options": ["물리학", "화학", "생물학", "수학"],
+      "answer": "물리학"
+  },
+  {
+      "category": "역사",
+      "quiz": "피사의 사탑이 위치한 나라는 어디인가요?",
+      "options": ["프랑스", "이탈리아", "스페인", "독일"],
+      "answer": "이탈리아"
+  },
+  {
+      "category": "생물학",
+      "quiz": "다음 중 가장 빠른 동물은 무엇인가요?",
+      "options": ["치타", "독수리", "캥거루", "사자"],
+      "answer": "치타"
+  },
+  {
+      "category": "문학",
+      "quiz": "하리 포터 시리즈의 저자는 누구인가요?",
+      "options": ["J.K. 롤링", "스티븐 킹", "조지 R.R. 마틴", "이안 맥큐언"],
+      "answer": "J.K. 롤링"
+  },
+  {
+    "category": "Computer Science",
+    "quiz": "HTTP의 약자는 무엇인가요?",
+    "options": ["Hyper Text Transfer Protocol", "High Text Transfer Protocol", "Hyper Text Test Protocol", "High Transfer Text Protocol"],
+    "answer": "Hyper Text Transfer Protocol"
+},
+{
+    "category": "Computer Science",
+    "quiz": "Java 언어에서 가비지 컬렉션의 역할은 무엇인가요?",
+    "options": ["메모리 정리", "코드 최적화", "버그 수정", "코드 컴파일"],
+    "answer": "메모리 정리"
+},
+{
+    "category": "Computer Science",
+    "quiz": "다음 중 웹 개발에서 클라이언트 측 언어는 무엇인가요?",
+    "options": ["Python", "Java", "C#", "JavaScript"],
+    "answer": "JavaScript"
+},
+{
+    "category": "Computer Science",
+    "quiz": "SQL의 'SELECT' 명령은 무엇을 하는데 사용되나요?",
+    "options": ["데이터 추가", "데이터 수정", "데이터 삭제", "데이터 조회"],
+    "answer": "데이터 조회"
+},
+{
+    "category": "Computer Science",
+    "quiz": "다음 중 정렬 알고리즘은 무엇인가요?",
+    "options": ["퀵 정렬", "피보나치 수열", "에라토스테네스의 체", "유클리드 알고리즘"],
+    "answer": "퀵 정렬"
+},
+{
+    "category": "Computer Science",
+    "quiz": "블록체인 기술이 처음 도입된 암호화폐는 무엇인가요?",
+    "options": ["리플", "이더리움", "라이트코인", "비트코인"],
+    "answer": "비트코인"
+},
+{
+    "category": "Computer Science",
+    "quiz": "HTML에서 'div' 태그의 주요 목적은 무엇인가요?",
+    "options": ["문서의 구조를 정의", "인라인 요소를 그룹화", "블록 요소를 그룹화", "텍스트를 강조"],
+    "answer": "블록 요소를 그룹화"
+},
+{
+    "category": "Computer Science",
+    "quiz": "IPv4 주소는 몇 비트로 구성되어 있나요?",
+    "options": ["32비트", "64비트", "128비트", "256비트"],
+    "answer": "32비트"
+},
+{
+    "category": "Computer Science",
+    "quiz": "Python의 대화형 셸을 뜻하는 용어는 무엇인가요?",
+    "options": ["Pip", "IDLE", "Django", "Flask"],
+    "answer": "IDLE"
+},
+{
+    "category": "Computer Science",
+    "quiz": "다음 중 데이터 구조는 무엇인가요?",
+    "options": ["배열", "변수", "상수", "연산자"],
+    "answer": "배열"
+},
+{
+  "category": "Web Development",
+  "quiz": "REST API에서 PUT 메소드의 주요 목적은 무엇인가요?",
+  "options": ["리소스 생성", "리소스 수정", "리소스 삭제", "리소스 조회"],
+  "answer": "리소스 수정"
+},
+{
+  "category": "Web Development",
+  "quiz": "CSS에서 'flex'는 어떤 속성의 축약형인가요?",
+  "options": ["flex-direction, flex-wrap, flex-flow", "flex-grow, flex-shrink, flex-basis", "flex-container, flex-item", "flex-start, flex-end"],
+  "answer": "flex-grow, flex-shrink, flex-basis"
+},
+{
+  "category": "Web Development",
+  "quiz": "Bootstrap이란 무엇인가요?",
+  "options": ["자바스크립트 라이브러리", "CSS 프레임워크", "HTML 템플릿", "프론트엔드 개발 도구"],
+  "answer": "CSS 프레임워크"
+},
+{
+  "category": "Web Development",
+  "quiz": "AJAX의 주요 목적은 무엇인가요?",
+  "options": ["페이지 새로고침 없이 데이터를 교환", "HTML과 CSS를 동시에 적용", "서버와 클라이언트 간의 통신 속도 향상", "페이지 로딩 시간 단축"],
+  "answer": "페이지 새로고침 없이 데이터를 교환"
+},
+{
+  "category": "Web Development",
+  "quiz": "'POST' 메소드는 어떤 상황에 사용되나요?",
+  "options": ["새로운 리소스를 생성할 때", "기존 리소스를 수정할 때", "특정 리소스를 삭제할 때", "특정 리소스를 조회할 때"],
+  "answer": "새로운 리소스를 생성할 때"
+},
+{
+  "category": "Web Development",
+  "quiz": "React.js는 어떤 회사에서 개발되었나요?",
+  "options": ["Google", "Apple", "Microsoft", "Facebook"],
+  "answer": "Facebook"
+},
+{
+  "category": "Web Development",
+  "quiz": "서버 사이드 렌더링(SSR)의 주된 장점은 무엇인가요?",
+  "options": ["페이지 로딩 속도 향상", "보안 강화", "서버 부하 감소", "검색 엔진 최적화(SEO) 개선"],
+  "answer": "검색 엔진 최적화(SEO) 개선"
+},
+{
+  "category": "Web Development",
+  "quiz": "Webpack이란 무엇인가요?",
+  "options": ["프론트엔드 개발 도구", "서버 사이드 렌더링 도구", "백엔드 개발 프레임워크", "데이터베이스 관리 시스템"],
+  "answer": "프론트엔드 개발 도구"
+},
+{
+  "category": "Web Development",
+  "quiz": "다음 중 웹 스토리지 방식은 무엇인가요?",
+  "options": ["Local Storage", "Session Storage", "Cookie", "모두 맞음"],
+  "answer": "모두 맞음"
+},
+{
+  "category": "Web Development",
+  "quiz": "CORS 정책은 어떤 문제를 해결하기 위해 만들어졌나요?",
+  "options": ["보안 위협", "서로 다른 도메인 간의 리소스 공유", "페이지 로딩 속도", "브라우저 호환성"],
+  "answer": "서로 다른 도메인 간의 리소스 공유"
+},
+{
+  "category": "Web Development",
+  "quiz": "MVC 패턴에서 'C'는 무엇을 의미하는가?",
+  "options": ["Component", "Controller", "Computer", "Converter"],
+  "answer": "Controller"
+},
+{
+  "category": "Web Development",
+  "quiz": "다음 중 JavaScript의 데이터 타입은 무엇인가요?",
+  "options": ["Number", "HTML", "CSS", "Python"],
+  "answer": "Number"
+},
+{
+  "category": "Web Development",
+  "quiz": "Python에서 웹 어플리케이션 개발을 위한 인기 있는 프레임워크는 무엇인가요?",
+  "options": ["Express.js", "Django", "Vue.js", "React.js"],
+  "answer": "Django"
+},
+{
+  "category": "Web Development",
+  "quiz": "HTTP 상태 코드 404는 어떤 상태를 나타내는가?",
+  "options": ["서버 오류", "페이지 찾을 수 없음", "잘못된 요청", "권한 없음"],
+  "answer": "페이지 찾을 수 없음"
+},
+{
+  "category": "Web Development",
+  "quiz": "다음 중 NoSQL 데이터베이스는 어떤 것인가요?",
+  "options": ["MySQL", "PostgreSQL", "MongoDB", "Oracle Database"],
+  "answer": "MongoDB"
+},
+{
+  "category": "Web Development",
+  "quiz": "HTML에서 폼 데이터를 서버로 전송하기 위해 어떤 태그를 사용하나요?",
+  "options": ["<form>", "<submit>", "<send>", "<post>"],
+  "answer": "<form>"
+},
+{
+  "category": "Web Development",
+  "quiz": "DOM이란 무엇의 약자인가요?",
+  "options": ["Document Object Model", "Digital Operating Machine", "Database Order Management", "Desktop Operating Module"],
+  "answer": "Document Object Model"
+},
+{
+  "category": "Web Development",
+  "quiz": "다음 중 프론트엔드 자바스크립트 프레임워크는 무엇인가요?",
+  "options": ["Angular.js", "Node.js", "Laravel", "Flask"],
+  "answer": "Angular.js"
+},
+{
+  "category": "Web Development",
+  "quiz": "CDN이란 무엇인가요?",
+  "options": ["Content Distribution Network", "Content Delivery Network", "Computer Defense Network", "Content Data Network"],
+  "answer": "Content Delivery Network"
+},
+{
+  "category": "Web Development",
+  "quiz": "GET 방식과 POST 방식의 주요 차이점은 무엇인가요?",
+  "options": ["데이터의 크기", "보안성", "속도", "모두 맞음"],
+  "answer": "모두 맞음"
+},
+{
+  "category": "Web Development",
+  "quiz": "자바스크립트에서 '===' 연산자의 역할은 무엇인가요?",
+  "options": ["대입", "동등 비교", "일치 비교", "산술 연산"],
+  "answer": "일치 비교"
+},
+{
+  "category": "Web Development",
+  "quiz": "HTML5에서 새롭게 도입된 그래픽 요소는 무엇인가요?",
+  "options": ["<img>", "<div>", "<canvas>", "<table>"],
+  "answer": "<canvas>"
+},
+{
+  "category": "Web Development",
+  "quiz": "Sass는 CSS의 어떤 점을 개선하기 위한 도구인가요?",
+  "options": ["성능 최적화", "의존성 관리", "유지보수성 향상", "크로스 브라우징"],
+  "answer": "유지보수성 향상"
+},
+{
+  "category": "Web Development",
+  "quiz": "Node.js는 어떤 언어로 작성된 플랫폼인가요?",
+  "options": ["Java", "Python", "C#", "JavaScript"],
+  "answer": "JavaScript"
+},
+{
+  "category": "Web Development",
+  "quiz": "Vue.js는 무엇을 위한 프레임워크인가요?",
+  "options": ["백엔드 개발", "데이터베이스 관리", "프론트엔드 개발", "머신러닝"],
+  "answer": "프론트엔드 개발"
+},
+{
+  "category": "Web Development",
+  "quiz": "웹소켓(WebSocket) 프로토콜의 주요 사용처는 무엇인가요?",
+  "options": ["실시간 통신", "데이터베이스 관리", "파일 업로드", "암호화"],
+  "answer": "실시간 통신"
+},
+{
+  "category": "Web Development",
+  "quiz": "다음 중 HTML의 블록 레벨 요소는 어떤 것인가요?",
+  "options": ["<div>", "<span>", "<a>", "<em>"],
+  "answer": "<div>"
+},
+{
+  "category": "Web Development",
+  "quiz": "Redux는 어떤 라이브러리인가요?",
+  "options": ["UI 컴포넌트 라이브러리", "테스팅 라이브러리", "상태 관리 라이브러리", "HTTP 요청 라이브러리"],
+  "answer": "상태 관리 라이브러리"
+},
+{
+  "category": "Web Development",
+  "quiz": "JSON의 약자는 무엇인가요?",
+  "options": ["JavaScript Object Notation", "Java Standard Output Network", "JavaScript Output Name", "Java Source Open Network"],
+  "answer": "JavaScript Object Notation"
+},
+{
+  "category": "Web Development",
+  "quiz": "HTTP 상태 코드 200은 어떤 상태를 나타내는가?",
+  "options": ["서버 오류", "리다이렉션 필요", "페이지 찾을 수 없음", "요청 성공"],
+  "answer": "요청 성공"
+},
+{
+  "category": "Geography",
+  "quiz": "세계에서 가장 큰 국가는 어디인가요?",
+  "options": ["러시아", "캐나다", "중국", "미국"],
+  "answer": "러시아"
+},
+{
+  "category": "History",
+  "quiz": "2차 세계대전이 종료된 연도는 언제인가요?",
+  "options": ["1945", "1940", "1950", "1955"],
+  "answer": "1945"
+},
+{
+  "category": "Science",
+  "quiz": "물이 끓는 온도는 몇 도인가요(섭씨 기준)?",
+  "options": ["0도", "50도", "100도", "150도"],
+  "answer": "100도"
+},
+{
+  "category": "Literature",
+  "quiz": "'해리 포터' 시리즈의 작가는 누구인가요?",
+  "options": ["J.K. 롤링", "스티븐 킹", "조지 오웰", "J.R.R. 톨킨"],
+  "answer": "J.K. 롤링"
+},
+{
+  "category": "Music",
+  "quiz": "비토벤이 작곡한 교향곡 중 '운명'이라는 별명을 가진 곡은 몇 번째 교향곡인가요?",
+  "options": ["3번", "5번", "7번", "9번"],
+  "answer": "5번"
+},
+{
+  "category": "Sports",
+  "quiz": "축구에서 팀당 몇 명의 선수가 경기에 참여하나요?",
+  "options": ["9명", "10명", "11명", "12명"],
+  "answer": "11명"
+},
+{
+  "category": "Movies",
+  "quiz": "'반지의 제왕' 시리즈를 감독한 사람은 누구인가요?",
+  "options": ["스티븐 스필버그", "조지 루카스", "피터 잭슨", "크리스토퍼 놀란"],
+  "answer": "피터 잭슨"
+},
+{
+  "category": "Astronomy",
+  "quiz": "우리 태양계에서 가장 큰 행성은 어디인가요?",
+  "options": ["목성", "토성", "지구", "화성"],
+  "answer": "목성"
+},
+{
+  "category": "Technology",
+  "quiz": "세계에서 가장 널리 사용되는 웹 브라우저는 무엇인가요?",
+  "options": ["인터넷 익스플로러", "사파리", "크롬", "파이어폭스"],
+  "answer": "크롬"
+},
+{
+  "category": "Art",
+  "quiz": "'비너스의 탄생'을 그린 화가는 누구인가요?",
+  "options": ["레오나르도 다 빈치", "산드로 보티첼리", "빈센트 반 고흐", "피카소"],
+  "answer": "산드로 보티첼리"
+},
+{
+  "category": "Biology",
+  "quiz": "DNA의 풀 네임은 무엇인가요?",
+  "options": ["Deoxyribonucleic Acid", "Deoxynucleic Acid", "Deoxyribose Nucleic Acid", "Di-oxide Nucleic Acid"],
+  "answer": "Deoxyribonucleic Acid"
+},
+{
+  "category": "Physics",
+  "quiz": "빛의 속도는 대략 어느 정도인가요?",
+  "options": ["30,000km/s", "300,000km/s", "3,000,000km/s", "30,000,000km/s"],
+  "answer": "300,000km/s"
+},
+{
+  "category": "Geology",
+  "quiz": "지구의 가장 바깥층은 무엇으로 구성되어 있나요?",
+  "options": ["지각", "외핵", "내핵", "맨틀"],
+  "answer": "지각"
+},
+{
+  "category": "Chemistry",
+  "quiz": "주기율표의 H는 어떤 원소를 나타내는 기호인가요?",
+  "options": ["Helium", "Hydrogen", "Hafnium", "Holmium"],
+  "answer": "Hydrogen"
+},
+{
+  "category": "Politics",
+  "quiz": "한국의 대통령 직무 수행 기간은 얼마나 되나요?",
+  "options": ["4년", "5년", "6년", "7년"],
+  "answer": "5년"
+},
+{
+  "category": "Economics",
+  "quiz": "경제에서 '인플레이션'이라는 용어의 의미는 무엇인가요?",
+  "options": ["물가 상승", "물가 하락", "경제 성장", "경제 침체"],
+  "answer": "물가 상승"
+},
+{
+  "category": "Mathematics",
+  "quiz": "피타고라스 정리에서 'c'는 어떤 변을 가리키나요?",
+  "options": ["빗변", "수직변", "밑변", "직각변"],
+  "answer": "빗변"
+},
+{
+  "category": "Languages",
+  "quiz": "세계에서 가장 많은 사람들이 사용하는 언어는 무엇인가요?",
+  "options": ["영어", "스페인어", "중국어", "힌디어"],
+  "answer": "중국어"
+},
+{
+  "category": "Philosophy",
+  "quiz": "'존재는 사유에서 비롯된다'는 주장은 누구의 주장인가요?",
+  "options": ["칸트", "헤겔", "니체", "플라톤"],
+  "answer": "헤겔"
+},
+{
+  "category": "Astronomy",
+  "quiz": "우리 태양계에서 가장 가까운 별은 무엇인가요?",
+  "options": ["알파 센타우리", "베텔게우스", "시리우스", "알데바란"],
+  "answer": "알파 센타우리"
+}
+]

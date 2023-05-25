@@ -2,8 +2,6 @@
 import {onSubmitButton_Login, onSubmitButton_SignUp, logOutButton} from '../../src/controllers/auth_controller'
 import axios from 'axios'
 import { emailValidator, passwordValidator } from '../../src/utils/validator';
-import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 
 const mockDispatch = jest.fn();
 const mockNavigate = jest.fn();

@@ -4,6 +4,7 @@ import fs from 'fs';
 import { ErrorClass } from '../types/ErrorClass';
 import { sequelize } from '../models';
 import { Model } from 'sequelize';
+import Product from '../models/product';
 
 //FUNCTIONS
 
@@ -43,7 +44,7 @@ const getModelAttributesWithModelName = (models:any[])=>{
 export const getTableData = async (req:Request, res:Response, next:NextFunction)=>{
   try{
     const Model:any = await getModelFiles(req.params.id)
-    const result = await Model.default.findAll()
+    const result = await Model.default.findAll({})
     // console.log(result)
     res.status(200).send(result);
   }
@@ -79,5 +80,24 @@ export const deleteTableData = async (req:Request, res:Response, next:NextFuncti
   }
   catch(err){
     next(err)
+  }
+}
+
+export const postExampleData = async (req:Request, res:Response, next:NextFunction)=>{
+  try{
+    const dataBuffer = fs.readFileSync(path.join(__dirname , '../DATA.json'))
+    const dataJSON = dataBuffer.toString();
+    const products:any[] = JSON.parse(dataJSON);
+    const final = new Map();
+    products.forEach(item => final.set(item.name , item))
+    let uniqueProducts = Array.from(final.values());
+    const result = await Product.bulkCreate(uniqueProducts)
+    console.log('success')
+    if(result) res.status(201).send(result);
+    else throw new ErrorClass(false, '데이터생성 실패', 500);
+  }
+  catch(err){
+    next(err)
+    console.log(err);
   }
 }

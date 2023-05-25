@@ -20,7 +20,6 @@ export const onSubmitButton_Login = async ( e:React.FormEvent, data:UserLoginFor
       alert('비밀번호 형식에 맞게 적으세요');
     } else {
       const result = await axios.post('/api/auth/login', data);
-      console.log(result)
       if(result.data.stat) {
         dispatch(setUserInfo_reducer(result.data.data))
         navigate('/')

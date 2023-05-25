@@ -1,8 +1,10 @@
+//libs
 import {useState, useEffect} from 'react';
 import { emailValidator, passwordValidator, nicknameValidator } from '../utils/validator';
 import { useNavigate } from 'react-router-dom';
 import { onSubmitButton_SignUp } from '../controllers/auth_controller';
 import { useDispatch } from 'react-redux';
+import axios from 'axios';
 
 export type InputType = {
   email : string,
@@ -30,17 +32,26 @@ const SignInPage = ():React.ReactElement=>{
     password_confirm : false
   })
 
-  const isAllValid = Object.values(userInfoValidation).every(Boolean);
+  const [duplicatedCheck, setDuplicatedCheck] = useState({
+    email : false,
+    nickname : false
+  })
+
+  const isAllValid = Object.values(userInfoValidation).every(Boolean) && Object.values(duplicatedCheck).every(Boolean)
 
   const onChangeUserInfo =(type:string, value:string):void=>{
     setUserInfo(state => { 
       return {...state, [type]:value}
     });
+    if(type === 'email' || 'nickname') setDuplicatedCheck(state => {return {...state ,[type]:false}})
   }
 
-  // const onDuplicatedButton = async ():Promise<void>=>{
-  //   const result = await axios.get('/')
-  // }
+  const onDuplicatedButton_SignUp = async (e:React.FormEvent, type:string, value:string):Promise<void>=>{
+    e.preventDefault();
+    const data = {type , value}
+    const result = await axios.post('/api/auth/dupcheck', data)
+    if(result.data.stat) setDuplicatedCheck(state => {return {...state, [data.type] : true}})
+  }
 
   useEffect(() => {
     const isEmailValid = emailValidator(userInfo.email);
@@ -54,19 +65,24 @@ const SignInPage = ():React.ReactElement=>{
       password: isPasswordValid,
       password_confirm: isPasswordConfirmValid
     });
+
+    setDuplicatedCheck({
+      email : !!duplicatedCheck.email,
+      nickname : !!duplicatedCheck.nickname
+    })
   }, [userInfo]);
     
   return (
     <div className="sign_up_page">
       <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton_SignUp(e, userInfo, navigate, dispatch)}}>
         email : <input type="email" onChange={(e) => onChangeUserInfo('email', e.target.value)} /> {userInfoValidation.email ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        <button>이메일중복검사</button>
+        {duplicatedCheck.email ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'email', userInfo.email)}}>이메일중복검사</button>}
         nickname : <input type="text" onChange={(e) => onChangeUserInfo('nickname', e.target.value)} /> {userInfoValidation.nickname ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        <button>닉네임중복검사</button>
+        {duplicatedCheck.nickname ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>닉네임중복검사</button>}
         password : <input type="password" onChange={(e) => onChangeUserInfo('password', e.target.value)} /> {userInfoValidation.password ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
         password again : <input type="password" onChange={(e) => onChangeUserInfo('password_confirm', e.target.value)} /> {userInfoValidation.password_confirm ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
         allTrue : {isAllValid.toString()}
-        <button type="submit">SUBMIT</button>
+        <button type="submit" disabled={!isAllValid}>SUBMIT</button>
       </form>
     </div>
   )

@@ -9,6 +9,8 @@ export interface InterfaceUser {
   password: string;
   roles: string;
   rank: string;
+  point: number;
+  cartId : string;
 }
 
 //Interface를 implements해서 User Model 생성 
@@ -19,6 +21,8 @@ class User extends Model implements InterfaceUser {
   public password!: string;
   public roles!: string;
   public rank!: string;
+  public point!: number;
+  public cartId!: string;
 
   // 모델의 외부 관계 정리
   static associate(db:any){
@@ -57,6 +61,16 @@ export const modelAttributes = {
     type : DataTypes.STRING(30),
     allowNull : true,
     defaultValue : 'Employee'
+  },
+  point : {
+    type : DataTypes.INTEGER,
+    allowNull : false,
+    defaultValue : 0
+  },
+  cartId : {
+    type : DataTypes.UUID,
+    unique : true,
+    defaultValue : DataTypes.UUIDV4
   }
 };
 

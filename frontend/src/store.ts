@@ -31,7 +31,8 @@ const userInfo = createSlice({
       state.email = null;
       state.nickname = null;
       state.rank = null;
-      state.roles = null;    }
+      state.roles = null;    
+    }
   }
 })
 

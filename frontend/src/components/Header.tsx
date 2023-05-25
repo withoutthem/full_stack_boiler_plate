@@ -1,32 +1,55 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+//libs 
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+
+//modules
 import { logOutButton } from '../controllers/auth_controller';
+
+//components
+import Searcher from './MainPage/Searcher';
+
 
 const Header = ():React.ReactElement=>{
 
-  const storeState = useSelector(state => state)
+  const storeState:any = useSelector(state => state)
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   return(
-    <Navbar bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-      <Nav className="me-auto">
-        <Link to='/' className='link'>Home</Link>
-        <Link to='/404testasdf' className='link'>404test</Link>
-        <Link to='/admin_panel' className='link'>ADMIN PANEL</Link>
-      </Nav>
-      <Link to='/login' className='link'>LOGIN</Link>
-      <Link to='/sign_up' className='link'>SIGNIN</Link>
-      <button onClick={()=>{console.log(storeState)}}>현재REDUX check하기</button>
-      <button onClick={()=>{logOutButton(navigate, dispatch)}}>로그아웃하기</button>
-    </Container>
-  </Navbar>
+    <header className="header">
+      <div className="auth_sub_header">
+        <button onClick={()=>{console.log(storeState)}}>현재REDUX check하기</button>
+        {storeState.userInfo.id && <div className="header_nickname">{storeState.userInfo.nickname}</div>}
+        <Link to='/privacy'>공지사항</Link>
+        { !storeState.userInfo.id ? 
+          <>
+            <Link to='/login'>LOGIN</Link>
+            <Link to='/sign_up'>SIGNUP</Link>
+          </> : 
+          <button className="logout_button" onClick={()=>{logOutButton(navigate, dispatch)}}>LOGOUT</button> }
+      </div>
+      
+      <Searcher></Searcher>
+
+      <nav className="header_gnb">
+        <ul>
+          <li><Link to='/'>HOME</Link></li>
+          <li><Link to='/'>퀴즈풀기(포인트 벌기)</Link></li>
+          <li><Link to='/'>전체상품</Link></li>
+          <li><Link to='/'>이벤트</Link></li>
+          { storeState.userInfo.roles === 'root' && 
+            <>
+            <li><Link to='/admin_panel'>ADMIN PANEL</Link></li>
+            <li><Link to='/404testasdf'>404 test</Link></li>
+            </> }
+        </ul>
+        <div className="user_zone">
+          <button className="check_my_info">check my info</button>
+          <button className="go_to_cart">go to my cart</button>
+        </div>
+      </nav>
+    </header>
   )
 }
 

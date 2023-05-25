@@ -1,0 +1,659 @@
+[
+  {
+    "name": "Melltorp Table",
+    "brand": "IKEA",
+    "shortDescription": "Minimalist white table",
+    "description": "The MELLTORP table suits many people from the minimalist to the family demanding everyday strength and durability. Put it in the kitchen or in the dining room. The clean design combines well with many styles.",
+    "furnitureType": "Table",
+    "theme": "Modern",
+    "price": 75
+  },
+  {
+    "name": "Craft Keyboard",
+    "brand": "Logitech",
+    "shortDescription": "Wireless keyboard with versatile input dial",
+    "description": "Type with confidence on a keyboard crafted for efficiency, stability, and precision. Backlit keys light up the moment your hands approach, and automatically adjust to suit changing lighting conditions.",
+    "furnitureType": "Keyboard",
+    "theme": "Cool",
+    "price": 199
+  },
+  {
+    "name": "Malm Bed Frame",
+    "brand": "IKEA",
+    "shortDescription": "Stylish and simple bed frame",
+    "description": "A clean design with solid wood veneer. Place the bed on its own or with the headboard against a wall. If you need space for extra bedding, add MALM bed storage boxes on casters.",
+    "furnitureType": "Bed Frame",
+    "theme": "Wooden",
+    "price": 239
+  },
+  {
+    "name": "Sammanhang Coffee Table",
+    "brand": "IKEA",
+    "shortDescription": "Rustic style coffee table",
+    "description": "With distinctive, playful shapes and a black finish, SAMMANHANG coffee table adds character to your living room. The glass top has a drawer underneath where you can show off your things or store them neatly away.",
+    "furnitureType": "Coffee Table",
+    "theme": "Warm",
+    "price": 129
+  },
+  {
+    "name": "Bekant Desk",
+    "brand": "IKEA",
+    "shortDescription": "Sturdy desk with generous surface space",
+    "description": "BEKANT desk underframes have a soft, geometric shape - because we first made them in 3D, then built the real desk. This desk has a durable melamine surface and rounded corners for a more comfortable work environment.",
+    "furnitureType": "Desk",
+    "theme": "Cool",
+    "price": 199
+  },
+  {
+    "name": "C27F396FHN Monitor",
+    "brand": "Samsung",
+    "shortDescription": "Curved 27\" monitor for immersive experience",
+    "description": "The deepest screen curve for the most deeply immersive viewing experience. 1,800R screen and Eye Saver Mode for increased viewing comfort. Superior image quality with Samsung’s advanced display technology.",
+    "furnitureType": "Monitor",
+    "theme": "Modern",
+    "price": 189
+  },
+  {
+    "name": "Kallax Shelf Unit",
+    "brand": "IKEA",
+    "shortDescription": "Versatile shelf for any room",
+    "description": "You can use the furniture as a room divider because it looks good from every angle. Choose whether you want to place it vertically or horizontally and use it as a shelf or sideboard.",
+    "furnitureType": "Shelf",
+    "theme": "Wooden",
+    "price": 69
+  },
+  {
+    "name": "Vitrazza Glass Chair Mat",
+    "brand": "Vitrazza",
+    "shortDescription": "Durable and stylish glass chair mat",
+    "description": "Vitrazza Glass Chair Mats are specifically designed to offer an elegant and practical alternative to plastic and mat chair mats. They support 1,000s of pounds, and are protected with a nano-tech coating for easy clean-up.",
+    "furnitureType": "Chair Mat",
+    "theme": "Modern",
+    "price": 275
+  },
+  {
+    "name": "Rens Sheepskin Rug",
+    "brand": "IKEA",
+    "shortDescription": "Soft and cozy sheepskin rug",
+    "description": "This sheepskin is very versatile and can be placed on the floor or on your furniture to create a warm, cosy feeling in your home. The sheepskin is very soft and adds an extra layer of comfort wherever you place it.",
+    "furnitureType": "Rug",
+    "theme": "Warm",
+    "price": 29
+  },
+  {
+    "name": "Mackapär Coat Rack",
+    "brand": "IKEA",
+    "shortDescription": "Functional and stylish coat rack",
+    "description": "Ideal in any hallway, this MACKAPÄR coat rack gives your guests a warm welcome with a place to hang their coat and sit down to remove their shoes.",
+    "furnitureType": "Coat Rack",
+    "theme": "Modern",
+    "price": 69
+  },
+  {
+    "name": "Hemnes Side Table",
+    "brand": "IKEA",
+    "shortDescription": "Solid wood side table with ample storage",
+    "description": "Sustainable beauty from sustainably-sourced solid wood, a durable and renewable material that maintains its genuine character with each passing year. Combines with other furniture in the HEMNES series.",
+    "furnitureType": "Table",
+    "theme": "Warm",
+    "price": 129
+  },
+  {
+    "name": "Corsair Dark Core RGB Pro",
+    "brand": "Corsair",
+    "shortDescription": "High-performance wireless gaming mouse",
+    "description": "The CORSAIR DARK CORE RGB PRO boasts three ways to connect, including sub-1ms SLIPSTREAM WIRELESS. A custom 18,000 DPI optical sensor optimizes accuracy and precision while a comfortable contoured shape and interchangeable side grips ensures precision and control.",
+    "furnitureType": "Mouse",
+    "theme": "Cool",
+    "price": 79
+  },
+  {
+    "name": "Ergonofis Adjustable Desk",
+    "brand": "Ergonofis",
+    "shortDescription": "Height adjustable desk for ergonomic setup",
+    "description": "Designed to keep you moving, this Ergonofis Adjustable Desk is the perfect partner for a healthier workday. A powerful, yet quiet dual motor system lifts and lowers the desk at an impressive rate of speed.",
+    "furnitureType": "Desk",
+    "theme": "Modern",
+    "price": 950
+  },
+  {
+    "name": "Samsung Odyssey G9 Monitor",
+    "brand": "Samsung",
+    "shortDescription": "Super ultra-wide gaming monitor",
+    "description": "Witness the winner of the Best of Innovation award. With a 1000R curvature, this super ultra-wide gaming monitor is your gateway to 5120x1440 resolution with a 240Hz refresh rate. It's the peak of innovation.",
+    "furnitureType": "Monitor",
+    "theme": "Cool",
+    "price": 1349
+  },
+  {
+    "name": "Tertial Work Lamp",
+    "brand": "IKEA",
+    "shortDescription": "Adjustable work lamp",
+    "description": "TERTIAL work lamp has been gracing desks at IKEA for two decades. With its adjustable arm and head, it’s easy to direct light where you need it.",
+    "furnitureType": "Lamp",
+    "theme": "Cool",
+    "price": 24
+  },
+  {
+    "name": "Eames Lounge Chair",
+    "brand": "Herman Miller",
+    "shortDescription": "Iconic mid-century modern chair",
+    "description": "The Eames Lounge Chair and Ottoman have their origin in Charles and Ray’s investigations into molding plywood and a desire to improve upon a familiar fixture in many living rooms: the lounge chair.",
+    "furnitureType": "Chair",
+    "theme": "Modern",
+    "price": 5500
+  },
+  {
+    "name": "Vitra Uten.Silo",
+    "brand": "Vitra",
+    "shortDescription": "Wall storage system",
+    "description": "With containers of different shapes and sizes, metal hooks and clips, Uten.Silo brings order to offices, kitchens, workshops, bathrooms and children's rooms.",
+    "furnitureType": "Storage",
+    "theme": "Cool",
+    "price": 475
+  },
+  {
+    "name": "Sennheiser HD 660 S",
+    "brand": "Sennheiser",
+    "shortDescription": "Open-back headphones",
+    "description": "The HD 660 S is the successor to the legendary HD 650. It features a new and improved transducer design that delivers lower harmonic distortion for an even more natural, lifelike audio experience.",
+    "furnitureType": "Headphones",
+    "theme": "Warm",
+    "price": 500
+  },
+  {
+    "name": "Kvistbro Storage Table",
+    "brand": "IKEA",
+    "shortDescription": "Storage table with removable tray top",
+    "description": "You can store everything from throws and pillows to newspapers and yarn in the basket - or let it stay empty to give an open, spacious feeling. The airy design makes the table easy to lift and move.",
+    "furnitureType": "Table",
+    "theme": "Modern",
+    "price": 59
+  },
+  {
+    "name": "Ergotron LX Desk Mount LCD Arm",
+    "brand": "Ergotron",
+    "shortDescription": "Versatile desk arm for LCD monitor",
+    "description": "The LX Desk Mount LCD Arm saves desk space and positions monitors for the most comfort and productivity. This single monitor mount uses patented Constant Force™ technology for easy adjustment.",
+    "furnitureType": "Monitor Arm",
+    "theme": "Cool",
+    "price": 145
+  },
+  {
+    "name": "Akurum Wall Cabinet",
+    "brand": "IKEA",
+    "shortDescription": "Spacious wall cabinet for storage",
+    "description": "The AKURUM Wall Cabinet with 2 doors has an adjustable shelf to customize your storage space. Its melamine surface makes it scratch-resistant.",
+    "furnitureType": "Cabinet",
+    "theme": "Wooden",
+    "price": 85
+  },
+  {
+    "name": "Røde NT-USB Microphone",
+    "brand": "Røde",
+    "shortDescription": "Versatile USB condenser microphone",
+    "description": "The NT-USB is a highly versatile side-address microphone that is ideal for recording singing and musical performances in addition to spoken applications such as podcasting and voice-over.",
+    "furnitureType": "Microphone",
+    "theme": "Modern",
+    "price": 169
+  },
+  {
+    "name": "Steelcase Leap Chair",
+    "brand": "Steelcase",
+    "shortDescription": "Ergonomic office chair with LiveBack technology",
+    "description": "Its back changes shape to support the entire spine, its Natural Glide System™ lets you recline and yet maintain your position so you stay oriented to your work. This encourages more varied postures, which means less static load on the spine.",
+    "furnitureType": "Chair",
+    "theme": "Warm",
+    "price": 799
+  },
+  {
+    "name": "Humanscale M8.1 Monitor Arm",
+    "brand": "Humanscale",
+    "shortDescription": "Flexible monitor arm for ergonomic setup",
+    "description": "Designed to offer easy adjustments for the widest range of monitors available today, the M8.1 monitor arm promotes a healthier, more ergonomic workstation. This high-capacity solution supports dual monitors and screens up to 40 pounds.",
+    "furnitureType": "Monitor Arm",
+    "theme": "Cool",
+    "price": 305
+  },
+  {
+    "name": "Aeron Chair",
+    "brand": "Herman Miller",
+    "shortDescription": "Ergonomic office chair",
+    "description": "The Aeron Chair combines a deep knowledge of human-centered design with cutting-edge technology. With over 7 million sold, our most admired and recognized work chair still sets the benchmark for ergonomic comfort more than 20 years after its debut.",
+    "furnitureType": "Chair",
+    "theme": "Cool",
+    "price": 1200
+  },
+  {
+    "name": "Bekant Desk",
+    "brand": "IKEA",
+    "shortDescription": "Adjustable desk for healthy posture",
+    "description": "It’s easy to keep your desk neat and tidy with the cable management net under the tabletop. You can mount the table top at a height that suits you, since the legs are adjustable between 25⅝\"- 33½\".",
+    "furnitureType": "Desk",
+    "theme": "Modern",
+    "price": 200
+  },
+  {
+    "name": "Malm Bed Frame",
+    "brand": "IKEA",
+    "shortDescription": "Elegant and practical bed frame",
+    "description": "This versatile bed frame will look great with your choice of textiles and bedroom furniture. The storage boxes are easy to roll out and in thanks to the castors on the base.",
+    "furnitureType": "Bed",
+    "theme": "Warm",
+    "price": 450
+  },
+  {
+    "name": "Logitech G Pro X Keyboard",
+    "brand": "Logitech",
+    "shortDescription": "Mechanical gaming keyboard",
+    "description": "Built for pros from the bottom up. A tenkeyless design, pro-grade clicky switches, and bright RGB lighting in a sleek, durable, compact design. It’s the pro keyboard you’ve always wanted, in a compact form.",
+    "furnitureType": "Keyboard",
+    "theme": "Cool",
+    "price": 130
+  },
+  {
+    "name": "Sonos Play:5",
+    "brand": "Sonos",
+    "shortDescription": "Ultimate smart speaker for streaming music",
+    "description": "Experience pure, vibrant sound with Play:5, tuned by renowned producer Giles Martin. Control it with the Sonos app, Apple AirPlay 2, and more.",
+    "furnitureType": "Speaker",
+    "theme": "Modern",
+    "price": 500
+  },
+  {
+    "name": "Magic Keyboard",
+    "brand": "Apple",
+    "shortDescription": "Wireless Keyboard",
+    "description": "Magic Keyboard combines a sleek design with a built-in rechargeable battery and enhanced key features. It provides a remarkably comfortable and precise typing experience.",
+    "furnitureType": "Keyboard",
+    "theme": "Modern",
+    "price": 99
+  },
+  {
+    "name": "Sayl Chair",
+    "brand": "Herman Miller",
+    "shortDescription": "Ergonomic office chair",
+    "description": "Inspired by the principles of suspension bridges, the frameless back of the SAYL work chair encourages a full range of movement while the suspension back material keeps you cool.",
+    "furnitureType": "Chair",
+    "theme": "Cool",
+    "price": 545
+  },
+  {
+    "name": "SoundSticks Wireless",
+    "brand": "Harman Kardon",
+    "shortDescription": "Iconic wireless speaker system",
+    "description": "Praised for its stunning design, the harman kardon® SoundSticks speaker and subwoofer system became a milestone in design history when it joined the permanent collection at New York City’s Museum of Modern Art (MoMA).",
+    "furnitureType": "Speaker",
+    "theme": "Modern",
+    "price": 230
+  },
+  {
+    "name": "Docksta Table",
+    "brand": "IKEA",
+    "shortDescription": "Compact dining table",
+    "description": "With its soft round shape and minimalistic look, the DOCKSTA table can be used in many different ways in your home. It's a perfect, modern dining table but can also serve as a desk or a decorative table.",
+    "furnitureType": "Table",
+    "theme": "Warm",
+    "price": 179
+  },
+  {
+    "name": "Ivar Cabinet",
+    "brand": "IKEA",
+    "shortDescription": "Versatile wooden cabinet",
+    "description": "IVAR Cabinet is a durable, solid pine storage solution. Its natural wood grain makes it a perfect addition to any room, and it can be painted or stained for a custom look.",
+    "furnitureType": "Cabinet",
+    "theme": "Wooden",
+    "price": 95
+  },
+  {
+      "name": "Kallax Shelving Unit",
+      "brand": "IKEA",
+      "shortDescription": "Multipurpose shelving unit",
+      "description": "The KALLAX Shelving Unit is a versatile piece that can be used as a bookcase, display case, or even a room divider. Its clean, modern design fits well in any space.",
+      "furnitureType": "Shelving Unit",
+      "theme": "Modern",
+      "price": 69
+  },
+  {
+      "name": "Arctis 7 Gaming Headset",
+      "brand": "SteelSeries",
+      "shortDescription": "Wireless gaming headset",
+      "description": "The Arctis 7 features a durable and lightweight steel headband, clear sound quality, and a battery that lasts for over 24 hours. It's the perfect gaming headset for gamers seeking high-quality sound and comfort.",
+      "furnitureType": "Headset",
+      "theme": "Cool",
+      "price": 149
+  },
+  {
+      "name": "DXRacer Gaming Chair",
+      "brand": "DXRacer",
+      "shortDescription": "Comfortable and durable gaming chair",
+      "description": "The DXRacer Gaming Chair offers a level of comfort that is perfect for gaming for long hours. It's durable and designed to last, with a sturdy metal frame and high-quality PU leather.",
+      "furnitureType": "Chair",
+      "theme": "Cool",
+      "price": 299
+  },
+  {
+      "name": "Ypperlig Coffee Table",
+      "brand": "IKEA",
+      "shortDescription": "Stylish and practical coffee table",
+      "description": "The YPPERLIG Coffee Table is a modern and stylish table designed with practicality in mind. Its simple design pairs well with a variety of décor styles.",
+      "furnitureType": "Table",
+      "theme": "Modern",
+      "price": 59
+  },
+  {
+      "name": "Yeezy Boost 350 V2 Sneakers",
+      "brand": "Adidas",
+      "shortDescription": "Trendy and comfortable sneakers",
+      "description": "The Adidas Yeezy Boost 350 V2 Sneakers provide a fashionable and comfortable fit, thanks to their responsive cushioning and primeknit upper.",
+      "furnitureType": "Shoes",
+      "theme": "Modern",
+      "price": 220
+  },
+  {
+      "name": "MX Master 3 Mouse",
+      "brand": "Logitech",
+      "shortDescription": "Advanced wireless mouse",
+      "description": "The MX Master 3 Mouse offers a comfortable design and high-precision tracking. Its intuitive controls and customizable buttons make it a perfect choice for productivity.",
+      "furnitureType": "Mouse",
+      "theme": "Cool",
+      "price": 99
+  },
+  {
+      "name": "Alex Drawer Unit",
+      "brand": "IKEA",
+      "shortDescription": "Compact drawer unit for office storage",
+      "description": "The ALEX Drawer Unit offers plenty of storage space with a sleek, modern design. It's perfect for storing office supplies and documents.",
+      "furnitureType": "Drawer Unit",
+      "theme": "Modern",
+      "price": 89
+  },
+  {
+      "name": "Galant Desk",
+      "brand": "IKEA",
+      "shortDescription": "Spacious and adjustable desk",
+      "description": "The GALANT Desk is perfect for those who need plenty of workspace. Its height can be adjusted for optimal comfort, and it comes with a cable management system to keep your workspace tidy.",
+      "furnitureType": "Desk",
+      "theme": "Modern",
+      "price": 199
+  },
+  {
+      "name": "QLED 8K TV",
+      "brand": "Samsung",
+      "shortDescription": "Immersive 8K TV",
+      "description": "Experience movies and games like never before with the Samsung QLED 8K TV. Its stunning 8K resolution and Quantum Dot technology offer incredible color and clarity.",
+      "furnitureType": "Television",
+      "theme": "Modern",
+      "price": 4999
+  },
+  {
+    "name": "Hemnes Bed Frame",
+    "brand": "IKEA",
+    "shortDescription": "Elegant wooden bed frame",
+    "description": "The HEMNES Bed Frame brings a touch of elegance with its solid wood design. Its robust construction promises long-lasting durability.",
+    "furnitureType": "Bed Frame",
+    "theme": "Traditional",
+    "price": 250
+  },
+  {
+    "name": "Mavic Pro Drone",
+    "brand": "DJI",
+    "shortDescription": "Compact, foldable drone",
+    "description": "The DJI Mavic Pro is a compact drone that offers professional-quality photos and videos. It's foldable and portable, making it the perfect travel companion.",
+    "furnitureType": "Drone",
+    "theme": "Tech",
+    "price": 999
+  },
+  {
+    "name": "BILLY Bookcase",
+    "brand": "IKEA",
+    "shortDescription": "Classic, versatile bookcase",
+    "description": "The BILLY Bookcase is a classic piece of furniture that's perfect for any room. Its versatile design can hold books, ornaments, and other items.",
+    "furnitureType": "Bookcase",
+    "theme": "Modern",
+    "price": 59
+  },
+  {
+    "name": "PS5 Console",
+    "brand": "Sony",
+    "shortDescription": "Next-gen gaming console",
+    "description": "Experience next-gen gaming with the Sony PS5 Console. With incredibly fast load times and stunning graphics, it offers a whole new level of immersion.",
+    "furnitureType": "Console",
+    "theme": "Tech",
+    "price": 499
+  },
+  {
+    "name": "Nintendo Switch",
+    "brand": "Nintendo",
+    "shortDescription": "Versatile gaming console",
+    "description": "Play games at home or on-the-go with the Nintendo Switch. Its versatile design allows for multiple play styles.",
+    "furnitureType": "Console",
+    "theme": "Tech",
+    "price": 299
+  },
+  {
+    "name": "Kivik Sofa",
+    "brand": "IKEA",
+    "shortDescription": "Comfortable and spacious sofa",
+    "description": "The KIVIK Sofa combines comfort and style, making it the perfect addition to your living room. Its spacious design offers plenty of seating space.",
+    "furnitureType": "Sofa",
+    "theme": "Modern",
+    "price": 599
+  },
+  {
+    "name": "PAX Wardrobe",
+    "brand": "IKEA",
+    "shortDescription": "Customizable wardrobe",
+    "description": "The PAX Wardrobe offers a flexible storage solution. Its customizable design allows you to create a wardrobe that fits your needs.",
+    "furnitureType": "Wardrobe",
+    "theme": "Modern",
+    "price": 499
+  },
+  {
+    "name": "Apple MacBook Pro",
+    "brand": "Apple",
+    "shortDescription": "High-performance laptop",
+    "description": "The Apple MacBook Pro offers high performance in a sleek design. With a Retina display and the latest Intel Core processors, it's perfect for both work and play.",
+    "furnitureType": "Laptop",
+    "theme": "Tech",
+    "price": 2399
+  },
+  {
+    "name": "PÖANG Armchair",
+    "brand": "IKEA",
+    "shortDescription": "Comfortable, stylish armchair",
+    "description": "The PÖANG Armchair combines comfort and style. Its unique design offers great support for your back, making it the perfect place to relax.",
+    "furnitureType": "Armchair",
+    "theme": "Modern",
+    "price": 79
+  },
+  {
+    "name": "Eames Lounge Chair",
+    "brand": "Herman Miller",
+    "shortDescription": "Iconic mid-century modern chair",
+    "description": "The Eames Lounge Chair and Ottoman have their origin in Charles and Ray’s investigations into molding plywood and a desire to improve upon a familiar fixture in many living rooms: the lounge chair.",
+    "furnitureType": "chair",
+    "theme": "modern",
+    "price": 5500
+  },
+  {
+      "name": "Standing Desk",
+      "brand": "FlexiSpot",
+      "shortDescription": "Height adjustable standing desk",
+      "description": "The standing desk offers the perfect solution for those who want to alternate between sitting and standing while working. Its adjustable height allows you to find the most comfortable position for your work.",
+      "furnitureType": "desk",
+      "theme": "modern",
+      "price": 499
+  },
+  {
+      "name": "L-Shaped Sectional Sofa",
+      "brand": "Ashley Furniture",
+      "shortDescription": "Spacious and comfortable L-shaped sectional sofa",
+      "description": "The L-shaped sectional sofa provides ample seating space and offers a cozy and comfortable spot for relaxation. Its modern design and high-quality materials make it a stylish addition to any living room.",
+      "furnitureType": "sofa",
+      "theme": "cool",
+      "price": 1299
+  },
+  {
+      "name": "Wireless Gaming Chair",
+      "brand": "X Rocker",
+      "shortDescription": "Ultimate gaming chair with built-in speakers",
+      "description": "The wireless gaming chair takes your gaming experience to the next level. With built-in speakers and a comfortable design, it immerses you in the game and provides hours of gaming enjoyment.",
+      "furnitureType": "chair",
+      "theme": "cool",
+      "price": 299
+  },
+  {
+      "name": "Minimalist Writing Desk",
+      "brand": "Furinno",
+      "shortDescription": "Simple and sleek writing desk",
+      "description": "The minimalist writing desk offers a clean and modern design, making it a perfect addition to your workspace. Its compact size is ideal for small spaces.",
+      "furnitureType": "desk",
+      "theme": "modern",
+      "price": 89
+  },
+  {
+      "name": "Leather Recliner Chair",
+      "brand": "Homelegance",
+      "shortDescription": "Luxurious leather recliner chair",
+      "description": "The leather recliner chair provides the ultimate comfort and relaxation. Its plush cushioning and smooth reclining mechanism make it the perfect spot to unwind after a long day.",
+      "furnitureType": "chair",
+      "theme": "warm",
+      "price": 699
+  },
+  {
+      "name": "Convertible Sofa Bed",
+      "brand": "Novogratz",
+      "shortDescription": "Versatile and stylish sofa bed",
+      "description": "The convertible sofa bed offers the convenience of a sofa during the day and easily transforms into a comfortable bed for overnight guests. Its modern design adds a touch of style to any room.",
+      "furnitureType": "sofa",
+      "theme": "modern",
+      "price": 499
+  },
+  {
+      "name": "Modern Office Chair",
+      "brand": "Modway",
+      "shortDescription": "Sleek and ergonomic office chair",
+      "description": "The modern office chair combines style and comfort, making it a perfect choice for your workspace. Its ergonomic design provides excellent support for long hours of work.",
+      "furnitureType": "chair",
+      "theme": "cool",
+      "price": 199
+  },
+  {
+      "name": "Wooden Writing Desk",
+      "brand": "Winsome Wood",
+      "shortDescription": "Classic wooden writing desk",
+      "description": "The wooden writing desk adds a touch of elegance to your workspace. Its timeless design and sturdy construction make it a durable and functional piece of furniture.",
+      "furnitureType": "desk",
+      "theme": "wooden",
+      "price": 179
+  },
+  {
+      "name": "Sectional Sleeper Sofa",
+      "brand": "Homelegance",
+      "shortDescription": "Spacious sectional sleeper sofa",
+      "description": "The sectional sleeper sofa offers both comfort and versatility. It provides ample seating space and easily transforms into a comfortable bed for overnight guests.",
+      "furnitureType": "sofa",
+      "theme": "warm",
+      "price": 999
+  },
+  {
+      "name": "Executive Office Chair",
+      "brand": "AmazonBasics",
+      "shortDescription": "Luxurious executive office chair",
+      "description": "The executive office chair exudes luxury and sophistication. Its high-back design, plush cushioning, and premium materials provide both comfort and style.",
+      "furnitureType": "chair",
+      "theme": "modern",
+      "price": 349
+  },
+  {
+    "name": "Eames Lounge Chair",
+    "brand": "Herman Miller",
+    "shortDescription": "Iconic mid-century modern chair",
+    "description": "The Eames Lounge Chair and Ottoman have their origin in Charles and Ray’s investigations into molding plywood and a desire to improve upon a familiar fixture in many living rooms: the lounge chair.",
+    "furnitureType": "chair",
+    "theme": "modern",
+    "price": 5500
+  },
+  {
+      "name": "Standing Desk",
+      "brand": "FlexiSpot",
+      "shortDescription": "Height adjustable standing desk",
+      "description": "The standing desk offers the perfect solution for those who want to alternate between sitting and standing while working. Its adjustable height allows you to find the most comfortable position for your work.",
+      "furnitureType": "desk",
+      "theme": "modern",
+      "price": 499
+  },
+  {
+      "name": "L-Shaped Sectional Sofa",
+      "brand": "Ashley Furniture",
+      "shortDescription": "Spacious and comfortable L-shaped sectional sofa",
+      "description": "The L-shaped sectional sofa provides ample seating space and offers a cozy and comfortable spot for relaxation. Its modern design and high-quality materials make it a stylish addition to any living room.",
+      "furnitureType": "sofa",
+      "theme": "cool",
+      "price": 1299
+  },
+  {
+      "name": "Wireless Gaming Chair",
+      "brand": "X Rocker",
+      "shortDescription": "Ultimate gaming chair with built-in speakers",
+      "description": "The wireless gaming chair takes your gaming experience to the next level. With built-in speakers and a comfortable design, it immerses you in the game and provides hours of gaming enjoyment.",
+      "furnitureType": "chair",
+      "theme": "cool",
+      "price": 299
+  },
+  {
+      "name": "Minimalist Writing Desk",
+      "brand": "Furinno",
+      "shortDescription": "Simple and sleek writing desk",
+      "description": "The minimalist writing desk offers a clean and modern design, making it a perfect addition to your workspace. Its compact size is ideal for small spaces.",
+      "furnitureType": "desk",
+      "theme": "modern",
+      "price": 89
+  },
+  {
+      "name": "Leather Recliner Chair",
+      "brand": "Homelegance",
+      "shortDescription": "Luxurious leather recliner chair",
+      "description": "The leather recliner chair provides the ultimate comfort and relaxation. Its plush cushioning and smooth reclining mechanism make it the perfect spot to unwind after a long day.",
+      "furnitureType": "chair",
+      "theme": "warm",
+      "price": 699
+  },
+  {
+      "name": "Convertible Sofa Bed",
+      "brand": "Novogratz",
+      "shortDescription": "Versatile and stylish sofa bed",
+      "description": "The convertible sofa bed offers the convenience of a sofa during the day and easily transforms into a comfortable bed for overnight guests. Its modern design adds a touch of style to any room.",
+      "furnitureType": "sofa",
+      "theme": "modern",
+      "price": 499
+  },
+  {
+      "name": "Modern Office Chair",
+      "brand": "Modway",
+      "shortDescription": "Sleek and ergonomic office chair",
+      "description": "The modern office chair combines style and comfort, making it a perfect choice for your workspace. Its ergonomic design provides excellent support for long hours of work.",
+      "furnitureType": "chair",
+      "theme": "cool",
+      "price": 199
+  },
+  {
+      "name": "Wooden Writing Desk",
+      "brand": "Winsome Wood",
+      "shortDescription": "Classic wooden writing desk",
+      "description": "The wooden writing desk adds a touch of elegance to your workspace. Its timeless design and sturdy construction make it a durable and functional piece of furniture.",
+      "furnitureType": "desk",
+      "theme": "wooden",
+      "price": 179
+  },
+  {
+      "name": "Sectional Sleeper Sofa",
+      "brand": "Homelegance",
+      "shortDescription": "Spacious sectional sleeper sofa",
+      "description": "The sectional sleeper sofa offers both comfort and versatility. It provides ample seating space and easily transforms into a comfortable bed for overnight guests.",
+      "furnitureType": "sofa",
+      "theme": "warm",
+      "price": 999
+  }
+]

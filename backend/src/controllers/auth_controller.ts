@@ -12,6 +12,8 @@ import { idLogger } from '../utils/logger';
 import { generalValidator } from '../utils/validator';
 import { dbToUser } from '../utils/db_to_user';
 
+//utils
+import { emailValidator, nicknameValidator } from '../utils/validator';
 
 
 //NOTE:TEST:OK
@@ -90,6 +92,27 @@ export const logoutController = async (req:any, res:Response, next:NextFunction)
     req.logout(() => {
       res.status(200).send({stat:true, message:'로그아웃 되었어요', status:200});
     });
+  }
+  catch(err){
+    next(err)
+  }
+}
+
+//NOTE:TEST:OK
+//TODO:POSTMAN
+export const validateUniqueUserAttributes = async (req:Request,res:Response,next:NextFunction) =>{
+  try{
+    const {type, value}:{type:string, value:string} = req.body;
+    let isValid:boolean;
+    if(type==='email') isValid = emailValidator(value)
+    else if(type==='nickname') isValid = nicknameValidator(value)
+    else throw new ErrorClass(false, '타입이 이상해요', 400)
+    if(isValid){
+      const result = await User.findOne({where : {[type] : value}});
+      if(result)res.status(409).send({stat:false, message: `이미 있는 ${type} 이에요`, status:409})
+      else res.status(200).send({stat:true, message: `사용 가능한 ${type} 이에요`, status:200})
+    }
+    else throw new ErrorClass(false, `유효하지 않은 ${type} 이에요`, 400)
   }
   catch(err){
     next(err)

@@ -231,3 +231,366 @@
 [2023-05-24 11:35:45] WHERE : Error_Handler STATUS : 200 OPTION :  IP: 127.0.0.1, Method: GET, URL: , Body: {}}
 [2023-05-24 11:36:28] WHERE : Error_Handler STATUS : 200 OPTION : message IP: 127.0.0.1, Method: GET, URL: , Body: {}}
 [2023-05-24 11:36:28] WHERE : Error_Handler STATUS : 200 OPTION :  IP: 127.0.0.1, Method: GET, URL: , Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 05:54:26] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 06:06:25] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:06:25] WHERE : Main_Router STATUS : 404 OPTION : 404 IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: {}}
+[2023-05-25 06:07:45] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:08:33] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:08:33] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:08:33] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 06:08:33] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 06:08:33] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:08:57] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:10:09] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:10:48] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 06:11:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:12:46] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:12:46] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:12:46] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 06:12:46] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 06:12:46] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 06:21:00] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:01:20] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:05:04] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/exampledata, Body: undefined}
+[2023-05-25 07:07:15] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:07:15] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:24:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:24:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:24:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/product/get_product, Body: undefined}
+[2023-05-25 07:24:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /favicon.ico, Body: undefined}
+[2023-05-25 07:24:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:24:27] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:25:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:49:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:49:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:49:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 07:49:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:49:28] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'Privilege.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'Privilege.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'User.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'User.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'Privilege.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:50:06] WHERE : Error_Handler STATUS : 200 OPTION : Unknown column 'User.name' in 'order clause' IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: {}}
+[2023-05-25 07:50:06] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:50:39] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/product/get_product_by_condition?queryda=asdlfafd&sdfsdflaf=1, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/logout, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/product.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user_info.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/user.ts, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/get_model_list, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/admin/data/privilege.ts, Body: undefined}
+[2023-05-25 13:08:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 13:08:26] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 13:08:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 13:08:26] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-25 13:08:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-25 13:08:26] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}

@@ -1,0 +1,93 @@
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호가 일치하지 않아요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"test@test.com","password":"asdf!123"}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호가 일치하지 않아요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"test@test.com","password":"asdf!123"}}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-24 11:36:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-24 23:36:36] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 email 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"email","value":"saldfkjasfd"}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호 형식에 맞지 않습니다 IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: {"email":"asdfT@test.com","nickname":"","password":"","password_confirm":""}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호 형식에 맞지 않습니다 IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: {"email":"asdfT@test.com","nickname":"","password":"","password_confirm":""}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호 형식에 맞지 않습니다 IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: {"email":"asdfT@test.com","nickname":"","password":"","password_confirm":""}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 nickname 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"nickname","value":""}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 email 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"email","value":"wefwfaf"}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 nickname 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"nickname","value":"adsjfaldsdfsadf"}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 nickname 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"nickname","value":"!@#!231"}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 nickname 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"nickname","value":"adsfadsf!!"}}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 00:41:03] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호가 일치하지 않아요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"admin@test.com","password":"asdf!12"}}
+[2023-05-25 07:05:04] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 07:05:04] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 07:05:04] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 07:05:04] WHERE : Error_Handler STATUS : 200 OPTION : 유효하지 않은 nickname 이에요 IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: {"type":"nickname","value":"a"}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 비밀번호가 일치하지 않아요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"admin@test.com","password":"asdf!12"}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : 아이디가 없어요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"admin@test.com","password":"dlwnsdnWkd!12"}}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 07:56:40] WHERE : Error_Handler STATUS : 200 OPTION : Validation error IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: {"email":"admin@test.com","nickname":"Victor","password":"dlwnsdnWkd!12","password_confirm":"dlwnsdnWkd!12"}}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Error_Handler STATUS : 200 OPTION : Validation error IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: {"email":"admin@test.com","nickname":"Victor","password":"dlwnsdnWkd!12","password_confirm":"dlwnsdnWkd!12"}}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
