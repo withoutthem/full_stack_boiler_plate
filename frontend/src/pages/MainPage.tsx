@@ -3,7 +3,7 @@ import axios from "axios";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 //lib css
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -27,10 +27,16 @@ import GuideCard from '../components/MainPage/GuideCard';
 const MainPage = ():React.ReactElement=>{
 
   const [populars, setPopulars] = useState<ProductInterface[]|null>(null)
-
+  const navigate = useNavigate();
   const setPopularsData = async ()=>{
-    const result = await getPopularProducts();
-    setPopulars(result)
+    try{
+      const result = await getPopularProducts();
+      setPopulars(result)
+    }
+    catch(err){
+      alert(err);
+      navigate('/')
+    }
   }
 
   useEffect(()=>{

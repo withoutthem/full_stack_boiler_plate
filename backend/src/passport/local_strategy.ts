@@ -4,7 +4,8 @@ import {Strategy as LocalStrategy} from 'passport-local';
 import bcrypt from 'bcrypt'
 
 //model
-import User from '../models/user'
+import User from '../models/user';
+import Cart from '../models/cart';
 import {generalValidator} from '../utils/validator';
 
 

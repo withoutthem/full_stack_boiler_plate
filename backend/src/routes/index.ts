@@ -4,13 +4,17 @@ import {logger} from '../utils/logger';
 
 import adminRouter from './admin_router';
 import authRouter from './auth_router';
-import productRouter from './product_router'
+import productRouter from './product_router';
+import quizRouter from './quiz_router';
+import cartRouter from './cart_router';
 
 const mainRouter = (app :Express):void=>{
   
   app.use('/api/auth', authRouter)
   app.use('/api/admin', adminRouter);
   app.use('/api/product', productRouter);
+  app.use('/api/quiz', quizRouter);
+  app.use('/api/cart', cartRouter);
 
   //404 To Front Router
   app.get('*', (req,res) =>{

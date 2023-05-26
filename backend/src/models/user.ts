@@ -10,7 +10,6 @@ export interface InterfaceUser {
   roles: string;
   rank: string;
   point: number;
-  cartId : string;
 }
 
 //Interface를 implements해서 User Model 생성 
@@ -22,11 +21,11 @@ class User extends Model implements InterfaceUser {
   public roles!: string;
   public rank!: string;
   public point!: number;
-  public cartId!: string;
 
   // 모델의 외부 관계 정리
   static associate(db:any){
     db.User.belongsTo(db.Privilege, {foreignKey : 'roles', sourceKey: 'roles_type'})
+    db.User.hasMany(db.Cart, {foreignKey: 'userId', sourceKey : 'id'})
   } 
 }
 
@@ -65,11 +64,6 @@ export const modelAttributes = {
     type : DataTypes.INTEGER,
     allowNull : false,
     defaultValue : 0
-  },
-  cartId : {
-    type : DataTypes.UUID,
-    unique : true,
-    defaultValue : DataTypes.UUIDV4
   }
 };
 

@@ -24,6 +24,7 @@ const DeveloperCard = ():React.ReactElement =>{
         <h5>더보기</h5>
         <a href="">GitHub</a>
         <a href="">현재 사이트 ERD 보러가기</a>
+        <a href="">현재 사이트 컴포넌트 설계 보러가기</a>
         <a href="">공부 어떻게 하는지 보러가기</a>
       </div>
     </div>

@@ -28,7 +28,7 @@ class Product extends Model implements InterfaceProduct {
   public likes!: number;
   // 모델의 외부 관계 정리
   static associate(db:any){
-    
+    db.Product.hasMany(db.Cart, {foreignKey: 'productId', sourceKey : 'id'})
   } 
 }
 

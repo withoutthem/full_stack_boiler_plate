@@ -48,9 +48,15 @@ const SignInPage = ():React.ReactElement=>{
 
   const onDuplicatedButton_SignUp = async (e:React.FormEvent, type:string, value:string):Promise<void>=>{
     e.preventDefault();
-    const data = {type , value}
-    const result = await axios.post('/api/auth/dupcheck', data)
-    if(result.data.stat) setDuplicatedCheck(state => {return {...state, [data.type] : true}})
+    try{
+      const data = {type , value}
+      const result = await axios.post('/api/auth/dupcheck', data)
+      if(result.data.stat) setDuplicatedCheck(state => {return {...state, [data.type] : true}})
+    }
+    catch(err){
+      alert(err);
+      navigate('/')
+    }
   }
 
   useEffect(() => {

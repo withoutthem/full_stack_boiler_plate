@@ -1,17 +1,15 @@
 //libs
 import passport from 'passport';
 import bcrypt from 'bcrypt';
-
+import {Response, Request, NextFunction} from 'express';
 //models
 import User from '../models/user';
-import {Response, Request, NextFunction} from 'express';
-import { ErrorClass } from '../types/ErrorClass';
-
+import Cart from '../models/cart';
 //modules
 import { idLogger } from '../utils/logger';
 import { generalValidator } from '../utils/validator';
 import { dbToUser } from '../utils/db_to_user';
-
+import { ErrorClass } from '../types/ErrorClass';
 //utils
 import { emailValidator, nicknameValidator } from '../utils/validator';
 
@@ -65,7 +63,7 @@ export const loginController = async(req:Request, res:Response, next:NextFunctio
   catch(err){
     next(err);
   }
-}
+} 
 
 //NOTE:TEST:OK
 //TODO:POSTMAN
@@ -118,3 +116,4 @@ export const validateUniqueUserAttributes = async (req:Request,res:Response,next
     next(err)
   }
 }
+

@@ -1,6 +1,10 @@
 import axios from 'axios';
+import { setInfo } from '../../utils/set_info';
+import { useDispatch } from 'react-redux';
 
 const TestPanel = ():React.ReactElement=>{
+
+  const dispatch = useDispatch();
 
   const massiveDataCreate = async ()=>{
     try{
@@ -25,6 +29,7 @@ const TestPanel = ():React.ReactElement=>{
     <div className="test_panel">
       <button onClick={massiveDataCreate}>MASSIVE PRODUCT DATA CREATE BUTTON</button>
       <button onClick={massiveDataCreate2}>MASSIVE QUIZ DATA CREATE BUTTON</button>
+      <button onClick={()=>{setInfo()}}>SETINFO TEST BUTTON</button>
     </div>
   )
 }

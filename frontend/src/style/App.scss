@@ -11,8 +11,17 @@
 .sagongsa .get_back_button:hover{background:#e4e4e4;}
 .go_button{background:#C07FFC; width:200px; border-radius:5px; height:50px; @include flexCenter(); color:#fff; font-size:16px; }
 .go_button:hover{background:#9343dd; }
-* {transition:.1s all;}
+* {transition:.1s all; box-sizing:border-box;}
 a{display:block;}
+.global_pop{width:100vw; height:100vh; z-index:1000; background:rgba(0,0,0,0.6); position:fixed; top:0; right:0; left:0; bottom:0;}
+.global_pop .pop{@include flexCenter; flex-direction: column; border-radius:5px; padding:30px; background:#fff; @include absoluteCenter;}
+.global_pop .pop .icon_img{width: 80px; height:80px; margin-bottom:30px;}
+.global_pop .pop .title{font-size:26px; font-weight:600; margin-bottom:20px;}
+.global_pop .pop .description{font-size:16px; color:#919191; margin-bottom:25px;}
+.global_pop .pop .pop_ok_button{cursor:pointer; font-size:15px; padding:9px; border-radius:3px; color:#ffffff; background:#3B7AF6; border:none;}
+.global_pop .pop .pop_ok_button:hover{background:#013eb7}
+.global_pop .pop .pop_close_button{cursor:pointer; padding:10px; position: absolute; right:0px; top:0px; background:none; border:none}
+.global_pop .pop .pop_close_button img{width:20px; height:20px;}
 
 //header
 .header{padding:0 20px;}

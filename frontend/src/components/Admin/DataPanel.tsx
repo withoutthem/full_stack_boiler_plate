@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const DataPanel = ():React.ReactElement=>{
 
@@ -8,32 +9,53 @@ const DataPanel = ():React.ReactElement=>{
   const [nowAllData, setNowAllData] = useState<any[]>([]); // all Data
   const [columnListData, setColumnListData] = useState<string[]>([]);
 
+  const navigate = useNavigate();
+
   //API
   const getListData = async ()=>{
-    const result = await axios.get('/api/admin/get_model_list');
-    console.log(result.data);
-    setFileNameList(result.data)
+    try{
+      const result = await axios.get('/api/admin/get_model_list');
+      console.log(result.data);
+      setFileNameList(result.data)
+    }
+    catch(err){
+      alert(err);
+      navigate('/')
+    }
   }
   
   const getTableData = async (id:string)=>{
-    const result = await axios.get(`/api/admin/data/${id}`);
-    console.log(result.data);
-    if(!result.data || result.data.length === 0){
-      setNowAllData([]);
-      setColumnListData([]);
-      return
-    } 
-    const nowColumnData = Object.keys(result.data[0])
-    setColumnListData(nowColumnData);
-    setNowAllData(result.data);
+    try{
+      const result = await axios.get(`/api/admin/data/${id}`);
+      console.log(result.data);
+      if(!result.data || result.data.length === 0){
+        setNowAllData([]);
+        setColumnListData([]);
+        return
+      } 
+      const nowColumnData = Object.keys(result.data[0])
+      setColumnListData(nowColumnData);
+      setNowAllData(result.data);
+    }
+    catch(err){
+      alert(err);
+      navigate('/')
+    }
+
   }
 
   const deleteData = async (fileName:string, primaryKey:string, primaryValue:string)=>{
-    const result = await axios.post(`/api/admin/delete_data`, [fileName,{primaryKey, primaryValue}]);
-    if(result.status === 200) {
-      setNowAllData(nowAllData.filter(item =>item[primaryKey] !== primaryValue))
+    try{
+      const result = await axios.post(`/api/admin/delete_data`, [fileName,{primaryKey, primaryValue}]);
+      if(result.status === 200) {
+        setNowAllData(nowAllData.filter(item =>item[primaryKey] !== primaryValue))
+      }
+      console.log(result.data);
     }
-    console.log(result.data);
+    catch(err){
+      alert(err);
+      navigate('/')
+    }
   }
 
   //HOOKS
