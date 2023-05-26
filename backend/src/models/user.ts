@@ -26,7 +26,6 @@ class User extends Model implements InterfaceUser {
 
   // 모델의 외부 관계 정리
   static associate(db:any){
-    db.User.hasOne(db.UserInfo, {foreignKey : 'user_id', sourceKey: 'id'})
     db.User.belongsTo(db.Privilege, {foreignKey : 'roles', sourceKey: 'roles_type'})
   } 
 }

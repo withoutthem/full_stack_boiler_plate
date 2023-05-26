@@ -4,7 +4,8 @@ export const dbToUser = (value:any)=>{
     email : value.email,
     nickname : value.nickname,
     roles : value.roles,
-    rank : value.rank
+    rank : value.rank,
+    poinrt : value.point
   }
   return returnValue;
 }

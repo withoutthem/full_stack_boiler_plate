@@ -43,3 +43,12 @@
 [2023-05-25 11:01:42] IP : ::1, URL : /login, METHOD : loginController ID : 5a776a58-2733-4601-b452-a492a4370155, EMAIL : admin@test.com
 [2023-05-25 11:11:23] IP : ::1, URL : /login, METHOD : loginController ID : 5a776a58-2733-4601-b452-a492a4370155, EMAIL : admin@test.com
 [2023-05-25 11:11:23] IP : ::1, URL : /login, METHOD : loginController ID : 5a776a58-2733-4601-b452-a492a4370155, EMAIL : admin@test.com
+[2023-05-26 02:20:43] IP : ::1, URL : /sign_up, METHOD : signUpController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 02:30:13] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 02:32:26] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 02:43:27] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 02:51:37] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 03:25:58] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 04:13:18] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 04:45:26] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
+[2023-05-26 04:47:11] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com

@@ -5,6 +5,7 @@ import { ErrorClass } from '../types/ErrorClass';
 import { sequelize } from '../models';
 import { Model } from 'sequelize';
 import Product from '../models/product';
+import Quiz from '../models/quiz';
 
 //FUNCTIONS
 
@@ -89,9 +90,29 @@ export const postExampleData = async (req:Request, res:Response, next:NextFuncti
     const dataJSON = dataBuffer.toString();
     const products:any[] = JSON.parse(dataJSON);
     const final = new Map();
-    products.forEach(item => final.set(item.name , item))
+    products.forEach((item, idx) => {
+      item.imageuri = `/images/product${idx}.png`
+      item.likes = Math.floor(Math.random()*100);
+      final.set(item.name , item)
+    })
     let uniqueProducts = Array.from(final.values());
     const result = await Product.bulkCreate(uniqueProducts)
+    console.log('success')
+    if(result) res.status(201).send(result);
+    else throw new ErrorClass(false, '데이터생성 실패', 500);
+  }
+  catch(err){
+    next(err)
+    console.log(err);
+  }
+}
+
+export const postExampleData2 = async (req:Request, res:Response, next:NextFunction)=>{
+  try{
+    const dataBuffer = fs.readFileSync(path.join(__dirname , '../DATA2.json'))
+    const dataJSON = dataBuffer.toString();
+    const quizs:any[] = JSON.parse(dataJSON);
+    const result = await Quiz.bulkCreate(quizs)
     console.log('success')
     if(result) res.status(201).send(result);
     else throw new ErrorClass(false, '데이터생성 실패', 500);

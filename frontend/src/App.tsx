@@ -15,6 +15,9 @@ import Admin from './pages/Admin';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import Privacy from './pages/Privacy';
+import Quiz from './pages/QuizPage';
+import AllProductsPage from './pages/AllProductsPage';
+import EventPage from './pages/EventPage';
 
 //components
 import Header from './components/Header'
@@ -52,6 +55,9 @@ function App() {
         <Route path='/login' element={<LoginPage></LoginPage>}></Route>
         <Route path='/sign_up' element={<SignUpPage></SignUpPage>}></Route>
         <Route path='/privacy' element={<Privacy></Privacy>}></Route>
+        <Route path='/quiz' element={<Quiz></Quiz>}></Route>
+        <Route path='/all_products' element={<AllProductsPage></AllProductsPage>}></Route>
+        <Route path='/event' element={<EventPage></EventPage>}></Route>
         <Route path='*' element={<SagongSa></SagongSa>}></Route>
       </Routes>
       <Footer></Footer>

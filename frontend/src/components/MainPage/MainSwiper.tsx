@@ -23,8 +23,8 @@ const MainSwiper = ():React.ReactElement=>{
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => null}
+      onSlideChange={() => null}
       autoplay={true}
       >
       <SwiperSlide>

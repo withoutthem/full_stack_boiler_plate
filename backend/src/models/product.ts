@@ -4,17 +4,20 @@ import { Model, DataTypes } from 'sequelize';
 //Interface 생성 
 export interface InterfaceProduct {
   id: string;
+  imageuri:string;
   name:string;
   brand:string;
   shortDescription:string;
   description:string;
   furnitureType:string;
   theme:string;
-  price:number
+  price:number;
+  likes:number
 }
 
 class Product extends Model implements InterfaceProduct {
   public id!: string;
+  public imageuri!:string;
   public name!: string;
   public brand!: string;
   public shortDescription!: string;
@@ -22,7 +25,7 @@ class Product extends Model implements InterfaceProduct {
   public furnitureType!: string;
   public theme!: string;
   public price!: number;
-
+  public likes!: number;
   // 모델의 외부 관계 정리
   static associate(db:any){
     
@@ -35,6 +38,11 @@ export const modelAttributes = {
     type :DataTypes.UUID,
     primaryKey : true,
     defaultValue : DataTypes.UUIDV4
+  },
+  imageuri : {
+    type : DataTypes.STRING(200),
+    allowNull : true,
+    unique : true
   },
   name : {
     type : DataTypes.STRING(40),
@@ -65,6 +73,10 @@ export const modelAttributes = {
   },
   price : {
     type : DataTypes.INTEGER
+  },
+  likes : {
+    type : DataTypes.INTEGER,
+    defaultValue : 0
   }
 };
 

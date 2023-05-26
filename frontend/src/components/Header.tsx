@@ -35,9 +35,9 @@ const Header = ():React.ReactElement=>{
       <nav className="header_gnb">
         <ul>
           <li><Link to='/'>HOME</Link></li>
-          <li><Link to='/'>퀴즈풀기(포인트 벌기)</Link></li>
-          <li><Link to='/'>전체상품</Link></li>
-          <li><Link to='/'>이벤트</Link></li>
+          <li><Link to='/quiz'>퀴즈풀기(포인트 벌기)</Link></li>
+          <li><Link to='/all_products'>전체상품</Link></li>
+          <li><Link to='/event'>이벤트</Link></li>
           { storeState.userInfo.roles === 'root' && 
             <>
             <li><Link to='/admin_panel'>ADMIN PANEL</Link></li>
@@ -45,8 +45,7 @@ const Header = ():React.ReactElement=>{
             </> }
         </ul>
         <div className="user_zone">
-          <button className="check_my_info">check my info</button>
-          <button className="go_to_cart">go to my cart</button>
+          <Link className="go_to_cart" to='/cart'>go to my cart</Link>
         </div>
       </nav>
     </header>

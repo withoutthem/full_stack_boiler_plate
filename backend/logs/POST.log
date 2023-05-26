@@ -91,3 +91,17 @@
 [2023-05-25 11:01:42] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
 [2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
 [2023-05-25 11:11:23] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 02:20:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-26 02:20:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/dupcheck, Body: undefined}
+[2023-05-26 02:20:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/sign_up, Body: undefined}
+[2023-05-26 02:20:43] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/admin/delete_data, Body: undefined}
+[2023-05-26 02:30:13] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 02:32:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 02:43:27] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 02:51:37] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 02:51:37] WHERE : Error_Handler STATUS : 200 OPTION : 아이디가 없어요. IP: ::1, Method: POST, URL: /api/auth/login, Body: {"email":"admin@admin.test","password":"asdf!12"}}
+[2023-05-26 02:51:37] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 03:25:58] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 04:13:18] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 04:45:26] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}
+[2023-05-26 04:47:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: POST, URL: /api/auth/login, Body: undefined}

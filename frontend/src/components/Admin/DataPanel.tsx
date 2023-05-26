@@ -77,7 +77,7 @@ const DataPanel = ():React.ReactElement=>{
                 {Object.values(col).map((row:any, idx2:number)=>{
                   return (
                     <div className="table_row" key={row ? row.toString()+idx2 : 'null' +idx1 + idx2 + 'table_row'}>
-                      {row && !(row.toString().length>40)? row.toString() : '0'}
+                      {row && !(row.toString().length>80)? row.toString() : '0'}
                     </div>
                   )
                 })}

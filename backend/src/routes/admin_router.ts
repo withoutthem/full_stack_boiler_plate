@@ -1,5 +1,5 @@
 import  express from "express";
-import {getTableData, getModelList, deleteTableData, postExampleData} from "../controllers/admin_controller";
+import { getTableData, getModelList, deleteTableData, postExampleData, postExampleData2 } from '../controllers/admin_controller';
 
 const adminRouter = express();
 
@@ -9,5 +9,6 @@ adminRouter.post('/delete_data', deleteTableData);
 
 //EXAMPLE PRODUCTDATA 
 adminRouter.get('/exampledata', postExampleData);
+adminRouter.get('/exampledata2', postExampleData2);
 
 export default adminRouter;

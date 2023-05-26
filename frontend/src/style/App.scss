@@ -9,7 +9,10 @@
 .sagongsa img{width:100%;}
 .sagongsa .get_back_button{background:#fff; cursor:pointer; position:absolute; left:20px; top:20px; width:120px; height:80px; border-radius:10px; font-size:20px;}
 .sagongsa .get_back_button:hover{background:#e4e4e4;}
+.go_button{background:#C07FFC; width:200px; border-radius:5px; height:50px; @include flexCenter(); color:#fff; font-size:16px; }
+.go_button:hover{background:#9343dd; }
 * {transition:.1s all;}
+a{display:block;}
 
 //header
 .header{padding:0 20px;}
@@ -42,6 +45,21 @@
 .main_page .hero_wrap .hero_banner{width:70%}
 .main_page .hero_wrap .hero_banner .swiper img{width:100%}
 .main_page .hero_wrap .user_interface{width:30%;}
+.main_page .side_wrap{display:flex}
+.main_page .side_left{width:90%}
+.main_page .list_best .card{width:200px; height:400px;}
+.main_page .list_best .card img{width:100%;}
+.main_page .hot_deal{display:flex}
+.main_page .hot_deal .hot_banner{display:flex; padding:20px;}
+.main_page .hot_deal .hot_banner_img{width:200px;}
+.main_page .side_floating_bar{position:sticky; top:45%; height:200px; background:blue}
+.user_info{display: flex}
+.user_info .profile_img{width:88px; height:88px; border-radius:50%;}
+.guide_card_list .guide_card{display:flex}
+.guide_card_list .guide_card img{width:200px;}
+.developer_card .img_round_wrap {width:100px; height:100px; overflow:hidden; border-radius:50%;}
+.developer_card img{width:100%;}
+.developer_card .card{display:flex}
 
 // admin panel
 .admin_panel{margin: 20px}

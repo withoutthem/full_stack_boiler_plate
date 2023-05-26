@@ -73,8 +73,8 @@ export const loginController = async(req:Request, res:Response, next:NextFunctio
 export const getMyInfo = (req:any, res:Response, next:NextFunction):void=>{
   try{
     if(req.user) {
-      const { email, id, nickname, rank, roles } = req.user;
-      const nowUser = { email, id, nickname, rank, roles };
+      const { email, id, nickname, rank, roles, point } = req.user;
+      const nowUser = { email, id, nickname, rank, roles, point };
       res.send({stat:true, message:'사용자 인증이 완료되었어요.', status : 200, data: nowUser})
     }
     else {throw new ErrorClass(false, '세션정보가 없거나 만료되었어요.', 401)}
