@@ -413,7 +413,6 @@ a {
 
 .main_page .side_right {
   width: 13%;
-  height: 100%;
   margin-left: 2%;
 }
 
@@ -422,17 +421,17 @@ a {
   height: 350px;
 }
 
-.main_page .list_best .card .spec_wrap {
-  line-height: 15px;
-  margin-bottom: 10px;
-}
-
 .main_page .list_best .card h3 {
   margin: 10px 0px;
   font-weight: 800;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.main_page .list_best .card .spec_wrap {
+  line-height: 15px;
+  margin-bottom: 10px;
 }
 
 .main_page .list_best .card .cart_img_wrap {

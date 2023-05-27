@@ -76,10 +76,11 @@ a{display:block; color: #333;}
 .main_page .side_left .list_best .swiper {width: 100%; position: relative;}
 .swiper-backface-hidden .swiper-slide {margin-right: 40px !important;}
 .main_page .side_left .list_best .swiper .swiper-wrapper {width: 90%; margin: 0px auto;}
-.main_page .side_right{width: 13%; height: 100%; margin-left: 2%;}
+.main_page .side_right{width: 13%; margin-left: 2%;}
 .main_page .list_best .card{width:200px; height:350px;}
-.main_page .list_best .card .spec_wrap{line-height: 15px; margin-bottom: 10px;}
 .main_page .list_best .card h3{margin: 10px 0px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.main_page .list_best .card .spec_wrap{line-height: 15px; margin-bottom: 10px;}
+
 .main_page .list_best .card .cart_img_wrap{position: relative;}
 .main_page .list_best .card .cart_img_wrap>img{width: 200px; height: 200px;}
 .main_page .list_best .card .cart_img_wrap button{position: absolute; bottom: 7px; right: 7px; width: 35px; height: 35px; background-color: #826F8C; border-radius: 100%; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer;}
