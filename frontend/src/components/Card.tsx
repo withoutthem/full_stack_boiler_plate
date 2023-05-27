@@ -30,8 +30,11 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
 
   return (
     <div className="card">
-      <div onClick={()=>{goToDetailPage(id)}}>
-        <LoadingImage {...loadingImageProps}></LoadingImage>
+      <div className="cart_img_wrap">
+        <div onClick={()=>{goToDetailPage(id)}}>
+          <LoadingImage {...loadingImageProps}></LoadingImage>
+          <button onClick={()=>{addToCart()}}><img src="/images/cart.png" /></button>
+        </div>
       </div>
       <h3>{name}</h3>
       <div className="spec_wrap">

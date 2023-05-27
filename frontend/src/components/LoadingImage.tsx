@@ -14,7 +14,7 @@ const LoadingImage = ({ src, alt }: LoadingImageProps) => {
   };
 
   return (
-    <div style={{position: 'relative'}}>
+    <div className='cart_img_wrap' style={{position: 'relative'}}>
       {isLoading && <IsLoading />}
       <img 
         className="product_img"
