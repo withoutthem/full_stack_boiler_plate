@@ -19,12 +19,23 @@ const AllProductsPage = () => {
   const getAllProductList = async () => {
     const query = new URLSearchParams(location.search);
     let url: string;
-    const key: string | null = query.get('key');
-    const value: string | null = query.get('value');
-    console.log(key)
-    if (!key) {url = '/api/product/get_product'; setIsSearch(false); setNowSearchParams(null)}
-    else {url = `/api/product/get_product_by_query?${key}=${value}`; setIsSearch(true); setNowSearchParams(value)}
-    console.log(url)
+
+    if(query.get('key')){ // ?key=검색키&value=검색값 (검색키가 검색값인 목록)
+      const key: string | null = query.get('key');
+      const value: string | null = query.get('value');
+      url = `/api/product/get_product_by_query?${key}=${value}`; 
+      setIsSearch(true); 
+      setNowSearchParams(value)
+    }
+    else if(query.get('searchparams')){ // ?searchparams=검색키워드 (검색키워드가 포함된 목록)
+      const searchparams:string|null = query.get('searchparams');
+      url = `/api/product/get_product_search?searchparams=${searchparams}`
+    }
+    else{
+      url = '/api/product/get_product'; //전체목록
+      setIsSearch(false); 
+      setNowSearchParams(null)
+    }
     try {
       const result = await axios.get(url);
       if (!result) return unknownError(dispatch);

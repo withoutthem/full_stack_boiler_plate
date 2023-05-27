@@ -113,7 +113,6 @@ const MainPage = ():React.ReactElement=>{
         </div>
         <div className="side_right">
           <div className="side_floating_bar">
-<<<<<<< HEAD
             <div className="my_point">현재 내 포인트 <br></br> <span>{storeState.userInfo.point}</span></div>
             <div className="cart_title_wrap">
               <div className="cart_title">장바구니</div>
@@ -131,24 +130,6 @@ const MainPage = ():React.ReactElement=>{
                 </ul>
                 <Link to='/cart_page'>더보기</Link>
               </div>
-=======
-            <div className="my_point">현재 내 포인트 : {storeState.userInfo.point}</div>
-            <div className="cart_title">장바구니</div>
-            <div className="cart_four_wrap">
-              <ul className="cart_four">
-                  {
-                    storeState.userCartFour.items.map((item:any) => {
-                      return (
-                        <li className="cart_item" key={item.Product.imageuri}>
-                          <img src={item.Product.imageuri} alt={item.Product.name} onClick={()=>{navigate(`/detail?id=${item.productId ? item.productId : item.Product.id}`)}} />
-                          <p className="name">{item.Product.name}</p>
-                        </li>
-                      )
-                    })
-                  }
-              </ul>
-              <Link to='/cart_page'>더보기</Link>
->>>>>>> 4502c84bafe1e39fe665c4c1611617814e97f11b
             </div>
             <button>TOP</button>
           </div>
