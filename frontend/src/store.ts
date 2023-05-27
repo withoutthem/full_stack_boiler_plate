@@ -106,6 +106,9 @@ const userCartFour = createSlice({
     },
     clearAllFour_reducer(state:any){
       state.items = [];
+    },
+    addCartFour_reducer(state:any, action:PayloadAction<any>){
+      state.items.push(action.payload);
     }
   }
 })
@@ -140,7 +143,7 @@ const globalPop = createSlice({
 export const { setUserInfo_reducer, deleteUserInfo_reducer, earnPoint_reducer, lostPoint_reducer } = userInfo.actions;
 export const { addCart_reducer , deleteCart_reducer, setCart_reducer, clearCart_reducer} = userCart.actions;
 export const { popOpen_reducer, popClose_reducer } = globalPop.actions;
-export const { setCartFour_reducer, clearAllFour_reducer } = userCartFour.actions;
+export const { setCartFour_reducer, clearAllFour_reducer, addCartFour_reducer } = userCartFour.actions;
 
 export default configureStore({
   reducer: {

@@ -89,14 +89,14 @@ const MainPage = ():React.ReactElement=>{
               <div className="hot_banner">
                 <div className="hot_banner_con">
                   <h4><span>의자</span> 모음전</h4>
-                  <Link className="go_button" to='/'>더보기</Link>
+                  <Link className="go_button" to='/'>사러가기</Link>
                 </div>
                 <img className="hot_banner_img" src={hotchair} alt="" />
               </div>
               <div className="hot_banner">
                 <div className="hot_banner_con">
                   <h4><span>책상</span> 모음전</h4>
-                  <Link className="go_button" to='/'>더보기</Link>
+                  <Link className="go_button" to='/'>사러가기</Link>
                 </div>
                 <img className="hot_banner_img" src={hotdesk} alt="" />
               </div>
@@ -113,23 +113,22 @@ const MainPage = ():React.ReactElement=>{
         </div>
         <div className="side_right">
           <div className="side_floating_bar">
-            <div className="my_point">현재 포인트 <br></br> <span>{storeState.userInfo.point}</span></div>
-            <div className="cart_title_wrap">
-              <div className="cart_title">장바구니</div>
-              <div className="cart_four_wrap">
-                <ul className="cart_four">
-                    {
-                      storeState.userCartFour.items.map((item:any) => {
-                        return (
-                          <li className="cart_item" key={item.id}>
-                            <img src={item.Product.imageuri} alt={item.Product.name} />
-                          </li>
-                        )
-                      })
-                    }
-                </ul>
-                <Link to='/cart_page'>더보기</Link>
-              </div>
+            <div className="my_point">현재 내 포인트 : {storeState.userInfo.point}</div>
+            <div className="cart_title">장바구니</div>
+            <div className="cart_four_wrap">
+              <ul className="cart_four">
+                  {
+                    storeState.userCartFour.items.map((item:any) => {
+                      return (
+                        <li className="cart_item" key={item.Product.imageuri}>
+                          <img src={item.Product.imageuri} alt={item.Product.name} />
+                          <p className="name">{item.Product.name}</p>
+                        </li>
+                      )
+                    })
+                  }
+              </ul>
+              <Link to='/cart_page'>더보기</Link>
             </div>
             <button>TOP</button>
           </div>

@@ -3,12 +3,11 @@ import {Response, Request, NextFunction} from 'express';
 import { ErrorClass } from "../types/ErrorClass";
 
 //TODO:TEST
-//param : ?key=value&order=desc
 export const getProductData = async (req:Request,res:Response,next:NextFunction)=>{
   try{
-    // if(req.params.key || req.params.order)
-    // const result = await Product.findAll({order : [['furnitureType','desc']]});
-    // res.send(result);
+    const result = await Product.findAll({});
+    if(!result) throw new ErrorClass(false, '아무것도 없어요. 서버에러일거에요.', 500)
+    res.send(result);
   }
   catch(err){
     next(err);
