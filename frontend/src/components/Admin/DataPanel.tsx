@@ -93,7 +93,7 @@ const DataPanel = ():React.ReactElement=>{
 
         {
           nowAllData && nowAllData.map((col:any , idx1:number)=>{
-            const primaryKey = fileNameList[nowViewModel][0]
+            const primaryKey = nowViewModel && fileNameList[nowViewModel][0]
             return (
               <div className="table_col" key={idx1 +'table_col'}>
                 {Object.values(col).map((row:any, idx2:number)=>{

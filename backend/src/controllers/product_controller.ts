@@ -48,23 +48,28 @@ export const getProductDataByLikes = async (req:Request, res:Response, next:Next
 //TODO:TEST
 export const getProductBySearch = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const searchTerm = req.query.searchTerm;
+    const searchparams = req.query.searchparams;
     const result = await Product.findAll({
       where: {
         [Op.or]: [
           {
             name: {
-              [Op.like]: `%${searchTerm}%`,
+              [Op.like]: `%${searchparams}%`,
             },
           },
           {
             description: {
-              [Op.like]: `%${searchTerm}%`,
+              [Op.like]: `%${searchparams}%`,
+            },
+          },
+          {
+            shortDescription: {
+              [Op.like]: `%${searchparams}%`,
             },
           },
           {
             furnitureType: {
-              [Op.like]: `%${searchTerm}%`,
+              [Op.like]: `%${searchparams}%`,
             },
           },
         ],
