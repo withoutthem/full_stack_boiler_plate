@@ -19,7 +19,8 @@ const Searcher = ()=>{
   
   const searchClickQuery = (e:React.FormEvent)=>{
     e.preventDefault();
-    navigate(`/all_products?searchparams=${searchInput}`)
+    setSearchInput('')
+    navigate(`/all_products?searchparams=${searchInput}`);
   }
 
   return (
