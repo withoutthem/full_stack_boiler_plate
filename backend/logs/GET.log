@@ -7554,3 +7554,65 @@
 [2023-05-27 15:28:53] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product63.png, Body: undefined}
 [2023-05-27 15:28:53] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product7.png, Body: undefined}
 >>>>>>> 4502c84bafe1e39fe665c4c1611617814e97f11b
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/product/get_product_by_likes, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/point_ill.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/cart_ill.webp, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/question_ill.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_ill.avif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_img.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/spec1.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/isLoading.gif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product51.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product29.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product20.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product18.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product72.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product13.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product30.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product17.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product26.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product37.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /main.caf26f32a132c61300ca.hot-update.json, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Main_Router STATUS : 404 OPTION : 404 IP: ::1, Method: GET, URL: /main.caf26f32a132c61300ca.hot-update.json, Body: {}}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/product/get_product_by_likes, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/isLoading.gif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Error_Handler STATUS : 200 OPTION : 세션정보가 없거나 만료되었어요. IP: ::1, Method: GET, URL: /api/auth/get_my_info, Body: {}}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /api/product/get_product_by_likes, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product29.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product72.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product51.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product18.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product20.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/point_ill.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/cart_ill.webp, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/question_ill.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_ill.avif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product51.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_img.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/isLoading.gif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product29.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product20.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/spec1.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product18.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product72.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product13.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product17.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product26.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product30.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product37.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/point_ill.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/cart_ill.webp, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/question_ill.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_ill.avif, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/dev_img.jpg, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/spec1.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product13.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product17.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product26.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product30.png, Body: undefined}
+[2023-05-27 16:07:11] WHERE : Req_Logger STATUS : 200 OPTION :  IP: ::1, Method: GET, URL: /images/product37.png, Body: undefined}
