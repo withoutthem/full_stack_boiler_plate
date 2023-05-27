@@ -50,20 +50,39 @@ a{display:block;}
 .header .searcher input.searchInput:focus-visible {outline:none}
 
 //main page
-.main_page .hero_wrap{@include flexAlign; overflow: hidden;}
+.main_page .hero_wrap{@include flexAlign; overflow: hidden; width: 1080px; margin: 30px auto; }
 .main_page .hero_wrap .hero_banner{width:70%}
 .main_page .hero_wrap .hero_banner .swiper img{width:100%}
 .main_page .hero_wrap .user_interface{width:30%;}
-.main_page .side_wrap{display:flex}
-.main_page .side_left{width:90%}
+.main_page .hero_wrap .user_interface .user_info_wrap{ width: 300px; height: 300px; border: 1px solid #aaa; border-radius: 15px; margin: 0px 0px 0px auto; }
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info {align-items: center; height: 50%; padding: 10px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile{margin-left: 10px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .nickname{margin-bottom: 10px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li{margin-bottom: 5px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li:last-child{margin-bottom: 0px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .signout {height: 25%; padding: 15px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .signout .signout_btn {width: 120px; height: 100%; margin: 0px 0px 0px auto; display: flex; justify-content: center; cursor: pointer; align-items: center; border-radius: 50px; color: #606060; border: 1px solid #EBEBEB }
+.main_page .side_wrap{display:flex; width: 1080px; margin: 0px auto; position: relative; background: lightcyan; }
+.main_page .side_left{width:100%}
+.main_page .side_left .list_best {width: 100%; margin-bottom: 30px;}
+.main_page .side_left .list_best>h3 {font-size: 30px; margin-bottom: 20px;}
+.main_page .side_left .list_best .swiper {width: 90%; position: relative;}
+.main_page .side_left .list_best .swiper .swiper-wrapper {width: 90%; margin: 0px auto;}
+.main_page .side_right{ position: absolute; top: 0px; right: -130px; height: 100%; background: lightcoral; }
 .main_page .list_best .card{width:200px; height:400px;}
 .main_page .list_best .card img{width:100%;}
-.main_page .hot_deal{display:flex}
-.main_page .hot_deal .hot_banner{display:flex; padding:20px;}
+.main_page .hot_deal>h3{font-size: 30px; margin-bottom:20px;}
+.main_page .hot_deal .hot_banner_wrap{display: flex; justify-content: space-between; width: 90%; margin: 0px auto;}
+.main_page .hot_deal .hot_banner{display:flex; justify-content: space-around; width: 49%; padding:10px; border: 1px solid #D6D6D6;}
+.main_page .hot_deal .hot_banner .hot_banner_con{display: flex; padding: 50px 0px; text-align: center; flex-direction: column; justify-content: space-between;}
+.main_page .hot_deal .hot_banner .hot_banner_con span{font-size: 30px;}
 .main_page .hot_deal .hot_banner_img{width:200px;}
 .main_page .side_floating_bar{position:sticky; top:45%; height:200px; background:blue}
 .user_info{display: flex}
 .user_info .profile_img{width:88px; height:88px; border-radius:50%;}
+.profile_button{ display: flex; height: 25%; background: #eee; align-items: center; border-radius: 0px 0px 15px 15px; border-top: 1px solid #aaa; }
+.profile_button .button_cart{ width: 50%; text-align: center; border-right: 1px solid #aaa;}
+.profile_button .button_collection{ width: 50%; text-align: center; }
 .guide_card_list .guide_card{display:flex}
 .guide_card_list .guide_card img{width:200px;}
 .developer_card .img_round_wrap {width:100px; height:100px; overflow:hidden; border-radius:50%;}
@@ -80,4 +99,3 @@ a{display:block;}
 //login page
 .login_page{padding:20px;}
 .login_page form input{display:block;}
-

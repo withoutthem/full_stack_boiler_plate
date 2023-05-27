@@ -85,15 +85,21 @@ const MainPage = ():React.ReactElement=>{
           </div>
           <div className="hot_deal">
             <h3>오늘의 추천</h3>
-            <div className="hot_banner">
-              <h4>의자 모음전</h4>
-              <img className="hot_banner_img" src={hotchair} alt="" />
-              <Link className="go_button" to='/'>사러가기</Link>
-            </div>
-            <div className="hot_banner">
-              <h4>책상 모음전</h4>
-              <img className="hot_banner_img" src={hotdesk} alt="" />
-              <Link className="go_button" to='/'>사러가기</Link>
+            <div className="hot_banner_wrap">
+              <div className="hot_banner">
+                <div className="hot_banner_con">
+                  <h4><span>의자</span> 모음전</h4>
+                  <Link className="go_button" to='/'>사러가기</Link>
+                </div>
+                <img className="hot_banner_img" src={hotchair} alt="" />
+              </div>
+              <div className="hot_banner">
+                <div className="hot_banner_con">
+                  <h4><span>책상</span> 모음전</h4>
+                  <Link className="go_button" to='/'>사러가기</Link>
+                </div>
+                <img className="hot_banner_img" src={hotdesk} alt="" />
+              </div>
             </div>
           </div>
           <div className="guide">
