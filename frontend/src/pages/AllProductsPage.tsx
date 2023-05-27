@@ -30,6 +30,8 @@ const AllProductsPage = () => {
     else if(query.get('searchparams')){ // ?searchparams=검색키워드 (검색키워드가 포함된 목록)
       const searchparams:string|null = query.get('searchparams');
       url = `/api/product/get_product_search?searchparams=${searchparams}`
+      setIsSearch(true); 
+      setNowSearchParams(searchparams)
     }
     else{
       url = '/api/product/get_product'; //전체목록
@@ -63,6 +65,7 @@ const AllProductsPage = () => {
         {isLoading ? (
           <IsLoading />
         ) : (
+          allProducts.length===0 ? <div className="nothing">상품이 없어요</div> : 
           allProducts.map((item: ProductInterface) => <Card {...item} key={item.imageuri} />)
         )}
       </div>
