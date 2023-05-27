@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 //css
 import './style/reset.css';
 import './style/App.css';
+import './style/etc.css';
 
 //pages
 import MainPage from './pages/MainPage';

@@ -14,7 +14,8 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const addToCart = ()=>{
+  const addToCart = (e:any)=>{
+    e.stopPropagation();
     if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch, storeState.userCartFour.items.length);
     else return open_ShouldLoginPopup(dispatch)
   }
@@ -33,7 +34,7 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
       <div className="cart_img_wrap">
         <div onClick={()=>{goToDetailPage(id)}}>
           <LoadingImage {...loadingImageProps}></LoadingImage>
-          <button onClick={()=>{addToCart()}}><img src="/images/cart.png" /></button>
+          <button onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
         </div>
       </div>
       <h3>{name}</h3>
