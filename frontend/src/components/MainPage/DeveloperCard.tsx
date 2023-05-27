@@ -20,7 +20,7 @@ const DeveloperCard = ():React.ReactElement =>{
         <h4>기술스택</h4>
         <img src="/images/spec1.png" alt="" />
       </div>
-      <div className="spec">
+      <div className="spec_plus">
         <h5>더보기</h5>
         <a href="">GitHub</a>
         <a href="">현재 사이트 ERD 보러가기</a>

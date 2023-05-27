@@ -29,7 +29,8 @@
 
 .go_button {
   background: #C07FFC;
-  width: 200px;
+  width: 90%;
+  margin: 0px auto;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -290,7 +291,7 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
   margin: 50px auto;
 }
 
@@ -308,7 +309,7 @@ a {
 }
 
 .main_page .hero_wrap .user_interface .user_info_wrap {
-  width: 300px;
+  width: 280px;
   border: 1px solid #e4e4e4;
   border-radius: 15px;
   margin: 0px 0px 0px auto;
@@ -422,7 +423,7 @@ a {
 }
 
 .main_page .list_best .card h3 {
-  margin: 10px 0px;
+  margin-top: 10px;
   font-weight: 800;
   white-space: nowrap;
   overflow: hidden;
@@ -473,16 +474,27 @@ a {
   display: none;
 }
 
+.spec_wrap .price {
+  margin: 10px 0px 3px 0px;
+  font-size: 15px;
+}
+
+.spec_wrap .price span {
+  font-weight: 800;
+  font-size: 25px;
+}
+
 .main_page .hot_deal .hot_banner_wrap {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
 }
 
 .main_page .hot_deal .hot_banner {
+  border-radius: 3px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 49%;
   padding: 10px;
   border: 1px solid #D6D6D6;
@@ -491,6 +503,7 @@ a {
 .main_page .hot_deal .hot_banner .hot_banner_con {
   display: flex;
   padding: 50px 0px;
+  width: 49%;
   text-align: center;
   flex-direction: column;
   justify-content: space-between;
@@ -501,16 +514,17 @@ a {
 }
 
 .main_page .hot_deal .hot_banner_img {
-  width: 200px;
+  width: 50%;
 }
 
 .main_page .side_floating_bar {
   position: sticky;
-  top: 14%;
+  top: 30px;
   text-align: center;
 }
 
 .main_page .side_floating_bar .my_point {
+  border-radius: 3px 3px 0px 0px;
   padding: 10px 0px;
   line-height: 25px;
   background-color: #3A4157;
@@ -524,6 +538,7 @@ a {
 }
 
 .main_page .side_floating_bar .cart_title_wrap {
+  border: 0px 0px 3px 3px;
   padding-bottom: 10px;
   border-left: 1px solid #c0c0c0;
   border-right: 1px solid #c0c0c0;
@@ -552,6 +567,7 @@ a {
 }
 
 .main_page .side_floating_bar button {
+  border-radius: 3px;
   margin-top: 10px;
   width: 100%;
   padding: 5px 10px;
@@ -615,8 +631,7 @@ a {
 }
 
 .main_page .side_left .guide .guide_card_list {
-  width: 90%;
-  margin: 0px auto;
+  width: 100%;
 }
 
 .guide_card_list .guide_card {
@@ -667,7 +682,7 @@ a {
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
-  color: #101010;
+  color: #aaa;
 }
 
 .guide_card_list .guide_card .context a:hover {
@@ -676,14 +691,18 @@ a {
 }
 
 .developer_card .img_round_wrap {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
+  width: 15%;
+  max-width: 130px;
+}
+
+.developer_card .img_round_wrap img {
+  border-radius: 100%;
 }
 
 .main_page .side_left .developer .developer_card {
-  padding: 20px 50px;
+  border-radius: 3px;
+  padding: 30px;
+  background-color: #eee;
   width: 100%;
 }
 
@@ -705,6 +724,7 @@ a {
 
 .developer_card .card .spec {
   margin-left: 20px;
+  width: 80%;
 }
 
 .developer_card .card .spec h5 {
@@ -718,6 +738,10 @@ a {
   line-height: 20px;
 }
 
+.side_left .developer {
+  margin-bottom: 100px;
+}
+
 .all_products_page .card_wrap {
   display: flex;
   flex-wrap: wrap;
@@ -729,6 +753,25 @@ a {
 
 .all_products_page .card_wrap .card .product_img {
   width: 100%;
+}
+
+.developer_card .spec_plus {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.developer_card .spec_plus h5, .developer_card .spec_plus a {
+  color: #aaa;
+  border-radius: 3px;
+  width: 19%;
+  padding: 5px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
 }
 
 .admin_panel {
@@ -770,4 +813,10 @@ a {
 
 .login_page form input {
   display: block;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #eee;
 }/*# sourceMappingURL=App.css.map */

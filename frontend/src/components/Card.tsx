@@ -42,7 +42,7 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
         <p className="short">{shortDescription}</p>
         <p className="type">Type : {furnitureType}</p>
         <p className="theme">Theme : {theme}</p>
-        <div className="price">{price} Won</div>
+        <div className="price"><span>{price}</span> Won</div>
         <div className="likes">Likes : {likes}</div>
       </div>
     </div>
