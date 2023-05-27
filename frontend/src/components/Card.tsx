@@ -30,9 +30,9 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
 
   return (
     <div className="card">
-      {/* <div onClick={()=>{goToDetailPage(id)}}> */}
+      <div onClick={()=>{goToDetailPage(id)}}>
         <LoadingImage {...loadingImageProps}></LoadingImage>
-      {/* </div> */}
+      </div>
       <h3>{name}</h3>
       <div className="spec_wrap">
         <p className="brand">Brand : {brand}</p>
