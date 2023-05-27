@@ -17,7 +17,7 @@ const DeveloperCard = ():React.ReactElement =>{
         </div>
       </div>
       <div className="spec">
-        <h5>기술스택</h5>
+        <h4>기술스택</h4>
         <img src="/images/spec1.png" alt="" />
       </div>
       <div className="spec">

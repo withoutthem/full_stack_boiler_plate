@@ -17,7 +17,10 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
 
   return (
     <div className="card">
-      <img src={imageuri} alt="" />
+      <div className="cart_img_wrap">
+        <img src={imageuri} alt="" />
+        <button onClick={()=>{addToCart()}}><img src="/images/cart.png" /></button>
+      </div>
       <h3>{name}</h3>
       <div className="spec_wrap">
         <p className="brand">Brand : {brand}</p>
@@ -27,7 +30,6 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
         <div className="price">{price} Won</div>
         <div className="likes">Likes : {likes}</div>
       </div>
-      <button onClick={()=>{addToCart()}}>장바구니에 담기</button>
     </div>
   )
 }
