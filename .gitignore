@@ -5,3 +5,5 @@
 /bakcend/.DS_Store
 /backend/test/.DS_Store
 /backend/src/.DS_Store
+/backend/.env
+/frontend/.env

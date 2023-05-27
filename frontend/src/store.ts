@@ -14,6 +14,10 @@ export type UserCartStore = {
   productId : string[]
 }
 
+export type CartOnlyFour = {
+  items : string[] | null
+}
+
 export type GlobalPopStore = {
   active : boolean,
   icon : string,
@@ -69,6 +73,15 @@ const userCart = createSlice({
     productId : []
   } as UserCartStore,
   reducers : {
+    setCart_reducer(state, action:PayloadAction<{user : string, productId:string[]}>) {
+      const {user, productId} = action.payload;
+      state.user = user;
+      state.productId = productId;
+    },
+    clearCart_reducer(state){
+      state.user = null;
+      state.productId = [];
+    },
     addCart_reducer(state, action:PayloadAction<{productId:string}>) {
       const {productId} = action.payload;
       state.productId && state.productId.push(productId);
@@ -76,10 +89,26 @@ const userCart = createSlice({
     deleteCart_reducer(state, action:PayloadAction<{productId:string}>){
       const {productId} = action.payload;
       state.productId && state.productId.filter(e => e!==productId)
-    }
+    },
+    
   }
 })
 
+//only four cart items for mainPage side bar
+const userCartFour = createSlice({
+  name : 'userCartFour',
+  initialState : {
+    items : []
+  } as CartOnlyFour,
+  reducers : {
+    setCartFour_reducer(state:any, action:PayloadAction<CartOnlyFour>) {
+      state.items = action.payload;
+    },
+    clearAllFour_reducer(state:any){
+      state.items = [];
+    }
+  }
+})
 
 //global_pop
 const globalPop = createSlice({
@@ -109,13 +138,15 @@ const globalPop = createSlice({
 })
 
 export const { setUserInfo_reducer, deleteUserInfo_reducer, earnPoint_reducer, lostPoint_reducer } = userInfo.actions;
-export const { addCart_reducer , deleteCart_reducer } = userCart.actions;
+export const { addCart_reducer , deleteCart_reducer, setCart_reducer, clearCart_reducer} = userCart.actions;
 export const { popOpen_reducer, popClose_reducer } = globalPop.actions;
+export const { setCartFour_reducer, clearAllFour_reducer } = userCartFour.actions;
 
 export default configureStore({
   reducer: {
     userInfo : userInfo.reducer,
     userCart : userCart.reducer,
-    globalPop : globalPop.reducer
+    globalPop : globalPop.reducer,
+    userCartFour : userCartFour.reducer
   }
 })

@@ -2,10 +2,12 @@
 import axios from 'axios';
 
 //modules
-import { setUserInfo_reducer } from "../store";
+import { clearAllFour_reducer, clearCart_reducer, setUserInfo_reducer } from "../store";
 import { emailValidator, passwordValidator } from "../utils/validator";
 import { UserLoginFormType } from "../pages/LoginPage";
 import {deleteUserInfo_reducer} from '../store'
+import { setInfoAll } from '../utils/set_info';
+import { clearAllInfo } from '../utils/set_info';
 
 //types
 import { InputType } from '../pages/SignUpPage';
@@ -21,7 +23,7 @@ export const onSubmitButton_Login = async ( e:React.FormEvent, data:UserLoginFor
     } else {
       const result = await axios.post('/api/auth/login', data);
       if(result.data.stat) {
-        dispatch(setUserInfo_reducer(result.data.data))
+        await setInfoAll(dispatch)
         navigate('/')
       } else {
         throw new Error(result.data.message)
@@ -59,7 +61,7 @@ export const logOutButton = async (navigate:(root:string)=>void, dispatch:Functi
     const result = await axios.get('/api/auth/logout')
     if(result.data.stat) {
       alert(result.data.message)
-      dispatch(deleteUserInfo_reducer())
+      clearAllInfo(dispatch)
       navigate('/')
     }
     else throw new Error('통신 도중 에러가 발생했어요.')

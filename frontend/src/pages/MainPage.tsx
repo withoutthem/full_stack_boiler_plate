@@ -4,6 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 //lib css
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -27,7 +28,10 @@ import GuideCard from '../components/MainPage/GuideCard';
 const MainPage = ():React.ReactElement=>{
 
   const [populars, setPopulars] = useState<ProductInterface[]|null>(null)
+
   const navigate = useNavigate();
+  const storeState:any = useSelector(state => state);
+
   const setPopularsData = async ()=>{
     try{
       const result = await getPopularProducts();
@@ -38,6 +42,7 @@ const MainPage = ():React.ReactElement=>{
       navigate('/')
     }
   }
+
 
   useEffect(()=>{
     setPopularsData();
@@ -102,9 +107,24 @@ const MainPage = ():React.ReactElement=>{
         </div>
         <div className="side_right">
           <div className="side_floating_bar">
-            현재 내 포인트 : <br></br>
-            장바구니 : <br></br>
-            to Top
+            <div className="my_point">현재 내 포인트 : {storeState.userInfo.point}</div>
+            <div className="cart_title">장바구니</div>
+            <div className="cart_four_wrap">
+              <ul className="cart_four">
+                  {
+                    storeState.userCartFour.items.map((item:any) => {
+                      return (
+                        <li className="cart_item" key={item.id}>
+                          <img src={item.Product.imageuri} alt={item.Product.name} />
+                          <p className="name">{item.Product.name}</p>
+                        </li>
+                      )
+                    })
+                  }
+              </ul>
+              <Link to='/cart_page'>더보기</Link>
+            </div>
+            <button>TOP</button>
           </div>
         </div>
       </div>

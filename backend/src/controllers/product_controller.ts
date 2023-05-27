@@ -3,11 +3,12 @@ import {Response, Request, NextFunction} from 'express';
 import { ErrorClass } from "../types/ErrorClass";
 
 //TODO:TEST
+//param : ?key=value&order=desc
 export const getProductData = async (req:Request,res:Response,next:NextFunction)=>{
   try{
-    // if(req.params.)
-    const result = await Product.findAll({order : [['furnitureType','desc']]});
-    res.send(result);
+    // if(req.params.key || req.params.order)
+    // const result = await Product.findAll({order : [['furnitureType','desc']]});
+    // res.send(result);
   }
   catch(err){
     next(err);

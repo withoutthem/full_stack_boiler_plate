@@ -1,6 +1,19 @@
+import { useDispatch, useSelector } from "react-redux";
+
+//utils
+import { addCartOne } from "../utils/to_cart";
 import { ProductInterface } from "../types/product";
+import { open_ShouldLoginPopup } from '../utils/open_pop';
 
 const Card = ({id, imageuri, name, brand, shortDescription, description, furnitureType, theme, price, likes}:ProductInterface):React.ReactElement=>{
+
+  const storeState:any = useSelector(state => state)
+  const dispatch = useDispatch();
+
+  const addToCart = ()=>{
+    if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch);
+    else return open_ShouldLoginPopup(dispatch)
+  }
 
   return (
     <div className="card">
@@ -14,7 +27,7 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
         <div className="price">{price} Won</div>
         <div className="likes">Likes : {likes}</div>
       </div>
-      <button>장바구니에 담기</button>
+      <button onClick={()=>{addToCart()}}>장바구니에 담기</button>
     </div>
   )
 }

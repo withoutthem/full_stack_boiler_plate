@@ -25,29 +25,16 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 //modules
-import { setUserInfo_reducer } from './store';
 import CartPage from './pages/CartPage';
 import GlobalPop from './components/GlobalPop';
+import { setInfoAll } from './utils/set_info';
 
 function App() {
 
   const dispatch = useDispatch();
   const storeState:any = useSelector(state => state);
   
-  useEffect(()=>{
-    const getMyInfo = async ():Promise<void>=>{
-      try{
-        const result:any = await axios.get('/api/auth/get_my_info')
-        console.log(result.data)
-        if(result.data.stat) dispatch(setUserInfo_reducer(result.data.data))
-        else console.log(result)
-      }
-      catch(err){
-        console.log(err)
-      }
-    }
-    getMyInfo();
-  },[dispatch])
+  useEffect(()=>{setInfoAll(dispatch)},[])
 
   return (
     <div className="all_wrapper">

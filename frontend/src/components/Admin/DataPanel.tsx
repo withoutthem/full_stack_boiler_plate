@@ -69,7 +69,7 @@ const DataPanel = ():React.ReactElement=>{
 
   return (
     <div className="data_panel">
-      <h3>{nowViewModel}</h3>
+      <h3>{nowViewModel && nowViewModel}</h3>
       {
         fileNameList && Object.keys(fileNameList).map((data:string, idx:number)=>{
           return(
