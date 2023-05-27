@@ -5,6 +5,9 @@ import { addCartOne } from "../utils/to_cart";
 import { ProductInterface } from "../types/product";
 import { open_ShouldLoginPopup } from '../utils/open_pop';
 
+//component
+import LoadingImage from "./LoadingImage";
+
 const Card = ({id, imageuri, name, brand, shortDescription, description, furnitureType, theme, price, likes}:ProductInterface):React.ReactElement=>{
 
   const storeState:any = useSelector(state => state)
@@ -20,9 +23,16 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
     navigate(`/detail?id=${productId}`)
   }
 
+  const loadingImageProps = {
+    src : imageuri,
+    alt : shortDescription
+  }
+
   return (
     <div className="card">
-      <img src={imageuri} onClick={()=>{goToDetailPage(id)}} alt="" />
+      <div onClick={()=>{goToDetailPage(id)}}>
+        <LoadingImage {...loadingImageProps}></LoadingImage>
+      </div>
       <h3>{name}</h3>
       <div className="spec_wrap">
         <p className="brand">Brand : {brand}</p>

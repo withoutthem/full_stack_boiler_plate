@@ -19,7 +19,7 @@ const Detail = ():React.ReactElement => {
 
   const addToCart = ()=>{
     if(id){
-      if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch, 5);
+      if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch, storeState.userCartFour.items.length);
       else return open_ShouldLoginPopup(dispatch)
     } 
     else{
@@ -47,10 +47,9 @@ const Detail = ():React.ReactElement => {
     return <div>Loading...</div>;
   }
 
-  const imgUrl = product.imageuri
   return (
     <div>
-      <img src={imgUrl} alt="" />
+      <img src={product.imageuri} alt="" />
       <h1>{product.name}</h1>
       <p>{product.description}</p>
       <p>{product.price}</p>
