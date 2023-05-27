@@ -14,13 +14,16 @@ const UserInfo = ():React.ReactElement=>{
       <div className="user_info">
         <img className="profile_img" src={sampleImg} alt="" />
         <div className="profile">
-          <p className="nickname">{nickname}</p>
+          <p className="nickname">{nickname}dd</p>
           <ul className="info">
             <li className="membership">멤버쉽 : {roles}</li>
             <li className="point">내 포인트 : {point}</li>
             <li className="email">이메일 : {email}</li>
           </ul>
         </div>
+      </div>
+      <div className="signout">
+        <div className="signout_btn">로그아웃</div>
       </div>
       <div className="profile_button">
         <Link className='button_cart' to='/cart_page'>장바구니</Link>
