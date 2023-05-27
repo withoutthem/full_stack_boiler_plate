@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { setUserInfo_reducer, setCart_reducer, setCartFour_reducer, deleteUserInfo_reducer, clearCart_reducer, clearAllFour_reducer } from '../store';
-import { openPop } from './open_pop';
+import { setUserInfo_reducer, setCart_reducer, setCartFour_reducer, deleteUserInfo_reducer, clearCart_reducer,clearAllFour_reducer } from '../store';
 
 export const setInfoAll = async (dispatch:Function)=>{
   try{
