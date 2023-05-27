@@ -7,7 +7,7 @@ import Product from '../models/product';
 export const getCartInfo = async(req:Request,res:Response,next:NextFunction) =>{
   const {id} = req.body
   try{
-    const result = await Cart.findAll({where : {userId : id}})
+    const result = await Cart.findAll({where : {userId : id}, include:['Product']})
     if(!result) throw new ErrorClass(false, '장바구니 데이터가 없어요.', 404)
     res.send(result);
   }
