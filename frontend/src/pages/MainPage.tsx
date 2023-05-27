@@ -121,7 +121,7 @@ const MainPage = ():React.ReactElement=>{
                     storeState.userCartFour.items.map((item:any) => {
                       return (
                         <li className="cart_item" key={item.Product.imageuri}>
-                          <img src={item.Product.imageuri} alt={item.Product.name} />
+                          <img src={item.Product.imageuri} alt={item.Product.name} onClick={()=>{navigate(`/detail?id=${item.productId ? item.productId : item.Product.id}`)}} />
                           <p className="name">{item.Product.name}</p>
                         </li>
                       )

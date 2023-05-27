@@ -36,6 +36,8 @@ const AllProductsPage = ()=>{
     getAllProductList()
   },[])
 
+
+  
   return (
     <div className="all_products_page">
       <h3>전체상품</h3>
