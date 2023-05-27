@@ -89,14 +89,14 @@ const MainPage = ():React.ReactElement=>{
               <div className="hot_banner">
                 <div className="hot_banner_con">
                   <h4><span>의자</span> 모음전</h4>
-                  <Link className="go_button" to='/'>사러가기</Link>
+                  <Link className="go_button" to='/all_products?key=furnitureType&value=chair'>사러가기</Link>
                 </div>
                 <img className="hot_banner_img" src={hotchair} alt="" />
               </div>
               <div className="hot_banner">
                 <div className="hot_banner_con">
                   <h4><span>책상</span> 모음전</h4>
-                  <Link className="go_button" to='/'>사러가기</Link>
+                  <Link className="go_button" to='/all_products?key=furnitureType&value=desk'>사러가기</Link>
                 </div>
                 <img className="hot_banner_img" src={hotdesk} alt="" />
               </div>
