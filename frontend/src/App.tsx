@@ -19,6 +19,7 @@ import QuizPage from './pages/QuizPage';
 import AllProductsPage from './pages/AllProductsPage';
 import EventPage from './pages/EventPage';
 import Collection from './pages/Collection'
+import Detail from './pages/Detail';
 
 //components
 import Header from './components/Header'
@@ -50,7 +51,7 @@ function App() {
         <Route path='/event' element={<EventPage></EventPage>}></Route>
         <Route path='/collection' element={<Collection></Collection>}></Route>
         <Route path='/cart_page' element={<CartPage></CartPage>}></Route>
-        <Route path='/detail/:id'></Route>
+        <Route path='/detail' element={<Detail></Detail>}></Route>
         <Route path='*' element={<SagongSa></SagongSa>}></Route>
       </Routes>
       <Footer></Footer>

@@ -120,7 +120,7 @@ const MainPage = ():React.ReactElement=>{
                   {
                     storeState.userCartFour.items.map((item:any) => {
                       return (
-                        <li className="cart_item" key={item.id}>
+                        <li className="cart_item" key={item.Product.imageuri}>
                           <img src={item.Product.imageuri} alt={item.Product.name} />
                           <p className="name">{item.Product.name}</p>
                         </li>

@@ -6,3 +6,8 @@
 [2023-05-26 12:24:00] IP : ::1, URL : /login, METHOD : loginController ID : d01f3923-64e5-4b43-9d59-6ce2e8751697, EMAIL : admin@admin.com
 [2023-05-26 13:18:31] IP : ::1, URL : /sign_up, METHOD : signUpController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com
 [2023-05-26 14:16:10] IP : ::1, URL : /sign_up, METHOD : signUpController ID : 1846f168-be81-4b55-a7ff-bc77bb92197e, EMAIL : aaa11@naver.com
+[2023-05-27 09:33:16] IP : ::1, URL : /login, METHOD : loginController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com
+[2023-05-27 09:49:02] IP : ::1, URL : /login, METHOD : loginController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com
+[2023-05-27 09:53:31] IP : ::1, URL : /login, METHOD : loginController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com
+[2023-05-27 10:05:18] IP : ::1, URL : /login, METHOD : loginController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com
+[2023-05-27 10:05:18] IP : ::1, URL : /login, METHOD : loginController ID : 5f11d347-921c-49d8-87c6-6396db99630d, EMAIL : admin@admin.com

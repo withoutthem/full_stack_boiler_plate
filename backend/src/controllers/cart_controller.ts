@@ -44,7 +44,7 @@ export const postCartInfo = async (req:Request, res:Response, next:NextFunction)
   const {userId , productId} = req.body
   try{
     const dupCheck = await Cart.findOne({where : {userId: userId, productId : productId}});
-    if(dupCheck) res.send({stat:false, message:'이미 있는 상품이에요', status:409})
+    if(dupCheck) return res.send({stat:false, message:'이미 있는 상품이에요', status:409})
     const result = await Cart.create({userId : userId, productId : productId})
     if(!result) throw new ErrorClass(false, '생성이 제대로 되지 않았어요.', 500);
     res.status(201).send({stat:true, message: '생성에 성공했어요.', status:201});

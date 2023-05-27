@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-
+import { useNavigate } from "react-router-dom";
 //utils
 import { addCartOne } from "../utils/to_cart";
 import { ProductInterface } from "../types/product";
@@ -9,15 +9,20 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
 
   const storeState:any = useSelector(state => state)
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const addToCart = ()=>{
-    if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch);
+    if(storeState.userInfo.id) return addCartOne(storeState.userInfo.id, id, dispatch, storeState.userCartFour.items.length);
     else return open_ShouldLoginPopup(dispatch)
+  }
+
+  const goToDetailPage = (productId:string)=>{
+    navigate(`/detail?id=${productId}`)
   }
 
   return (
     <div className="card">
-      <img src={imageuri} alt="" />
+      <img src={imageuri} onClick={()=>{goToDetailPage(id)}} alt="" />
       <h3>{name}</h3>
       <div className="spec_wrap">
         <p className="brand">Brand : {brand}</p>
