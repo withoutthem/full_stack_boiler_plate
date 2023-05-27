@@ -34,7 +34,7 @@ a{display:block; color: #333;}
 .auth_sub_header a:last-of-type::after{display:none;}
 .auth_sub_header .header_nickname{font-weight:600; font-size:20px; margin:0 20px;}
 .header .header_gnb{@include flexAlign; width:100%; height:50px; border-top:1px solid #f6f6f6; border-bottom:1px solid #f6f6f6; justify-content: space-between;}
-.header .header_gnb a{color:rgb(24, 26, 28); margin:0 16px; padding:10px; font-weight:600; font-size:18px;}
+.header .header_gnb a{color:rgb(24, 24, 24); margin:0 16px; padding:10px; font-weight:600; font-size:18px;}
 .header .header_gnb ul{@include flexAlign;}
 .header .header_gnb ul li{list-style:none;}
 .header .header_gnb ul li a{text-decoration: none;}
@@ -54,20 +54,21 @@ a{display:block; color: #333;}
 .main_page .hero_wrap .hero_banner{width:70%}
 .main_page .hero_wrap .hero_banner .swiper img{width:100%; height: 250px;}
 .main_page .hero_wrap .user_interface{width:30%;}
-.main_page .hero_wrap .user_interface .user_info_wrap{ width: 260px; height: 250px; border: 1px solid #aaa; border-radius: 15px; margin: 0px 0px 0px auto; }
-.main_page .hero_wrap .user_interface .user_info_wrap .user_info {align-items: center; height: 55%; padding: 10px;}
+.main_page .hero_wrap .user_interface .user_info_wrap{ width: 300px;border: 1px solid #e4e4e4; border-radius: 15px; margin: 0px 0px 0px auto; }
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info {align-items: center; height: 50%; padding: 15px; justify-content: space-around;}
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile{margin-left: 10px;}
-.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .nickname{margin-bottom: 10px;}
-.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li{margin-bottom: 5px;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .nickname{margin-bottom: 10px; font-weight:700; font-size:22px}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li{margin-bottom: 6px; font-size:14px; color:#666;}
+.main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li span.emp{font-size:16px; font-weight:600; color:#101010}
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .info li:last-child{margin-bottom: 0px;}
-.main_page .hero_wrap .user_interface .user_info_wrap .signout {height: 20%; padding: 7px;}
-.main_page .hero_wrap .user_interface .user_info_wrap .signout .signout_btn {width: 120px; height: 100%; margin: 0px 0px 0px auto; display: flex; justify-content: center; cursor: pointer; align-items: center; border-radius: 50px; color: #aaa; border: 1px solid #c0c0c0 }
+.main_page .hero_wrap .user_interface .user_info_wrap .signout {height: 20%; padding: 15px; padding-top:0;}
+.main_page .hero_wrap .user_interface .user_info_wrap .signout .signout_btn {width: 120px; height: 40px; margin: 0 auto; display: flex; justify-content: center; cursor: pointer; align-items: center; border-radius: 10px; color: #aaa; border: 1px solid #c0c0c0 }
 .main_page .hero_wrap .user_interface .user_info_wrap .signout .signout_btn:hover{color: #333; border: 1px solid #333;}
 .main_page .side_wrap{display:flex; width: 90%; margin: 0px auto; }
 .main_page .side_left{width:85%}
 .main_page .side_left .list_best,
 .main_page .side_left .hot_deal,
-.main_page .side_left .guide {width: 100%; margin-bottom: 30px;}
+.main_page .side_left .guide {width: 100%; margin-bottom: 60px;}
 .main_page .side_left .list_best>h3, 
 .main_page .side_left .hot_deal > h3, 
 .main_page .side_left .guide > h3,
@@ -100,27 +101,34 @@ a{display:block; color: #333;}
 .main_page .side_floating_bar .cart_four_wrap .cart_four .cart_item img{width: 100%;}
 .main_page .side_floating_bar button { margin-top: 10px; width: 100%; padding: 5px 10px; background: transparent; border: 1px solid #c0c0c0; }
 .user_info{display: flex}
-.user_info .profile_img{width:88px; height:88px; border-radius:50%;}
-.profile_button{ display: flex; height: 25%; background: #eee; align-items: center; border-radius: 0px 0px 15px 15px; border-top: 1px solid #aaa; }
-.profile_button .button_cart{ width: 50%; text-align: center; border-right: 1px solid #aaa;}
-.profile_button .button_collection{ width: 50%; text-align: center; }
+.user_info .profile_img{width:60px; height:60px; border-radius:50%;}
+.profile_button{ display: flex; height: 50px; background: #eee; align-items: center; border-radius: 0px 0px 15px 15px; border-top: 1px solid #e4e4e4; }
+.profile_button .button_cart{@include flexCenter(); position:relative; width: 50%; height:50px; text-align: center; border-radius:0px 0px 0px 15px;}
+.profile_button a:hover{background:#e4e4e4;}
+.profile_button .button_cart:first-of-type::after{position:absolute; right:0; width:1px; height:20px; background:#D6D6D6; content:'';}
+.profile_button .button_collection{ width: 50%; text-align: center; @include flexCenter(); position:relative; width: 50%; height:50px; border-radius:0px 0px 15px 0px;}
 .main_page .side_left .guide .guide_card_list{width: 90%; margin: 0px auto;}
 .guide_card_list .guide_card{display:flex; margin-bottom: 30px;}
 .guide_card_list .guide_card:last-child{margin-bottom: 0px;}
 .guide_card_list .guide_card img{width:250px; border-radius: 20px; margin-right: 30px;}
 .guide_card_list .guide_card .context{font-size: 20px; padding-left: 30px; width: 80%; display: flex; flex-direction: column; justify-content: center; border-radius: 20px; border: 1px solid #c0c0c0;}
 .guide_card_list .guide_card .context .title {font-size: 30px; font-weight: 800; margin-bottom: 20px;}
+.guide_card_list .guide_card .context .description {margin-bottom: 10px;}
 .guide_card_list .guide_card .context .disclaimer{font-size: 13px; margin: 4px 0px 13px 0px; color: #aaa;}
-.guide_card_list .guide_card .context a{ width: 180px; border: 1px solid #aaa; border-radius: 100px; padding: 10px 20px; text-align: center; color: #aaa; }
+.guide_card_list .guide_card .context a{ width: 180px; border: 1px solid #aaa; border-radius: 10px; padding: 10px 20px; text-align: center; color: #101010; }
 .guide_card_list .guide_card .context a:hover{border: 1px solid #333; color: #333;}
 .developer_card .img_round_wrap {width:150px; height:150px; overflow:hidden; border-radius:50%;}
-.main_page .side_left .developer .developer_card{padding: 50px; width: 100%; background-color: #EEE;}
-.main_page .side_left .developer .developer_card h4{font-size: 20px; margin-bottom: 20px;}
+.main_page .side_left .developer .developer_card{padding: 20px 50px; width: 100%; }
+.main_page .side_left .developer .developer_card h4{font-size: 22px; margin-bottom: 20px; font-weight:600;}
 .developer_card img{width:100%;}
 .developer_card .card{display:flex; align-items: center; margin-bottom: 30px;}
 .developer_card .card .spec{margin-left: 20px;}
 .developer_card .card .spec h5{font-size: 30px; font-weight: 800; margin-bottom: 20px;}
 .developer_card .card .spec ul{font-size: 18px; line-height: 20px;}
+
+.all_products_page .card_wrap{display:flex; flex-wrap:wrap;}
+.all_products_page .card_wrap .card{width:200px;}
+.all_products_page .card_wrap .card .product_img{width:100%;}
 
 // admin panel
 .admin_panel{margin: 20px}
@@ -132,3 +140,7 @@ a{display:block; color: #333;}
 //login page
 .login_page{padding:20px;}
 .login_page form input{display:block;}
+
+.swiper-button-next:after, .swiper-button-prev:after{}
+
+

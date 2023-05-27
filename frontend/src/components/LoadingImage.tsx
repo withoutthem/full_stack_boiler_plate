@@ -17,6 +17,7 @@ const LoadingImage = ({ src, alt }: LoadingImageProps) => {
     <div style={{position: 'relative'}}>
       {isLoading && <IsLoading />}
       <img 
+        className="product_img"
         src={src} 
         alt={alt} 
         onLoad={handleImageLoad} 

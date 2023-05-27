@@ -16,9 +16,9 @@ const UserInfo = ():React.ReactElement=>{
         <div className="profile">
           <p className="nickname">{nickname}dd</p>
           <ul className="info">
-            <li className="membership">멤버쉽 : {roles}</li>
-            <li className="point">내 포인트 : {point}</li>
-            <li className="email">이메일 : {email}</li>
+            <li className="membership">멤버쉽 : <span className="emp">{roles}</span></li>
+            <li className="point">내 포인트 : <span className="emp">{point}</span> </li>
+            <li className="email">이메일 : <span className="emp">{email}</span> </li>
           </ul>
         </div>
       </div>

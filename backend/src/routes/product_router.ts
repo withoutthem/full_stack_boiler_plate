@@ -1,10 +1,11 @@
 import express from 'express';
 
-import { getProductData, getProductDataByQuery, getProductDataByLikes } from '../controllers/product_controller';
+import { getProductData, getProductDataByQuery, getProductDataByLikes, getProductBySearch } from '../controllers/product_controller';
 
 const productRouter = express();
 
 productRouter.get('/get_product', getProductData);
 productRouter.get('/get_product_by_query', getProductDataByQuery)
 productRouter.get('/get_product_by_likes', getProductDataByLikes)
+productRouter.get('/get_product_search', getProductBySearch)
 export default productRouter;

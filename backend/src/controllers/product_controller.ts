@@ -1,6 +1,7 @@
 import Product from "../models/product"
 import {Response, Request, NextFunction} from 'express';
 import { ErrorClass } from "../types/ErrorClass";
+import { Op } from "sequelize";
 
 //TODO:TEST
 export const getProductData = async (req:Request,res:Response,next:NextFunction)=>{
@@ -39,3 +40,40 @@ export const getProductDataByLikes = async (req:Request, res:Response, next:Next
     next(err)
   }
 }
+
+// description 
+// name
+// furnitureType
+
+//TODO:TEST
+export const getProductBySearch = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const searchTerm = req.query.searchTerm;
+    const result = await Product.findAll({
+      where: {
+        [Op.or]: [
+          {
+            name: {
+              [Op.like]: `%${searchTerm}%`,
+            },
+          },
+          {
+            description: {
+              [Op.like]: `%${searchTerm}%`,
+            },
+          },
+          {
+            furnitureType: {
+              [Op.like]: `%${searchTerm}%`,
+            },
+          },
+        ],
+      },
+    });
+    if(!result) res.status(404).send({stat:false, message:'검색된 상품도 없어요.', status:404})
+    res.send(result);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send(err);
+  }
+};
