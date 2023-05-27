@@ -309,10 +309,10 @@ a {
 }
 
 .main_page .hero_wrap .user_interface .user_info_wrap {
-  width: 280px;
+  width: auto;
   border: 1px solid #e4e4e4;
   border-radius: 15px;
-  margin: 0px 0px 0px auto;
+  margin-left: 30px;
 }
 
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info {
@@ -678,16 +678,13 @@ a {
 
 .guide_card_list .guide_card .context a {
   width: 180px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
-  color: #aaa;
-}
-
-.guide_card_list .guide_card .context a:hover {
-  border: 1px solid #333;
-  color: #333;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .developer_card .img_round_wrap {
@@ -761,10 +758,10 @@ a {
   margin-top: 20px;
 }
 
-.developer_card .spec_plus h5, .developer_card .spec_plus a {
+.developer_card .spec_plus a {
   color: #aaa;
   border-radius: 3px;
-  width: 19%;
+  width: 24%;
   padding: 5px;
   border: 1px solid;
   display: flex;
@@ -772,6 +769,11 @@ a {
   align-items: center;
   font-size: 15px;
   text-align: center;
+}
+
+.developer_card .spec_plus a:hover {
+  border: 1px solid #333;
+  color: #333;
 }
 
 .admin_panel {

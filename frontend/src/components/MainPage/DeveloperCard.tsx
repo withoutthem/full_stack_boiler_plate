@@ -21,7 +21,6 @@ const DeveloperCard = ():React.ReactElement =>{
         <img src="/images/spec1.png" alt="" />
       </div>
       <div className="spec_plus">
-        <h5>더보기</h5>
         <a href="">GitHub</a>
         <a href="">현재 사이트 ERD 보러가기</a>
         <a href="">현재 사이트 컴포넌트 설계 보러가기</a>

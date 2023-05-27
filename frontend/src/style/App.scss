@@ -54,7 +54,7 @@ a{display:block; color: #333;}
 .main_page .hero_wrap .hero_banner{width:70%}
 .main_page .hero_wrap .hero_banner .swiper img{width:100%; height: 250px;}
 .main_page .hero_wrap .user_interface{width:30%;}
-.main_page .hero_wrap .user_interface .user_info_wrap{ width: 280px;border: 1px solid #e4e4e4; border-radius: 15px; margin: 0px 0px 0px auto; }
+.main_page .hero_wrap .user_interface .user_info_wrap{ width: auto; border: 1px solid #e4e4e4; border-radius: 15px; margin-left: 30px; }
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info {align-items: center; height: 50%; padding: 15px; justify-content: space-around;}
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile{margin-left: 10px;}
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile .nickname{margin-bottom: 10px; font-weight:700; font-size:22px}
@@ -117,8 +117,7 @@ a{display:block; color: #333;}
 .guide_card_list .guide_card .context .title {font-size: 30px; font-weight: 800; margin-bottom: 20px;}
 .guide_card_list .guide_card .context .description {margin-bottom: 10px;}
 .guide_card_list .guide_card .context .disclaimer{font-size: 13px; margin: 4px 0px 13px 0px; color: #aaa;}
-.guide_card_list .guide_card .context a{ width: 180px; border: 1px solid #aaa; border-radius: 10px; padding: 10px 20px; text-align: center; color: #aaa; }
-.guide_card_list .guide_card .context a:hover{border: 1px solid #333; color: #333;}
+.guide_card_list .guide_card .context a{ width: 180px; border-radius: 5px; padding: 10px 20px; text-align: center; background: #333; color: #fff; font-size: 15px; font-weight: 800; }
 .developer_card .img_round_wrap {width:15%; max-width: 130px;}
 .developer_card .img_round_wrap img {border-radius: 100%;}
 .main_page .side_left .developer .developer_card{border-radius: 3px; padding: 30px; background-color: #eee; width: 100%; }
@@ -133,7 +132,8 @@ a{display:block; color: #333;}
 .all_products_page .card_wrap .card{width:200px;}
 .all_products_page .card_wrap .card .product_img{width:100%;}
 .developer_card .spec_plus{display: flex; justify-content: space-between; margin-top: 20px;}
-.developer_card .spec_plus h5, .developer_card .spec_plus a{color: #aaa; border-radius: 3px; width: 19%; padding: 5px; border: 1px solid; display: flex; justify-content: center; align-items: center; font-size: 15px; text-align: center;}
+.developer_card .spec_plus a{color: #aaa; border-radius: 3px; width: 24%; padding: 5px; border: 1px solid; display: flex; justify-content: center; align-items: center; font-size: 15px; text-align: center;}
+.developer_card .spec_plus a:hover {border: 1px solid #333; color: #333;}
 
 // admin panel
 .admin_panel{margin: 20px}
