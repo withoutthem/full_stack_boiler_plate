@@ -9,10 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 //img import
-import banner1 from '../../assets/images/banner1.jpg'
-import banner2 from '../../assets/images/banner2.jpg'
-import banner3 from '../../assets/images/banner3.jpg' 
-import banner4 from '../../assets/images/banner4.jpg' 
+import banner1 from '../../assets/images/banner1.png'
+import banner2 from '../../assets/images/banner2.png'
+import banner3 from '../../assets/images/banner3.png' 
 
 const MainSwiper = ():React.ReactElement=>{
   return (
@@ -35,9 +34,6 @@ const MainSwiper = ():React.ReactElement=>{
       </SwiperSlide>
       <SwiperSlide>
         <img src={banner3} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={banner4} alt="" />
       </SwiperSlide>
     </Swiper>
   )
