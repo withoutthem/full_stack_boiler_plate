@@ -37,7 +37,7 @@ export const modelAttributes = {
     type :DataTypes.UUID,
     defaultValue : DataTypes.UUIDV4
   },
-  number : {
+  count : {
     type : DataTypes.INTEGER,
     defaultValue : 1
   }

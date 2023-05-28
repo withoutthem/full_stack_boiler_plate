@@ -31,7 +31,13 @@ export const onPayment = async (req:Request,res:Response,next:NextFunction)=>{
     //collection에 추가
     await Promise.all(foundProducts.map(async (product) => {
       if(product) {
-        await Collection.create({ userId, productId: product.id });
+        const existingCollection = await Collection.findOne({ where: { userId, productId: product.id } });
+        if (existingCollection) {
+          existingCollection.count += 1;
+          await existingCollection.save();
+        } else {
+          await Collection.create({ userId, productId: product.id, count: 1 });
+        }
       }
     }));
     res.status(200).send("Payment successful");

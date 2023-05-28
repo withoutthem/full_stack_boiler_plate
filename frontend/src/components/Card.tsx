@@ -8,7 +8,7 @@ import { open_ShouldLoginPopup } from '../utils/open_pop';
 //component
 import LoadingImage from "./LoadingImage";
 
-const Card = ({id, imageuri, name, brand, shortDescription, description, furnitureType, theme, price, likes}:ProductInterface):React.ReactElement=>{
+const Card = ({id, imageuri, name, brand, shortDescription, description, furnitureType, theme, price, likes, Collections}:ProductInterface):React.ReactElement=>{
 
   const storeState:any = useSelector(state => state)
   const dispatch = useDispatch();
@@ -31,10 +31,11 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
 
   return (
     <div className="card">
+      {Collections && Collections[0]? <div className="badge">보유중</div> : null}
       <div className="cart_img_wrap">
         <div onClick={()=>{goToDetailPage(id)}}>
           <LoadingImage {...loadingImageProps}></LoadingImage>
-          <button onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
+          <button className="add_to_cart_button" onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
         </div>
       </div>
       <h3>{name}</h3>

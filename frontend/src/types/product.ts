@@ -9,4 +9,5 @@ export interface ProductInterface {
   theme: string;
   price: number;
   likes: number;
+  Collections?:any;
 }

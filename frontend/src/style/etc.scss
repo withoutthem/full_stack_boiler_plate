@@ -23,5 +23,22 @@
 .cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn:hover{background:#777;}
 .cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button{background:#4287f5}
 .cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button:hover{background:#1d4a91}
+.collection_page { display:flex; flex-wrap:wrap;}
+.collection_page .card h3{margin-top: 10px; font-size: 18px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.collection_page .card .spec_wrap{line-height: 15px; margin-bottom: 10px;}
+.collection_page .card .cart_img_wrap{position: relative;}
+.collection_page .card .cart_img_wrap>img{width: 220px; height: 200px;}
+.collection_page .card .cart_img_wrap button{position: absolute; bottom: 7px; right: 7px; width: 35px; height: 35px; background-color: #333; border-radius: 100%; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.collection_page .card .cart_img_wrap button:hover{background-color: #555;}
+.collection_page .card .cart_img_wrap button.add_to_cart_button{display:none;} 
 
+.all_products_page .card h3{margin-top: 10px; font-size: 18px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.all_products_page .card .spec_wrap{line-height: 15px; margin-bottom: 10px;}
+.all_products_page .card .cart_img_wrap{position: relative;}
+.all_products_page .card .cart_img_wrap>img{width: 100%; height: 200px;}
+.all_products_page .card .cart_img_wrap button{position: absolute; bottom: 7px; right: 7px; width: 35px; height: 35px; background-color: #333; border-radius: 100%; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.all_products_page .card .cart_img_wrap button:hover{background-color: #555;}
+
+.card{position:relative;}
+.badge{padding:6px 8px; border-radius:6px;position:absolute; right:0; top:0; background:#2ac41f; color:#fff; z-index:1;}
 
