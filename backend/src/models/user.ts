@@ -26,6 +26,7 @@ class User extends Model implements InterfaceUser {
   static associate(db:any){
     db.User.belongsTo(db.Privilege, {foreignKey : 'roles', sourceKey: 'roles_type'})
     db.User.hasMany(db.Cart, {foreignKey: 'userId', sourceKey : 'id'})
+    db.User.hasMany(db.Collection, {foreignKey: 'userId', sourceKey : 'id'})
   } 
 }
 
