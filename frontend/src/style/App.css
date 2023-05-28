@@ -28,9 +28,10 @@
 }
 
 .go_button {
-  background: #C07FFC;
+  background: #333;
+  color: #fff;
   width: 90%;
-  margin: 0px auto;
+  margin: 30px auto 0px auto;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -38,10 +39,14 @@
   align-items: center;
   color: #fff;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .go_button:hover {
-  background: #9343dd;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  font-weight: 600;
 }
 
 * {
@@ -319,10 +324,11 @@ a {
   align-items: center;
   height: 50%;
   padding: 15px;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info .profile {
+  width: 70%;
   margin-left: 10px;
 }
 
@@ -357,7 +363,7 @@ a {
 .main_page .hero_wrap .user_interface .user_info_wrap .signout .signout_btn {
   width: 120px;
   height: 40px;
-  margin: 0 auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -424,6 +430,7 @@ a {
 
 .main_page .list_best .card h3 {
   margin-top: 10px;
+  font-size: 18px;
   font-weight: 800;
   white-space: nowrap;
   overflow: hidden;
@@ -468,6 +475,8 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #aaa;
+  margin-top: 5px;
 }
 
 .card .spec_wrap .brand, .card .spec_wrap .type, .card .spec_wrap .theme {
@@ -475,7 +484,7 @@ a {
 }
 
 .spec_wrap .price {
-  margin: 10px 0px 3px 0px;
+  margin: 20px 0px 5px 0px;
   font-size: 15px;
 }
 
@@ -506,7 +515,7 @@ a {
   width: 49%;
   text-align: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main_page .hot_deal .hot_banner .hot_banner_con span {
@@ -538,7 +547,7 @@ a {
 }
 
 .main_page .side_floating_bar .cart_title_wrap {
-  border: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
   padding-bottom: 10px;
   border-left: 1px solid #c0c0c0;
   border-right: 1px solid #c0c0c0;
@@ -580,8 +589,7 @@ a {
 }
 
 .user_info .profile_img {
-  width: 60px;
-  height: 60px;
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -684,7 +692,7 @@ a {
   background: #333;
   color: #fff;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .developer_card .img_round_wrap {
