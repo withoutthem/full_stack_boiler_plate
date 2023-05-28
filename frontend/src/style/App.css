@@ -31,7 +31,7 @@
   background: #333;
   color: #fff;
   width: 90%;
-  margin: 30px auto 0px auto;
+  margin: 20px auto 0px auto;
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -520,6 +520,7 @@ a {
 
 .main_page .hot_deal .hot_banner .hot_banner_con span {
   font-size: 30px;
+  font-weight: 600;
 }
 
 .main_page .hot_deal .hot_banner_img {
@@ -686,6 +687,7 @@ a {
 
 .guide_card_list .guide_card .context a {
   width: 180px;
+  border: 1px solid #333;
   border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
@@ -693,6 +695,11 @@ a {
   color: #fff;
   font-size: 15px;
   font-weight: 600;
+}
+
+.guide_card_list .guide_card .context a:hover {
+  color: #333;
+  background-color: #fff;
 }
 
 .developer_card .img_round_wrap {
