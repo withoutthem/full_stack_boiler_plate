@@ -12,7 +12,6 @@ export const setInfoAll = async (dispatch:Function)=>{
     return {userInfo, cartInfo}
   }
   catch(err){
-    console.error(err);
     return false
   }
 }
