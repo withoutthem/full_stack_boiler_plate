@@ -7,6 +7,7 @@ import authRouter from './auth_router';
 import productRouter from './product_router';
 import quizRouter from './quiz_router';
 import cartRouter from './cart_router';
+import paymentRouter from './payment_router';
 
 const mainRouter = (app :Express):void=>{
   
@@ -15,6 +16,7 @@ const mainRouter = (app :Express):void=>{
   app.use('/api/product', productRouter);
   app.use('/api/quiz', quizRouter);
   app.use('/api/cart', cartRouter);
+  app.use('/api/payment', paymentRouter);
 
   //404 To Front Router
   app.get('*', (req,res) =>{

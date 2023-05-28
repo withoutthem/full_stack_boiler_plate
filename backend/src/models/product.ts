@@ -29,6 +29,7 @@ class Product extends Model implements InterfaceProduct {
   // 모델의 외부 관계 정리
   static associate(db:any){
     db.Product.hasMany(db.Cart, {foreignKey: 'productId', sourceKey : 'id'})
+    db.Product.hasMany(db.Collection, {foreignKey: 'productId', sourceKey : 'id'})
   } 
 }
 

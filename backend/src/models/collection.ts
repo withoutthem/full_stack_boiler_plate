@@ -2,21 +2,21 @@ import { Model, DataTypes } from 'sequelize';
 
 
 //Interface 생성 
-export interface InterfaceCart {
+export interface InterfaceCollection {
   id: string;
   userId: string;
   productId : string;
 }
 
-class Cart extends Model implements InterfaceCart {
+class Collection extends Model implements InterfaceCollection {
   public id!: string;
   public userId! : string
   public productId!: string;
 
   // 모델의 외부 관계 정리
   static associate(db:any){
-    db.Cart.belongsTo(db.User, {foreignKey : 'userId', targetKey: 'id'}) 
-    db.Cart.belongsTo(db.Product, {foreignKey : 'productId', targetKey: 'id'})
+    db.Collection.belongsTo(db.User, {foreignKey : 'userId', targetKey: 'id'}) 
+    db.Collection.belongsTo(db.Product, {foreignKey : 'productId', targetKey: 'id'})
   } 
 }
 
@@ -40,12 +40,12 @@ export const modelAttributes = {
 // table Options
 export const modelOptions = {
   underscored : true, 
-  modelName : 'Cart',
-  tableName : 'carts',
-  fileName : 'cart.ts',
+  modelName : 'Collection',
+  tableName : 'collections',
+  fileName : 'collection.ts',
   paranoid : true, // soft delete
   charset : 'utf8',
   collate : 'utf8_general_ci'
 };
 
-export default Cart;
+export default Collection;

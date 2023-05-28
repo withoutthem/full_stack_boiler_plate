@@ -20,15 +20,3 @@ export const addCartOne = async (userId:string, productId:string, dispatch:Funct
     return false;
   }
 }
-
-export const deleteCartOne = async (userId:string, productId:string, dispatch:Function) =>{
-  try{
-    const result = await axios.post('/api/cart/delete_cart_info', {userId, productId});
-    if(!result) throw new Error('정상적으로 삭제되지 않았어요.');
-    dispatch(deleteCart_reducer({productId}))
-  }
-  catch(err){
-    alert(err);
-    return false;
-  }
-}

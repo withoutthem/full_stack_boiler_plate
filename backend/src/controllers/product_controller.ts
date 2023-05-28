@@ -23,6 +23,7 @@ export const getProductDataByQuery = async (req: Request, res: Response, next: N
     res.status(200).json(result);
   } catch (err) {
     console.log(err);
+    
     res.status(500).send(err);
   }
 };
