@@ -6,12 +6,14 @@ export interface InterfaceCollection {
   id: string;
   userId: string;
   productId : string;
+  count : number;
 }
 
 class Collection extends Model implements InterfaceCollection {
   public id!: string;
   public userId! : string
   public productId!: string;
+  public count!: number;
 
   // 모델의 외부 관계 정리
   static associate(db:any){
@@ -35,6 +37,10 @@ export const modelAttributes = {
     type :DataTypes.UUID,
     defaultValue : DataTypes.UUIDV4
   },
+  number : {
+    type : DataTypes.INTEGER,
+    defaultValue : 1
+  }
 };
 
 // table Options

@@ -13,3 +13,15 @@
 .cart_page .table_wrap .cell .name_title{font-size:18px; margin-bottom:8px;}
 .cart_page .nothing_in_here{width:100%; height:500px; @include flexCenter; }
 
+.cart_page .pay_pop_wrap{@include flexCenter(); position:fixed; top:0; left:0; bottom:0; right:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); }
+.cart_page .pay_pop_wrap img{width:50px; height:50px; margin-bottom:26px;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop{border-radius:5px; padding:25px; background:#fff; @include flexCenter(); flex-direction: column; }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .are_you_sure{font-size: 18px; font-weight:600;margin-bottom:20px;  }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap{@include flexAlign() }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button{cursor:pointer; border-radius:3px; width:120px; height:50px; border:1px solid #e4e4e4; color:#fff; font-weight:600;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn{background:#666; margin-right:12px;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn:hover{background:#777;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button{background:#4287f5}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button:hover{background:#1d4a91}
+
+

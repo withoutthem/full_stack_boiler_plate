@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from "react-redux";
 // modules
 import { open_ShouldLoginPopup, unknownError } from '../utils/open_pop';
-import { deleteUserInfo_reducer, deleteCart_reducer } from "../store";
+import { deleteUserInfo_reducer, deleteCart_reducer, deleteCartItems_reducer, lostPointByPayment } from "../store";
 import { setInfoAll } from "../utils/set_info";
 //types
 import { Cart } from "../types/cart";
@@ -15,6 +15,7 @@ const CartPage = ():React.ReactElement=>{
   const [cartState , setCartState] = useState<boolean>()
   const [allCheckButton, setAllCheckButton] = useState<boolean>(false)
   const [finalAmount, setFinalAmount] = useState<number>(0);
+  const [sureToPay, setSureToPay]= useState<boolean>(false);
 
   const dispatch = useDispatch();
   const storeState = useSelector((state:any) => state);
@@ -69,8 +70,23 @@ const CartPage = ():React.ReactElement=>{
     }
   }
 
-  const onPayButton = ()=>{
-    
+  const onPayButton = async ()=>{
+    try{
+      const userId:string = storeState.userInfo.id;
+      const products:string[] = cartItems?.filter((item) => item.isChecked).map((item) => item.productId) || [];
+      const result = await axios.post('/api/payment/on_pay', {userId, products});
+      console.log(result);
+      if(result){
+        dispatch(deleteCartItems_reducer({products}))
+        setCartItems((prevItems) => prevItems?.filter((item) => !products.includes(item.productId)) || null);
+        dispatch(lostPointByPayment(finalAmount))
+      }
+      alert('구매가 완료되었습니다.')
+      window.location.reload(); // 새로고침 보장
+    }
+    catch(err){
+      alert(err)
+    }
   }
 
   useEffect(()=>{
@@ -140,6 +156,8 @@ const CartPage = ():React.ReactElement=>{
         </div>
       }
 
+      {cartState ? 
+      <>
       <div className="inspect_wrap">
         <div className="my_point">
           내 포인트 : {storeState.userInfo.point}
@@ -148,7 +166,23 @@ const CartPage = ():React.ReactElement=>{
         <div className="remain">결제 후 잔액 : {storeState.userInfo.point - finalAmount}</div>
         {(storeState.userInfo.point - finalAmount<0) ? <div className="no_point">포인트가 부족해요</div> : null}
       </div>
-      <button onClick={()=>{}} disabled={(finalAmount ===0 || storeState.userInfo.point - finalAmount<0)}>결제하기</button>
+      <button onClick={()=>{setSureToPay(true)}} disabled={(finalAmount ===0 || storeState.userInfo.point - finalAmount<0)}>구매하기</button>
+      </>
+      : null
+      }
+      {
+        sureToPay ? 
+        <div className="pay_pop_wrap">
+          <div className="sure_to_pay_pop">
+            <img src="/images/icon_ok.png" alt="are you sure to pay?" />
+            <div className="are_you_sure">정말 구매 하시겠어요?</div>
+            <div className="button_wrap">
+              <button className="close_btn" onClick={()=>{setSureToPay(false)}} >아니요<br></br>생각해볼래요.</button>
+              <button className="on_pay_button" onClick={()=>{onPayButton()}}>구매하기</button>
+            </div>
+          </div>
+        </div> : null 
+      }
     </div>
   )
 }
