@@ -113,28 +113,37 @@ const QuizPage = ():React.ReactElement =>{
 
   return (
     <div className="quiz_page">
-      <div className="my_info">
-        <div className="nickname">{storeState.userInfo.nickname}</div>
-        <p className="point">현재 내 포인트 : <span>{storeState.userInfo.point}</span></p>
-      </div>
-      {
-        storeState.globalPop.active ? null :
-        <div className="quiz">
-          <div className="category">
-            분야 : {nowQuiz.category}
-          </div>
-          <div className="quiz_box">
-            Q : {nowQuiz.quiz}
-            {
-              nowQuiz.options.map((item:string,idx:number) => {
-                return(
-                  <button onClick={e => {submitAnswer(idx)}} key={item}>{item}</button>
-                )
-              })
-            }
-          </div>
+      
+      <div className='quiz_img_wrap'>
+        <div className="quiz_img_box">
+          <img src="/images/quizImg1.png" alt="" />
         </div>
-      }
+        {
+          storeState.globalPop.active ? null :
+          <div className="quiz">
+            <div className="category">
+              {nowQuiz.category}
+            </div>
+            <div className="quiz_box">
+              {nowQuiz.quiz}
+              {
+                nowQuiz.options.map((item:string,idx:number) => {
+                  return(
+                    <button onClick={e => {submitAnswer(idx)}} key={item}>{item}</button>
+                  )
+                })
+              }
+            </div>
+          </div>
+        }
+        <div className="quiz_img_box flex">
+          <div className="my_info">
+            <div className="nickname">{storeState.userInfo.nickname}</div>
+            <p className="point">현재 포인트<br /> <span>{storeState.userInfo.point}</span></p>
+          </div>
+          <img src="/images/quizImg2.png" alt="" />
+        </div>
+      </div>
     </div>
   )
 }
