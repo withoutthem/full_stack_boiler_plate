@@ -3,30 +3,6 @@
   overflow: hidden;
 }
 
-.sagongsa {
-  position: relative;
-}
-
-.sagongsa img {
-  width: 100%;
-}
-
-.sagongsa .get_back_button {
-  background: #fff;
-  cursor: pointer;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 120px;
-  height: 80px;
-  border-radius: 10px;
-  font-size: 20px;
-}
-
-.sagongsa .get_back_button:hover {
-  background: #e4e4e4;
-}
-
 .go_button {
   background: #333;
   color: #fff;
@@ -952,4 +928,46 @@ a {
 .quiz_page .quiz_img_wrap .quiz .quiz_box button:hover {
   border: 2px solid #1872DF;
   color: #1872DF;
+}
+
+.event_page img {
+  width: 100%;
+}
+
+.sagongsa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F3F7F8;
+  position: relative;
+}
+
+.sagongsa img {
+  width: 45%;
+}
+
+.sagongsa p {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  color: #aaa;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sagongsa .get_back_button {
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  background-color: transparent;
+  top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.sagongsa .get_back_button:hover {
+  background: #333;
+  color: #fff;
 }/*# sourceMappingURL=App.css.map */

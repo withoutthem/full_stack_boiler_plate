@@ -5,10 +5,6 @@
 
 //COMMON
 .ripple_wrap{border-radius:50%; overflow:hidden;}
-.sagongsa{position:relative;}
-.sagongsa img{width:100%;}
-.sagongsa .get_back_button{background:#fff; cursor:pointer; position:absolute; left:20px; top:20px; width:120px; height:80px; border-radius:10px; font-size:20px;}
-.sagongsa .get_back_button:hover{background:#e4e4e4;}
 .go_button{background:#333; color: #fff; width:90%; margin: 20px auto 0px auto; border-radius:5px; height:50px; @include flexCenter(); color:#fff; font-size:16px; font-weight: 600; }
 .go_button:hover{border: 1px solid #333; color: #333; background-color: #fff; font-weight: 600;}
 * {transition:.1s all; box-sizing:border-box;}
@@ -172,3 +168,13 @@ a{display:block; color: #333;}
 .quiz_page .quiz_img_wrap .quiz .quiz_box button {cursor: pointer; margin-top: 20px; border-radius: 100px; border: 2px solid #aaa; font-weight: 600; color: #333; padding: 10px; background-color: #fff;}
 .quiz_page .quiz_img_wrap .quiz .quiz_box button:first-child {margin-top: 50px;}
 .quiz_page .quiz_img_wrap .quiz .quiz_box button:hover {border: 2px solid #1872DF; color: #1872DF;}
+
+//event
+.event_page img {width: 100%;}
+
+//sagongsa
+.sagongsa {width: 100%; display: flex; justify-content: center; background-color: #F3F7F8; position: relative;}
+.sagongsa img {width: 45%;}
+.sagongsa p {position: absolute; font-size: 20px; font-weight: 600; color: #aaa; bottom: 8%; left: 50%; transform: translateX(-50%);}
+.sagongsa .get_back_button{cursor:pointer; position:absolute; left:20px; background-color: transparent; top:20px; padding: 10px; border-radius:10px; font-size:20px;}
+.sagongsa .get_back_button:hover{background:#333; color: #fff;}

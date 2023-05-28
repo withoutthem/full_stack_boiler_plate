@@ -14,7 +14,7 @@ const UserInfo = ():React.ReactElement=>{
       <div className="user_info">
         <img className="profile_img" src={sampleImg} alt="" />
         <div className="profile">
-          <p className="nickname">{nickname}dd</p>
+          <p className="nickname">{nickname}</p>
           <ul className="info">
             <li className="membership">멤버쉽 : <span className="emp">{roles}</span></li>
             <li className="point">내 포인트 : <span className="emp">{point}</span> </li>
