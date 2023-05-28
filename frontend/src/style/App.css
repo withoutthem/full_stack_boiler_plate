@@ -457,7 +457,7 @@ a {
   right: 7px;
   width: 35px;
   height: 35px;
-  background-color: #826F8C;
+  background-color: #333;
   border-radius: 100%;
   border: none;
   display: flex;
@@ -467,7 +467,7 @@ a {
 }
 
 .main_page .list_best .card .cart_img_wrap button:hover {
-  background-color: #685970;
+  background-color: #555;
 }
 
 .card .spec_wrap .short {
@@ -577,6 +577,7 @@ a {
 }
 
 .main_page .side_floating_bar button {
+  cursor: pointer;
   border-radius: 3px;
   margin-top: 10px;
   width: 100%;
@@ -774,11 +775,11 @@ a {
 }
 
 .developer_card .spec_plus a {
-  color: #aaa;
+  color: #333;
   border-radius: 3px;
   width: 24%;
   padding: 5px;
-  border: 1px solid;
+  border: 1px solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -787,8 +788,8 @@ a {
 }
 
 .developer_card .spec_plus a:hover {
-  border: 1px solid #333;
-  color: #333;
+  color: #fff;
+  background-color: #333;
 }
 
 .admin_panel {
@@ -834,6 +835,29 @@ a {
 
 .footer {
   width: 100%;
-  height: 300px;
   background-color: #eee;
+  padding: 50px;
+}
+
+.footer .footer_content {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.footer .footer_content h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+.footer .footer_content hr {
+  margin: 30px 0px;
+}
+
+.footer .footer_content p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.footer .footer_content p.bold {
+  font-weight: 600;
 }/*# sourceMappingURL=App.css.map */
