@@ -20,7 +20,7 @@ export const getProductData = async (req:Request,res:Response,next:NextFunction)
 export const getProductDataByQuery = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const condition = req.query;
-    const result = await Product.findAll({ where: condition });
+    const result = await Product.findAll({ where: condition, include:[{model:Collection}] });
     res.status(200).json(result);
   } catch (err) {
     console.log(err);
@@ -33,7 +33,8 @@ export const getProductDataByLikes = async (req:Request, res:Response, next:Next
   try{
     const result = await Product.findAll({
       order: [['likes', 'DESC']], // 'likes' 속성을 기준으로 내림차순 정렬
-      limit: 10 // 결과를 최대 10개로 제한
+      limit: 10, // 결과를 최대 10개로 제한
+      include:[{model:Collection}]
     });
     if(!result) throw new ErrorClass(false, '불러오기 오류입니다', 500)
     res.send(result);
@@ -73,6 +74,7 @@ export const getProductBySearch = async (req: Request, res: Response, next: Next
           },
         ],
       },
+      include:[{model:Collection}]
     });
     if(!result) res.status(404).send({stat:false, message:'검색된 상품도 없어요.', status:404})
     res.send(result);
