@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { addCartOne } from "../utils/to_cart";
 import { ProductInterface } from "../types/product";
 import { open_ShouldLoginPopup } from '../utils/open_pop';
+import {BsCart3} from 'react-icons/bs';
+import {BiWon} from 'react-icons/bi';
+import { FcLike } from "react-icons/fc";
 
 //component
 import LoadingImage from "./LoadingImage";
@@ -36,7 +39,7 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
         <div className="cart_img_wrap">
           <div>
             <LoadingImage {...loadingImageProps}></LoadingImage>
-            <button className="add_to_cart_button" onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
+            <button className="add_to_cart_button" onClick={ e =>{addToCart(e)}}><BsCart3 className="cart_icon"></BsCart3></button>
           </div>
         </div>
         <h3>{name}</h3>
@@ -45,8 +48,8 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
           <p className="short">{shortDescription}</p>
           <p className="type">Type : {furnitureType}</p>
           <p className="theme">Theme : {theme}</p>
-          <div className="price"><span>{price}</span> Won</div>
-          <div className="likes">Likes : {likes}</div>
+          <div className="price"><BiWon></BiWon><span>{price}</span></div>
+          <div className="likes"><FcLike></FcLike> {likes}</div>
         </div>
       </div>
     </div>

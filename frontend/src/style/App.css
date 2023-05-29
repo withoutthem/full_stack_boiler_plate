@@ -467,6 +467,7 @@ a {
 .spec_wrap .price span {
   font-weight: 800;
   font-size: 25px;
+  color: #333;
 }
 
 .main_page .hot_deal .hot_banner_wrap {
@@ -735,7 +736,7 @@ a {
   margin: 80px 0px;
 }
 
-.all_products_page h3 {
+.all_products_page > h3 {
   width: 90%;
   margin: 0px auto;
   font-weight: 600;

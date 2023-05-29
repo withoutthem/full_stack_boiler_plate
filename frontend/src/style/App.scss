@@ -83,7 +83,7 @@ a{display:block; color: #333;}
 .card .spec_wrap .short{font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #aaa; margin-top: 5px;}
 .card .spec_wrap .brand, .card .spec_wrap .type, .card .spec_wrap .theme{display: none;}
 .spec_wrap .price{ margin: 20px 0px 5px 0px; font-size: 15px;}
-.spec_wrap .price span{font-weight: 800; font-size: 25px;}
+.spec_wrap .price span{font-weight: 800; font-size: 25px; color: #333;}
 .main_page .hot_deal .hot_banner_wrap{display: flex; justify-content: space-between; width: 100%; margin: 0px auto;}
 .main_page .hot_deal .hot_banner{border-radius: 3px; display:flex; justify-content: space-between; width: 49%; padding:10px; border: 1px solid #D6D6D6;}
 .main_page .hot_deal .hot_banner .hot_banner_con{display: flex; padding: 50px 0px; width: 49%; text-align: center; flex-direction: column; justify-content: center;}
@@ -126,7 +126,7 @@ a{display:block; color: #333;}
 .developer_card .card .spec ul{font-size: 18px; line-height: 20px;}
 .side_left .developer {margin-bottom: 100px;}
 .all_products_page {margin: 80px 0px;}
-.all_products_page h3 { width: 90%; margin: 0px auto; font-weight: 600; font-size: 25px; }
+.all_products_page>h3 { width: 90%; margin: 0px auto; font-weight: 600; font-size: 25px; }
 .all_products_page .card_wrap{display:flex; flex-wrap:wrap; width: 90%; margin: 0px auto;}
 .all_products_page .card_wrap .card_hover {width: 20%; padding: 20px 10px 30px 10px; border-bottom: 1px solid #aaa;}
 .all_products_page .card_wrap .card_hover .card{width:100%; padding: 10px; border-radius: 3px; cursor: pointer; transition: 0.3s;}

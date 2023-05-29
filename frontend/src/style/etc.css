@@ -226,4 +226,11 @@
   background: #2ac41f;
   color: #fff;
   z-index: 1;
+}
+
+.card .cart_icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  fill: #fff;
 }/*# sourceMappingURL=etc.css.map */
