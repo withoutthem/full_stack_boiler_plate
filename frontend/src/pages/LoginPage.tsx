@@ -30,8 +30,8 @@ const LoginPage = ():React.ReactElement=>{
       <div className="inner"> 
         <img src={loginImg}  alt="" />
         <form action="POST" onSubmit={(e)=>{onSubmitButton_Login(e,userIdPs, navigate, dispatch)}}>
-        <input type="text" placeholder="이메일을 입력해주세요." onChange={(e)=>{setUserIdPs(state => {return {...state, email:e.target.value}})}}/>
-        <input type="password" placeholder="비밀번호를 입력해주세요." onChange={(e)=>{setUserIdPs(state => {return {...state, password:e.target.value}})}}/>
+          <input type="text" placeholder="이메일을 입력해주세요." onChange={(e)=>{setUserIdPs(state => {return {...state, email:e.target.value}})}}/>
+          <input type="password" placeholder="비밀번호를 입력해주세요." onChange={(e)=>{setUserIdPs(state => {return {...state, password:e.target.value}})}}/>
           <button type='submit'>로그인</button> 
         </form>
       </div>
