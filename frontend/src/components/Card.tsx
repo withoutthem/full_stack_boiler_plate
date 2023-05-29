@@ -7,6 +7,7 @@ import { open_ShouldLoginPopup } from '../utils/open_pop';
 import {BsCart3} from 'react-icons/bs';
 import {BiWon} from 'react-icons/bi';
 import { FcLike } from "react-icons/fc";
+import { formatter } from "../utils/formatter";
 
 //component
 import LoadingImage from "./LoadingImage";
@@ -48,7 +49,7 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
           <p className="short">{shortDescription}</p>
           <p className="type">Type : {furnitureType}</p>
           <p className="theme">Theme : {theme}</p>
-          <div className="price"><BiWon></BiWon><span>{price}</span></div>
+          <div className="price"><BiWon></BiWon><span>{formatter(price)}</span></div>
           <div className="likes"><FcLike></FcLike> {likes}</div>
         </div>
       </div>

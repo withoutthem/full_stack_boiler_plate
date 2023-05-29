@@ -165,14 +165,17 @@ const CartPage = ():React.ReactElement=>{
       {cartState ? 
       <>
       <div className="inspect_wrap">
-        <div className="my_point">
-          내 포인트 : {storeState.userInfo.point}
-        </div>
-        <div className="final_payment">총 금액 : {finalAmount}</div>
-        <div className="remain">결제 후 잔액 : {storeState.userInfo.point - finalAmount}</div>
-        {(storeState.userInfo.point - finalAmount<0) ? <div className="no_point">포인트가 부족해요</div> : null}
+        <div className="my_point"> <span>내 포인트:</span> {formatter(storeState.userInfo.point)} p </div>
+        -
+        <div className="final_payment"><span>총 금액 :</span> {formatter(finalAmount)} p</div>
+        =
+        <div className="remain"><span>결제 후 잔액 :</span> {formatter(storeState.userInfo.point - finalAmount)} p</div>
       </div>
-      <button onClick={()=>{setSureToPay(true)}} disabled={(finalAmount ===0 || storeState.userInfo.point - finalAmount<0)}>구매하기</button>
+      <div className="final_button_wrap">
+        <button onClick={()=>{navigate('/all_products')}}>계속 쇼핑하기</button>
+        <button onClick={()=>{setSureToPay(true)}} disabled={(finalAmount ===0 || storeState.userInfo.point - finalAmount<0)}>구매하기</button>
+      </div>
+      {(storeState.userInfo.point - finalAmount<0) ? <div className="no_point">포인트가 부족해요</div> : null}
       </>
       : null
       }

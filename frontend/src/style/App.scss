@@ -9,6 +9,7 @@
 .go_button:hover{border: 1px solid #333; color: #333; background-color: #fff; font-weight: 600;}
 * {transition:.1s all; box-sizing:border-box;}
 a{display:block; color: #333;}
+button{cursor:pointer;}
 .global_pop{width:100vw; height:100vh; z-index:1000; background:rgba(0,0,0,0.6); position:fixed; top:0; right:0; left:0; bottom:0;}
 .global_pop .pop{@include flexCenter; flex-direction: column; border-radius:5px; padding:30px; background:#fff; @include absoluteCenter;}
 .global_pop .pop .icon_img{width: 80px; height:80px; margin-bottom:30px;}
@@ -48,7 +49,7 @@ a{display:block; color: #333;}
 //main page
 .main_page .hero_wrap{@include flexAlign; overflow: hidden; width: 95%; margin: 50px auto; }
 .main_page .hero_wrap .hero_banner{width:70%}
-.main_page .hero_wrap .hero_banner .swiper img{width:100%; height: 250px;}
+.main_page .hero_wrap .hero_banner .swiper img{width:100%; height: 250px; padding-bottom:25px;}
 .main_page .hero_wrap .user_interface{width:30%;}
 .main_page .hero_wrap .user_interface .user_info_wrap{ width: auto; border: 1px solid #e4e4e4; border-radius: 15px; margin-left: 30px; }
 .main_page .hero_wrap .user_interface .user_info_wrap .user_info {align-items: center; height: 50%; padding: 15px; justify-content: flex-start;}

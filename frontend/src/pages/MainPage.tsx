@@ -1,6 +1,6 @@
 //libs
 import axios from "axios";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 //components
 import MainSwiper from "../components/MainPage/MainSwiper";
 import UserInfo from '../components/MainPage/UserInfo';
@@ -64,12 +63,11 @@ const MainPage = ():React.ReactElement=>{
           <div className="list_best">
             <h3>인기 상품</h3>
             <Swiper
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              modules={[Navigation, Pagination, A11y]}
               spaceBetween={50}
               slidesPerView={4}
               navigation
               pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
               onSwiper={(swiper) => null}
               onSlideChange={() => null}
               >

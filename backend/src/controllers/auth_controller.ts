@@ -106,7 +106,7 @@ export const validateUniqueUserAttributes = async (req:Request,res:Response,next
     else if(type==='nickname') isValid = nicknameValidator(value)
     else throw new ErrorClass(false, '타입이 이상해요', 400)
     if(isValid){
-      const result = await User.findOne({where : {[type] : value}});
+      const result = await User.findOne({where : {[type] : value}, paranoid: false});
       if(result)res.status(409).send({stat:false, message: `이미 있는 ${type} 이에요`, status:409})
       else res.status(200).send({stat:true, message: `사용 가능한 ${type} 이에요`, status:200})
     }
