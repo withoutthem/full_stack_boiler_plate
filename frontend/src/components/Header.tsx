@@ -61,9 +61,8 @@ const Header = ():React.ReactElement=>{
           <Link className="go_to_cart" to='/cart_page'>
             <TiShoppingCart className="header_cart_icon"/>
             {
-              storeState.userCart.productId ? <div className="count_badge">{storeState.userCart.productId.length}</div>  : null
+              storeState.userCart.productId.length !== 0 ? <div className="count_badge"><span>{storeState.userCart.productId.length}</span></div>  : null
             }
-            
             </Link>
         </div>
       </nav>

@@ -2,27 +2,6 @@
 @mixin flexJustify {display: flex; justify-content: center;}
 @mixin flexAlign {display: flex; align-items: center;}
 
-.cart_page{padding:0px 50px;}
-.cart_page .table_wrap .thead .row .cell{border-top:1px solid #ccc;}
-.cart_page .table_wrap .row{@include flexAlign;}
-.cart_page .table_wrap .cell{@include flexAlign(); width:100px; height:100px; border-right:1px solid #ccc;border-bottom:1px solid #ccc;box-sizing:border-box;}
-.cart_page .table_wrap .cell:first-child{border-left:1px solid #ccc;}
-.cart_page .table_wrap .cell:nth-of-type(2){width:500px}
-.cart_page .table_wrap .cell img.cart_item_img{ width: 100px; height:80px;}
-.cart_page .table_wrap .cell p.description{font-size:12px;}
-.cart_page .table_wrap .cell .name_title{font-size:18px; margin-bottom:8px;}
-.cart_page .nothing_in_here{width:100%; height:500px; @include flexCenter; }
-
-.cart_page .pay_pop_wrap{@include flexCenter(); position:fixed; top:0; left:0; bottom:0; right:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); }
-.cart_page .pay_pop_wrap img{width:50px; height:50px; margin-bottom:26px;}
-.cart_page .pay_pop_wrap .sure_to_pay_pop{border-radius:5px; padding:25px; background:#fff; @include flexCenter(); flex-direction: column; }
-.cart_page .pay_pop_wrap .sure_to_pay_pop .are_you_sure{font-size: 18px; font-weight:600;margin-bottom:20px;  }
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap{@include flexAlign() }
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button{cursor:pointer; border-radius:3px; width:120px; height:50px; border:1px solid #e4e4e4; color:#fff; font-weight:600;}
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn{background:#666; margin-right:12px;}
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn:hover{background:#777;}
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button{background:#4287f5}
-.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button:hover{background:#1d4a91}
 .collection_page { display:flex; flex-wrap:wrap;}
 .collection_page .card h3{margin-top: 10px; font-size: 18px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .collection_page .card .spec_wrap{line-height: 15px; margin-bottom: 10px;}
@@ -44,5 +23,46 @@
 .card .cart_icon{width:20px; height:20px; color:#fff; fill:#fff;}
 .header_cart_icon {width:30px; height:30px;}
 .header .header_gnb a{@include flexCenter(); position:relative;}
-.count_badge{position:absolute; top:0; right:0; width: 20px; height: 20px; border-radius: 20px; background:#eb1349; color:#fff; @include flexCenter();}
+.count_badge{position:absolute; font-size:13px; top:0; right:0; width: 20px; height: 20px; border-radius: 50%; background:#eb1349; color:#fff; @include flexCenter();}
+.count_badge span{transform:translateY(1px)}
+
+.cart_page{margin:80px 0px}
+.cell{flex-shrink:0; flex-grow:0;}
+.cart_page .table_wrap .thead .row .cell{background:#fafafa; height:80px; border-top:1px solid #dddddd; border-right:none; font-weight:600; @include flexCenter();}
+.cart_page .table_wrap .thead .row .cell:first-of-type{padding-left:10px; width:100px;}
+.cart_page .table_wrap .thead .row .cell:nth-of-type(2){width:750px;}
+.cart_page .table_wrap .thead .row .cell:last-of-type{width:200px;}
+.cart_page .table_wrap .row{@include flexAlign;}
+.cart_page .table_wrap .cell{@include flexAlign(); border-right:1px solid #ddd;border-bottom:1px solid #ddd;box-sizing:border-box;}
+.cart_page .table_wrap .cell:nth-of-type(1){border-left:none;}
+.cart_page .table_wrap .cell:last-of-type{border-right:none;}
+.cart_page .table_wrap .cell img.cart_item_img{ width: 140px; height:140px; cursor:pointer;}
+.cart_page .table_wrap .cell p.description{font-size:24px;}
+.cart_page .table_wrap .cell .name_title{font-size:13px; margin-bottom:22px;}
+.cart_page .table_wrap .tbody .cell.check_cell{width:30px; border-right:none; padding:0px; padding-left:15px;}
+.cart_page .table_wrap .tbody .cell{padding:20px; height:181px}
+.cart_page .table_wrap .tbody .cell .price{font-size:20px; @include flexAlign();}
+.cart_page .table_wrap .tbody .price_cell button{@include flexCenter(); background:none;border:none; cursor:pointer;}
+.cart_page .table_wrap .tbody .price_cell button svg{width:20px; height:20px;}
+.cart_page .table_wrap .tbody .cell.cell.info_cell{width:821px}
+.cart_page .table_wrap .tbody .cell.cell.info_cell .cart_box .description{cursor:pointer;}
+.cart_page .table_wrap .tbody .cell.info_cell img{margin-right:30px;}
+.cart_page .table_wrap .tbody .cell.price_cell{width:200px; justify-content: space-around;}
+.cart_page .table_wrap .tbody .cell.price_cell .price svg{margin-right:10px; transform:translateY(-2px)}
+.cart_page .table_wrap .cell input[type=checkbox]{margin-right:10px; transform:translateY(-1px)}
+
+.cart_page .nothing_in_here{width:100%; height:500px; @include flexCenter; }
+.cart_page .pay_pop_wrap{@include flexCenter(); position:fixed; top:0; left:0; bottom:0; right:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); }
+.cart_page .pay_pop_wrap img{width:50px; height:50px; margin-bottom:26px;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop{border-radius:5px; padding:25px; background:#fff; @include flexCenter(); flex-direction: column; }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .are_you_sure{font-size: 18px; font-weight:600;margin-bottom:20px;  }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap{@include flexAlign() }
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button{cursor:pointer; border-radius:3px; width:120px; height:50px; border:1px solid #e4e4e4; color:#fff; font-weight:600;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn{background:#666; margin-right:12px;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.close_btn:hover{background:#777;}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button{background:#4287f5}
+.cart_page .pay_pop_wrap .sure_to_pay_pop .button_wrap button.on_pay_button:hover{background:#1d4a91}
+.cart_page h3 svg{margin-right:5px; transform:translateY(1px)}
+.cart_page h3{ width:90%;margin:0px auto;font-weight:600;font-size:25px;margin-bottom:30px;}
+.cart_page .table_wrap{  width:90%;margin:0px auto;}
 
