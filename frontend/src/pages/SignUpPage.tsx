@@ -4,6 +4,8 @@ import { emailValidator, passwordValidator, nicknameValidator } from '../utils/v
 import { useNavigate } from 'react-router-dom';
 import { onSubmitButton_SignUp } from '../controllers/auth_controller';
 import { useDispatch } from 'react-redux';
+import { IoMdCheckmarkCircle } from "react-icons/io";
+import iconJoin from '../assets/images/icon_join.png'
 import axios from 'axios';
 
 export type InputType = {
@@ -78,17 +80,58 @@ const SignInPage = ():React.ReactElement=>{
   }, [userInfo]);
     
   return (
-    <div className="sign_up_page">
-      <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton_SignUp(e, userInfo, navigate, dispatch)}}>
-        email : <input type="email" onChange={(e) => onChangeUserInfo('email', e.target.value)} /> {userInfoValidation.email ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        {duplicatedCheck.email ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'email', userInfo.email)}}>이메일중복검사</button>}
-        nickname : <input type="text" onChange={(e) => onChangeUserInfo('nickname', e.target.value)} /> {userInfoValidation.nickname ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        {duplicatedCheck.nickname ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>닉네임중복검사</button>}
-        password : <input type="password" onChange={(e) => onChangeUserInfo('password', e.target.value)} /> {userInfoValidation.password ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        password again : <input type="password" onChange={(e) => onChangeUserInfo('password_confirm', e.target.value)} /> {userInfoValidation.password_confirm ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        allTrue : {isAllValid.toString()}
-        <button type="submit" disabled={!isAllValid}>SUBMIT</button>
-      </form>
+    <div className="sign_up_page typeA">
+        <div className="inner">
+            <div className='img_box'>
+            <img src={iconJoin} alt="" />
+            <h2>회원가입</h2>
+            <p></p>
+          </div>
+          <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton_SignUp(e, userInfo, navigate, dispatch)}}>
+            <ul className='join_list'>
+                <li>
+                  <h3>이메일</h3>
+                  <div>
+                      <div className='inp'>
+                        <input type="email" onChange={(e) => onChangeUserInfo('email', e.target.value)} placeholder='이메일을 입력해주세요.' />
+                        {duplicatedCheck.email ? <IoMdCheckmarkCircle></IoMdCheckmarkCircle> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'email', userInfo.email)}}>중복확인</button>}
+                      </div>
+                      {userInfoValidation.email ? <p style={{color : 'green'}}>사용가능한 이메일 입니다.</p> : <p style={{color:'red'}}>사용불가능한 이메일 입니다.</p>}
+                  </div>
+                </li>
+                <li>
+                  <h3>닉네임</h3>
+                  <div>
+                    <div className='inp'>
+                      <input type="text" placeholder='닉네임을 입력하세요.' onChange={(e) => onChangeUserInfo('nickname', e.target.value)} />
+                      {duplicatedCheck.nickname ? <IoMdCheckmarkCircle></IoMdCheckmarkCircle> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>중복확인</button>}
+                    </div>
+                    {userInfoValidation.nickname ? <p style={{color : 'green'}}>사용가능한 닉네임 입니다.</p> : <p>사용불가능한 닉네임 입니다.</p>}
+                  </div>
+                </li>
+                <li>
+                  <h3>비밀번호</h3>
+                  <div>
+                    <div className="inp">
+                      <input type="password" placeholder='비밀번호를 입력하세요.' onChange={(e) => onChangeUserInfo('password', e.target.value)} />
+                    </div>
+                    {userInfoValidation.password ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p>사용불가능한 비밀번호 입니다.</p>}
+                  </div>
+                </li>
+                <li>
+                  <h3>비밀번호 확인</h3>
+                  <div>
+                    <div className="inp">
+                      <input type="password" placeholder='비밀번호를 입력하세요.' onChange={(e) => onChangeUserInfo('password_confirm', e.target.value)} />
+                    </div>
+                    {userInfoValidation.password_confirm ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p>사용불가능한 비밀번호 입니다.</p>}
+                  </div>
+                </li>
+            </ul>
+            {/* allTrue : {isAllValid.toString()} */}
+            <button type="submit" disabled={!isAllValid}>가입하기</button>
+          </form>
+        </div>
     </div>
   )
 }
