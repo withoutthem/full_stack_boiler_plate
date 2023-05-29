@@ -56,7 +56,7 @@
 .none_box{display:flex; height: 250px; flex-direction: column; justify-content: center; align-items: center; background: #f5f6fa; margin-left: 30px; position: relative;
     img{width: 147px; position: absolute; top: -48px; left: 50%; transform: translateX(-50%);}
     .inner{width:100%; max-width: 300px; margin-top: 80px; text-align: center;
-        h3{font-size: 20px; font-size: 18px; font-weight: bold; margin-bottom: 20px; }
+        h3{ font-size: 17px; font-weight: bold; margin-bottom: 20px; }
         .login_go{display:block; text-align: center; background: #3A4157; color: #fff; width: 100%; line-height: 35px; margin-bottom: 20px;}
         .join_go{display: block; text-align: right; color: #999; font-weight: bold;}
     }
