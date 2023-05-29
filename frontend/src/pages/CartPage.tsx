@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {BsCart3} from 'react-icons/bs';
 import {BiWon} from 'react-icons/bi';
 import {IoClose} from 'react-icons/io5';
+import {TbMoodEmpty} from 'react-icons/tb';
 import { useNavigate } from "react-router-dom";
 
 // modules
@@ -158,7 +159,8 @@ const CartPage = ():React.ReactElement=>{
         </div>
       </section> :
         <div className="nothing_in_here">
-          장바구니에 아무것도 없어요.
+          <TbMoodEmpty></TbMoodEmpty>
+          <p>장바구니에 아무것도 없어요.</p>
         </div>
       }
 
