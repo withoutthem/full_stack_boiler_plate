@@ -62,7 +62,7 @@ const Detail = ():React.ReactElement => {
         <div className='detail_bot'>
         <p className='price'><BiWon></BiWon> <span>{product.price}</span></p>
           <div className='detail_btn_box'>
-            <button className='plus' onClick={()=>{addToCart()}}>장바구니</button>
+            <button className='plus' onClick={()=>{addToCart()}}>장바구니에 담기</button>
           </div>
         </div>
       </div>
