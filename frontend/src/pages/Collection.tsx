@@ -30,19 +30,20 @@ const Collection = ():React.ReactElement=>{
   },[])
 
   return(
-    <div className="collection_page">
-      {
-        myCollection && myCollection.map((item:any) =>{
-          return(
-            <>
-            <div className="collection_card">
-              <Card {...item.Product} key={item.Product.id} ></Card>
-              <div className="count">가진 개수 : {item.count}</div>
-            </div>
-            </>
-          )
-        })
-      }
+    <div className="collection_page_wrap">
+      <h3>컬렉션</h3>
+      <div className="collection_page">
+        {
+          myCollection && myCollection.map((item:any, idx:number) =>{
+            return(
+              <div className="collection_card" key={item.Product.id+idx}>
+                <div className="count">가진개수 : <span>{item.count}</span></div>
+                <Card {...item.Product} key={item.Product.id} ></Card>
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }

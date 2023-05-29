@@ -79,11 +79,11 @@ a{display:block; color: #333;}
 .main_page .list_best .card .cart_img_wrap{position: relative;}
 .main_page .list_best .card .cart_img_wrap>img{width: 100%; height: 200px;}
 .main_page .list_best .card .cart_img_wrap button{position: absolute; bottom: 7px; right: 7px; width: 35px; height: 35px; background-color: #333; border-radius: 100%; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer;}
-.main_page .list_best .card .cart_img_wrap button:hover{background-color: #555;}
+.main_page .list_best .card .cart_img_wrap button:hover{background-color: #1872DF;}
 .card .spec_wrap .short{font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #aaa; margin-top: 5px;}
 .card .spec_wrap .brand, .card .spec_wrap .type, .card .spec_wrap .theme{display: none;}
 .spec_wrap .price{ margin: 20px 0px 5px 0px; font-size: 15px;}
-.spec_wrap .price span{font-weight: 800; font-size: 25px;}
+.spec_wrap .price span{font-weight: 800; font-size: 25px; color: #333;}
 .main_page .hot_deal .hot_banner_wrap{display: flex; justify-content: space-between; width: 100%; margin: 0px auto;}
 .main_page .hot_deal .hot_banner{border-radius: 3px; display:flex; justify-content: space-between; width: 49%; padding:10px; border: 1px solid #D6D6D6;}
 .main_page .hot_deal .hot_banner .hot_banner_con{display: flex; padding: 50px 0px; width: 49%; text-align: center; flex-direction: column; justify-content: center;}
@@ -125,9 +125,13 @@ a{display:block; color: #333;}
 .developer_card .card .spec h5{font-size: 30px; font-weight: 800; margin-bottom: 20px;}
 .developer_card .card .spec ul{font-size: 18px; line-height: 20px;}
 .side_left .developer {margin-bottom: 100px;}
-.all_products_page .card_wrap{display:flex; flex-wrap:wrap;}
-.all_products_page .card_wrap .card{width:200px;}
-.all_products_page .card_wrap .card .product_img{width:100%;}
+.all_products_page {margin: 80px 0px;}
+.all_products_page>h3 { width: 90%; margin: 0px auto; font-weight: 600; font-size: 25px; }
+.all_products_page .card_wrap{display:flex; flex-wrap:wrap; width: 90%; margin: 0px auto;}
+.all_products_page .card_wrap .card_hover {width: 20%; padding: 20px 10px 30px 10px; border-bottom: 1px solid #aaa;}
+.all_products_page .card_wrap .card_hover .card{width:100%; padding: 10px; border-radius: 3px; cursor: pointer; transition: 0.3s;}
+.all_products_page .card_wrap .card_hover .card:hover{box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);}
+.all_products_page .card_wrap .card_hover .card .product_img{width:100%;}
 .developer_card .spec_plus{display: flex; justify-content: space-between; margin-top: 20px;}
 .developer_card .spec_plus a{color: #333; font-weight: 600; border-radius: 3px; width: 24%; padding: 8px; border: 1px solid #333; display: flex; justify-content: center; align-items: center; font-size: 14px; text-align: center;}
 .developer_card .spec_plus a:hover {color: #fff; background-color: #333;}
@@ -178,3 +182,15 @@ a{display:block; color: #333;}
 .sagongsa p {position: absolute; font-size: 20px; font-weight: 600; color: #aaa; bottom: 8%; left: 50%; transform: translateX(-50%);}
 .sagongsa .get_back_button{cursor:pointer; position:absolute; left:20px; background-color: transparent; top:20px; padding: 10px; border-radius:10px; font-size:20px;}
 .sagongsa .get_back_button:hover{background:#333; color: #fff;}
+
+//collection page
+.collection_page_wrap {margin: 80px 0px;}
+.collection_page_wrap>h3 {width: 90%; margin: 0px auto; font-weight: 600; font-size: 25px;}
+.collection_page_wrap .collection_page {display:flex; flex-wrap:wrap; width: 90%; margin: 0px auto;}
+.collection_page_wrap .collection_page .collection_card{display:flex; flex-wrap:wrap; width: 20%;}
+.collection_page_wrap .collection_page .collection_card .count{font-size: 20px; margin: 30px 0px 10px auto; margin-right: 20px;}
+.collection_page_wrap .collection_page .collection_card .count span{color: rgb(244, 67, 54); font-weight: 600; font-size: 24px;}
+.collection_page_wrap .collection_page .card_hover {width: 100%; padding: 0px 10px 30px 10px; }
+.collection_page_wrap .collection_page .card_hover .card{padding: 10px 10px 10px 10px; border-radius: 3px; cursor: pointer; transition: 0.3s;}
+.collection_page_wrap .collection_page .card_hover .card:hover{box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);}
+.collection_page_wrap .collection_page .card_hover .card .product_img{width:100%;}

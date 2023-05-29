@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 //modules
 import { logOutButton } from '../controllers/auth_controller';
 import { openPop } from '../utils/open_pop';
+import {TiShoppingCart} from 'react-icons/ti';
 
 //components
 import Searcher from './MainPage/Searcher';
@@ -57,7 +58,12 @@ const Header = ():React.ReactElement=>{
             </> }
         </ul>
         <div className="user_zone">
-          <Link className="go_to_cart" to='/cart_page'>go to my cart</Link>
+          <Link className="go_to_cart" to='/cart_page'>
+            <TiShoppingCart className="header_cart_icon"/>
+            {
+              storeState.userCart.productId.length !== 0 ? <div className="count_badge"><span>{storeState.userCart.productId.length}</span></div>  : null
+            }
+            </Link>
         </div>
       </nav>
     </header>

@@ -62,12 +62,12 @@ const AllProductsPage = () => {
         isSearch && <div className="is_search">검색결과 : {nowSearchParams}</div>
       }
       <div className="card_wrap">
-        {isLoading ? (
-          <IsLoading />
-        ) : (
-          allProducts.length===0 ? <div className="nothing">상품이 없어요</div> : 
-          allProducts.map((item: ProductInterface) => <Card {...item} key={item.imageuri} />)
-        )}
+          {isLoading ? (
+            <IsLoading />
+          ) : (
+            allProducts.length===0 ? <div className="nothing">상품이 없어요</div> :
+            allProducts.map((item: ProductInterface) => <Card {...item} key={item.imageuri} />)
+          )}
       </div>
     </div>
   );

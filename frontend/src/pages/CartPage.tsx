@@ -2,10 +2,17 @@
 import { useState,useEffect } from "react";
 import axios from 'axios';
 import { useSelector, useDispatch } from "react-redux";
+import {BsCart3} from 'react-icons/bs';
+import {BiWon} from 'react-icons/bi';
+import {IoClose} from 'react-icons/io5';
+import { useNavigate } from "react-router-dom";
+
 // modules
 import { open_ShouldLoginPopup, unknownError } from '../utils/open_pop';
-import { deleteUserInfo_reducer, deleteCart_reducer, deleteCartItems_reducer, lostPointByPayment } from "../store";
+import { deleteCartItems_reducer, lostPointByPayment } from "../store";
 import { setInfoAll } from "../utils/set_info";
+import { formatter } from "../utils/formatter";
+
 //types
 import { Cart } from "../types/cart";
 
@@ -18,6 +25,7 @@ const CartPage = ():React.ReactElement=>{
   const [sureToPay, setSureToPay]= useState<boolean>(false);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const storeState = useSelector((state:any) => state);
   const getMyCartInfo = async ()=>{
     try{
@@ -44,6 +52,10 @@ const CartPage = ():React.ReactElement=>{
     )
   }
 
+  const goToDetailPage = (productId:string)=>{
+    navigate(`/detail?id=${productId}`)
+  }
+
   const allCheckToggleButton = () => {
     const currentCheckState = !allCheckButton;
     setAllCheckButton(currentCheckState);
@@ -57,13 +69,10 @@ const CartPage = ():React.ReactElement=>{
   const deleteCartOneFromCartPage = async (userId:string, productId:string)=>{
     try{
       const result = await axios.delete('/api/cart/delete_cart_info', {data:{userId, productId}});
-      console.log(result);
-      if(result){
-        dispatch(deleteCart_reducer({productId}))
-        cartItems && setCartItems((state:any) =>{
-          return state.filter((item:Cart) => item.productId !== productId)
-        })
-      }
+      cartItems && setCartItems((state:any) =>{
+        return state.filter((item:Cart) => item.productId !== productId)
+      })
+      setInfoAll(dispatch)
     }
     catch(err){
       alert(err)
@@ -112,9 +121,7 @@ const CartPage = ():React.ReactElement=>{
 
   return (
     <div className="cart_page">
-      <h3>장바구니</h3>
-      <button onClick={()=>{console.log(cartState)}}>CHECK CARTSTATE</button>
-      <button onClick={()=>{console.log(cartItems)}}>CHECK CARTITEMS</button>
+      <h3><BsCart3></BsCart3>장바구니</h3>
       {
         cartState ?       
       <section className="table_wrap">  
@@ -130,21 +137,20 @@ const CartPage = ():React.ReactElement=>{
           cartItems && cartItems.map((item:any) =>{
             return (
               <div className="row" key={item.id}>
-                <div className="cell"> <input type="checkbox" checked={item.isChecked} onChange={()=>{checkToggle(item.id)}} /> 선택</div>
-                <div className="cell">
-                  <img className="cart_item_img" src={item.Product.imageuri} alt="" /> 
+                <div className="cell check_cell"> <input type="checkbox" checked={item.isChecked} onChange={()=>{checkToggle(item.id)}} /></div>
+                <div className="cell info_cell">
+                  <img className="cart_item_img" onClick={()=>{goToDetailPage(item.productId)}} src={item.Product.imageuri} alt="" /> 
                   <div className="cart_box">
                     <div className="name_title">{item.Product.name}</div>
-                    <p className="description">{item.Product.shortDescription}</p>
+                    <p className="description" onClick={()=>{goToDetailPage(item.productId)}}>{item.Product.shortDescription}</p>
                   </div>
                   </div>
-                <div className="cell">
+                <div className="cell price_cell">
                   <div className="price">
-                    {item.Product.price} Won
+                    <BiWon></BiWon><span className="value">{formatter(item.Product.price)}</span>
                   </div>
-                  <button className="delete_button" onClick={()=>{deleteCartOneFromCartPage(item.userId, item.productId)}}>DELETE</button>
+                  <button className="delete_button" onClick={()=>{deleteCartOneFromCartPage(item.userId, item.productId)}}><IoClose></IoClose></button>
                 </div>
-                
               </div>
             )
           })
