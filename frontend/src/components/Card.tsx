@@ -30,22 +30,24 @@ const Card = ({id, imageuri, name, brand, shortDescription, description, furnitu
   }
 
   return (
-    <div className="card">
-      {Collections && Collections[0]? <div className="badge">보유중</div> : null}
-      <div className="cart_img_wrap">
-        <div onClick={()=>{goToDetailPage(id)}}>
-          <LoadingImage {...loadingImageProps}></LoadingImage>
-          <button className="add_to_cart_button" onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
+    <div className="card_hover">
+      <div className="card" onClick={()=>{goToDetailPage(id)}}>
+        {Collections && Collections[0]? <div className="badge">보유중</div> : null}
+        <div className="cart_img_wrap">
+          <div>
+            <LoadingImage {...loadingImageProps}></LoadingImage>
+            <button className="add_to_cart_button" onClick={ e =>{addToCart(e)}}><img src="/images/cart.png" /></button>
+          </div>
         </div>
-      </div>
-      <h3>{name}</h3>
-      <div className="spec_wrap">
-        <p className="brand">Brand : {brand}</p>
-        <p className="short">{shortDescription}</p>
-        <p className="type">Type : {furnitureType}</p>
-        <p className="theme">Theme : {theme}</p>
-        <div className="price"><span>{price}</span> Won</div>
-        <div className="likes">Likes : {likes}</div>
+        <h3>{name}</h3>
+        <div className="spec_wrap">
+          <p className="brand">Brand : {brand}</p>
+          <p className="short">{shortDescription}</p>
+          <p className="type">Type : {furnitureType}</p>
+          <p className="theme">Theme : {theme}</p>
+          <div className="price"><span>{price}</span> Won</div>
+          <div className="likes">Likes : {likes}</div>
+        </div>
       </div>
     </div>
   )

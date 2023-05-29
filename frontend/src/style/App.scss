@@ -125,9 +125,13 @@ a{display:block; color: #333;}
 .developer_card .card .spec h5{font-size: 30px; font-weight: 800; margin-bottom: 20px;}
 .developer_card .card .spec ul{font-size: 18px; line-height: 20px;}
 .side_left .developer {margin-bottom: 100px;}
-.all_products_page .card_wrap{display:flex; flex-wrap:wrap;}
-.all_products_page .card_wrap .card{width:200px;}
-.all_products_page .card_wrap .card .product_img{width:100%;}
+.all_products_page {margin: 80px 0px;}
+.all_products_page h3 { width: 90%; margin: 0px auto; font-weight: 600; font-size: 25px; }
+.all_products_page .card_wrap{display:flex; flex-wrap:wrap; width: 90%; margin: 0px auto;}
+.all_products_page .card_wrap .card_hover {width: 20%; padding: 20px 10px 30px 10px; border-bottom: 1px solid #aaa;}
+.all_products_page .card_wrap .card_hover .card{width:100%; padding: 10px; border-radius: 3px; cursor: pointer; transition: 0.3s;}
+.all_products_page .card_wrap .card_hover .card:hover{box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);}
+.all_products_page .card_wrap .card_hover .card .product_img{width:100%;}
 .developer_card .spec_plus{display: flex; justify-content: space-between; margin-top: 20px;}
 .developer_card .spec_plus a{color: #333; font-weight: 600; border-radius: 3px; width: 24%; padding: 8px; border: 1px solid #333; display: flex; justify-content: center; align-items: center; font-size: 14px; text-align: center;}
 .developer_card .spec_plus a:hover {color: #fff; background-color: #333;}
