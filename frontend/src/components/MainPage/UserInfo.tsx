@@ -1,11 +1,15 @@
 //libs
-import { useEffect } from "react";
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 //assets
 import sampleImg from '../../assets/images/random_man.png'
+//modules
+import { logOutButton } from "../../controllers/auth_controller";
 const UserInfo = ():React.ReactElement=>{
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const storeState:any = useSelector(state => state);
   const {nickname, email, rank, roles, point} = storeState.userInfo;
 
@@ -23,7 +27,7 @@ const UserInfo = ():React.ReactElement=>{
         </div>
       </div>
       <div className="signout">
-        <div className="signout_btn">로그아웃</div>
+        <div className="signout_btn" onClick={()=>{logOutButton(navigate, dispatch)}}>로그아웃</div>
       </div>
       <div className="profile_button">
         <Link className='button_cart' to='/cart_page'>장바구니</Link>

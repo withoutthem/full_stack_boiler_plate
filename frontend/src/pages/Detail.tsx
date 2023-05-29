@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
+import {IoClose} from 'react-icons/io5'
+
 //module
 import { addCartOne } from '../utils/to_cart';
 import {BiWon} from 'react-icons/bi';
@@ -66,6 +68,7 @@ const Detail = ():React.ReactElement => {
           </div>
         </div>
       </div>
+      <button className="detail_close_btn" onClick={()=>{navigate(-1)}}><IoClose></IoClose></button>
     </div>
   );
 };

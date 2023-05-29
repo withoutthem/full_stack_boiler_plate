@@ -30,8 +30,8 @@ const Header = ():React.ReactElement=>{
   return(
     <header className="header">
       <div className="auth_sub_header">
-        <button onClick={()=>{openPop(testPopUpData, dispatch)}}>글로벌팝업 열어보기</button>
-        <button onClick={()=>{console.log(storeState)}}>현재REDUX check하기</button>
+        {/* <button onClick={()=>{openPop(testPopUpData, dispatch)}}>글로벌팝업 열어보기</button>
+        <button onClick={()=>{console.log(storeState)}}>현재REDUX check하기</button> */}
         {storeState.userInfo.id && <div className="header_nickname">{storeState.userInfo.nickname}</div>}
         <Link to='/privacy'>공지사항</Link>
         { !storeState.userInfo.id ? 

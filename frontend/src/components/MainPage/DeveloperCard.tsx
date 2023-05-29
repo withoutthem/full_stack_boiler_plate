@@ -1,4 +1,16 @@
+import axios from "axios";
+
 const DeveloperCard = ():React.ReactElement =>{
+
+  const imageRender = async ()=>{
+    try{
+      const result = await axios.get('/image/ERD.png');
+    }
+    catch(err){
+      console.error(err)
+    }
+  }
+
   return (
     <div className="developer_card">
       <h4 className="title">개발자는 누구?</h4>
@@ -17,14 +29,28 @@ const DeveloperCard = ():React.ReactElement =>{
         </div>
       </div>
       <div className="spec">
-        <h4>기술스택</h4>
+        <h4>개발자 기술스택</h4>
         <img src="/images/spec1.png" alt="" />
       </div>
       <div className="spec_plus">
-        <a href="">GitHub</a>
-        <a href="">현재 사이트<br/> ERD 보러가기</a>
-        <a href="">현재 사이트<br/> 컴포넌트 설계 보러가기</a>
-        <a href="">공부 어떻게<br/> 하는지 보러가기</a>
+        <a href="https://github.com/withoutthem">GitHub</a>
+        <a href="http://localhost:4589/images/ERD.png">현재 사이트<br/> ERD 보러가기</a>
+        <a href="https://gitmind.com/app/docs/mk57a3gd">공부 어떻게<br/> 하는지 보러가기</a>
+      </div>
+      <div className="now_page_spec">
+        <h4>현재 사이트 기술스택</h4>
+        <li>Language : TypeScript, SQL</li>
+        <li>Front Framework : React(TS, CRA) - SPA/CSR</li>
+        <li>BackEnd Framework : Node-Express(TS)</li>
+        <li>DB : MySQL(ORM : Sequelize)</li>
+        <li>TEST : JEST(TS), POSTMAN(API)</li>
+      </div>
+      <div className="now_page_spec">
+        <h4>제작기간</h4>
+        <li>2023.05.26. ~ 2023.05.29. (4일)</li>
+      </div>
+      <div className="end">
+        감사합니다.
       </div>
     </div>
   )

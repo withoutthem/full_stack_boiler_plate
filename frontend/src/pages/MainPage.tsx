@@ -44,6 +44,12 @@ const MainPage = ():React.ReactElement=>{
     }
   }
 
+  const toTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   useEffect(()=>{
     setPopularsData();
@@ -142,7 +148,7 @@ const MainPage = ():React.ReactElement=>{
                 <Link to='/cart_page'>더보기</Link>
               </div>
             </div>
-            <button>TOP</button>
+            <button onClick={toTop}>TOP</button>
           </div>
         </div>
       </div>

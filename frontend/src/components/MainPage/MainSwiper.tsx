@@ -1,6 +1,7 @@
 //libs
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useNavigate } from 'react-router-dom';
 
 //lib css
 import 'swiper/css';
@@ -13,6 +14,7 @@ import banner2 from '../../assets/images/banner2.png'
 import banner3 from '../../assets/images/banner3.png' 
 
 const MainSwiper = ():React.ReactElement=>{
+  const navigate = useNavigate();
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
@@ -26,7 +28,7 @@ const MainSwiper = ():React.ReactElement=>{
       autoplay={true}
       >
       <SwiperSlide>
-        <img src={banner1} alt="" />
+        <img onClick={()=>{navigate('/event')}} src={banner1} alt="" />
       </SwiperSlide>
       <SwiperSlide>
         <img src={banner2} alt="" />

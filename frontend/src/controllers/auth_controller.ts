@@ -30,8 +30,9 @@ export const onSubmitButton_Login = async ( e:React.FormEvent, data:UserLoginFor
       }
     }
   }
-  catch(err){
-    console.error(err)
+  catch(err:any){
+    console.error(err.response.data)
+    alert(err.response.data)
   }
 }
 

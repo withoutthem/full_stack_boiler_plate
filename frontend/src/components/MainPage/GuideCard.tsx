@@ -15,7 +15,7 @@ const data = [
     description : '마음에 드는 상품을 장바구니에 담으세요!',
     button : '상품 보러가기',
     buttonUrl : '/all_products',
-    disclaimer : '상품은 허위이며 배송되지 않아요.'
+    disclaimer : '검색도 가능하고, 상품은 허위이며 배송되지 않아요.'
   },
   {
     imgUri : '/images/question_ill.jpg',
@@ -28,14 +28,22 @@ const data = [
   {
     imgUri : '/images/dev_ill.avif',
     title : '왜냐하면!',
-    description : '3일만에 만들어진 포트폴리오 사이트이기 때문이에요.',
+    description : '4일만에 만들어진 포트폴리오 사이트이기 때문이에요.',
     button : '개발자 보기',
-    buttonUrl : '#dev',
+    buttonUrl : 'dev',
     disclaimer : '의미는 딱히 없습니다!'
   },
 ]
 
 const GuideCard = ():React.ReactElement =>{
+
+  const toDev = () => {
+    window.scrollTo({
+      top: window.scrollY + 400,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <ul className="guide_card_list">
       {
@@ -47,7 +55,10 @@ const GuideCard = ():React.ReactElement =>{
                 <h4 className="title">{item.title}</h4>
                 <p className="description">{item.description}</p>
                 <p className="disclaimer">{item.disclaimer}</p>
-                <Link to={item.buttonUrl} className="link_button">{item.button}</Link>
+                {
+                  item.buttonUrl === 'dev' ? <a className="link_button" onClick={toDev}>개발자 보기</a> :
+                  <Link to={item.buttonUrl} className="link_button">{item.button}</Link>
+                }
               </div>
             </li>
           )
