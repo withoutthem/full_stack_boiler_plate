@@ -1025,15 +1025,15 @@ a {
 }
 
 .collection_page_wrap .collection_page .collection_card .count {
-  font-size: 20px;
+  font-size: 14px;
   margin: 30px 0px 10px auto;
   margin-right: 20px;
 }
 
 .collection_page_wrap .collection_page .collection_card .count span {
-  color: rgb(244, 67, 54);
+  color: rgb(201, 48, 37);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .collection_page_wrap .collection_page .card_hover {
