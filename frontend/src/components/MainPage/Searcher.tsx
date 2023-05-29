@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 //assets
-import random_logo from '../../assets/images/random_logo.gif'
+import logo_image from '../../assets/images/logo_image.png'
 import ic_search from '../../assets/images/ic_search.svg';
 
 
@@ -26,7 +26,7 @@ const Searcher = ()=>{
   return (
     <div className="searcher_wrap">
       <Link to="/" className="main_logo_wrap">
-        <img className="main_logo" src={random_logo} alt="random logo" />
+        <img className="main_logo" src={logo_image} alt="random logo" />
       </Link>
       <form action="GET" onSubmit={e=>{searchClickQuery(e)}}>
       <label htmlFor="searchInput" className={`searcher ${inputFocus && 'active'}`}>
