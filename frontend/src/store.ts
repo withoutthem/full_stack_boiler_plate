@@ -91,13 +91,10 @@ const userCart = createSlice({
       const {productId} = action.payload;
       state.productId && state.productId.push(productId);
     },
-    deleteCart_reducer(state, action:PayloadAction<{productId:string}>){
-      const {productId} = action.payload;
-      state.productId && state.productId.filter(e => e!==productId)
-    },
     deleteCartItems_reducer(state, action:PayloadAction<{products:string[]}>){
       const {products} = action.payload;
       state.productId = state.productId.filter(id => !products.includes(id))
+      console.log(state.productId);
     }
   }
 })
@@ -149,7 +146,7 @@ const globalPop = createSlice({
 })
 
 export const { setUserInfo_reducer, deleteUserInfo_reducer, earnPoint_reducer, lostPoint_reducer,lostPointByPayment } = userInfo.actions;
-export const { addCart_reducer , deleteCart_reducer, setCart_reducer, clearCart_reducer, deleteCartItems_reducer} = userCart.actions;
+export const { addCart_reducer , setCart_reducer, clearCart_reducer, deleteCartItems_reducer} = userCart.actions;
 export const { popOpen_reducer, popClose_reducer } = globalPop.actions;
 export const { setCartFour_reducer, clearAllFour_reducer, addCartFour_reducer, } = userCartFour.actions;
 

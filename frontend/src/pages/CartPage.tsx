@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from "react-redux";
 // modules
 import { open_ShouldLoginPopup, unknownError } from '../utils/open_pop';
-import { deleteUserInfo_reducer, deleteCart_reducer, deleteCartItems_reducer, lostPointByPayment } from "../store";
+import { deleteCartItems_reducer, lostPointByPayment } from "../store";
 import { setInfoAll } from "../utils/set_info";
 //types
 import { Cart } from "../types/cart";
@@ -57,13 +57,10 @@ const CartPage = ():React.ReactElement=>{
   const deleteCartOneFromCartPage = async (userId:string, productId:string)=>{
     try{
       const result = await axios.delete('/api/cart/delete_cart_info', {data:{userId, productId}});
-      console.log(result);
-      if(result){
-        dispatch(deleteCart_reducer({productId}))
-        cartItems && setCartItems((state:any) =>{
-          return state.filter((item:Cart) => item.productId !== productId)
-        })
-      }
+      cartItems && setCartItems((state:any) =>{
+        return state.filter((item:Cart) => item.productId !== productId)
+      })
+      setInfoAll(dispatch)
     }
     catch(err){
       alert(err)

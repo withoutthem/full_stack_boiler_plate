@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { addCartFour_reducer, addCart_reducer, deleteCart_reducer } from '../store';
+import { addCartFour_reducer, addCart_reducer } from '../store';
 import { addCartPopup, addCartPopup_duplicated, unknownError } from './open_pop';
 
 export const addCartOne = async (userId:string, productId:string, dispatch:Function, count:number)=>{

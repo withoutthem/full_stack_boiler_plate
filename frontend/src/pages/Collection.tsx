@@ -35,14 +35,12 @@ const Collection = ():React.ReactElement=>{
       <h3>컬렉션</h3>
       <div className="collection_page">
         {
-          myCollection && myCollection.map((item:any) =>{
+          myCollection && myCollection.map((item:any, idx:number) =>{
             return(
-              <>
-              <div className="collection_card">
+              <div className="collection_card" key={item.Product.id+idx}>
                 <div className="count"><BsBagCheckFill></BsBagCheckFill> <span>{item.count}</span></div>
                 <Card {...item.Product} key={item.Product.id} ></Card>
               </div>
-              </>
             )
           })
         }
