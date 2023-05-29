@@ -37,12 +37,12 @@
 .all_products_page .card .cart_img_wrap{position: relative;}
 .all_products_page .card .cart_img_wrap>img{width: 100%; height: 200px;}
 .all_products_page .card .cart_img_wrap button{position: absolute; bottom: 7px; right: 7px; width: 35px; height: 35px; background-color: #333; border-radius: 100%; border: none; display: flex; justify-content: center; align-items: center; cursor: pointer;}
-.all_products_page .card .cart_img_wrap button:hover{background-color: ##1872DF;}
+.all_products_page .card .cart_img_wrap button:hover{background-color: #1872DF;}
 
 .card{position:relative;}
 .badge{padding:4px 6px; font-size:10px; border-radius:6px;position:absolute; right:4px; top:4px; background:#2ac41f; color:#fff; z-index:1;}
 .card .cart_icon{width:20px; height:20px; color:#fff; fill:#fff;}
 .header_cart_icon {width:30px; height:30px;}
 .header .header_gnb a{@include flexCenter(); position:relative;}
-.count_badge{position:absolute; top:0; right:0; background:#eb1349; color:#fff; @include flexCenter();}
+.count_badge{position:absolute; top:0; right:0; width: 20px; height: 20px; border-radius: 20px; background:#eb1349; color:#fff; @include flexCenter();}
 

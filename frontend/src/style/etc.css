@@ -209,7 +209,7 @@
 }
 
 .all_products_page .card .cart_img_wrap button:hover {
-  background-color: #555;
+  background-color: #1872DF;
 }
 
 .card {
@@ -251,6 +251,9 @@
   position: absolute;
   top: 0;
   right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
   background: #eb1349;
   color: #fff;
   display: flex;
