@@ -23,6 +23,7 @@ import { ProductInterface } from "../types/product";
 import hotchair from '../assets/images/hot_chair.png'
 import hotdesk from '../assets/images/hot_desk.webp';
 import GuideCard from '../components/MainPage/GuideCard';
+import iconLogin from "../assets/images/icon_login2.png";
 
 const MainPage = ():React.ReactElement=>{
 
@@ -55,7 +56,18 @@ const MainPage = ():React.ReactElement=>{
         <MainSwiper></MainSwiper>
         </div>
         <div className="user_interface">
-          <UserInfo></UserInfo>
+          {storeState.userInfo.id === null ? 
+          <div className="none_box">
+            <img src={iconLogin} alt="" />
+            <div className="inner">
+              <h3>로그인을 해주세요</h3>
+              <Link className="login_go"  to='/login'>로그인</Link>
+              <Link className="join_go"  to='/sign_up'>회원가입</Link>
+            </div>
+          </div>
+          : 
+          <UserInfo></UserInfo>}
+          
         </div>
       </div>
       <div className="side_wrap">

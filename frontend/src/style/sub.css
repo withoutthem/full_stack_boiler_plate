@@ -163,4 +163,53 @@
   text-align: left;
   font-size: 15px;
   margin-top: 10px;
+}
+
+.none_box {
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6fa;
+  margin-left: 30px;
+  position: relative;
+}
+.none_box img {
+  width: 147px;
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.none_box .inner {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 80px;
+  text-align: center;
+}
+.none_box .inner h3 {
+  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.none_box .inner .login_go {
+  display: block;
+  text-align: center;
+  background: #3A4157;
+  color: #fff;
+  width: 100%;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.none_box .inner .join_go {
+  display: block;
+  text-align: right;
+  color: #999;
+  font-weight: bold;
+}
+
+.main_page .hero_wrap {
+  overflow: visible;
 }/*# sourceMappingURL=sub.css.map */
