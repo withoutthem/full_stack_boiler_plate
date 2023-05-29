@@ -81,9 +81,9 @@ const SignInPage = ():React.ReactElement=>{
     <div className="sign_up_page">
       <form action="POST" className="sign_up" onSubmit={ (e) => {onSubmitButton_SignUp(e, userInfo, navigate, dispatch)}}>
         email : <input type="email" onChange={(e) => onChangeUserInfo('email', e.target.value)} /> {userInfoValidation.email ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        {duplicatedCheck.email ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'email', userInfo.email)}}>이메일중복검사</button>}
+        {duplicatedCheck.email ? <div>OK</div> : <button disabled={!userInfoValidation.email} onClick={ e =>{onDuplicatedButton_SignUp(e, 'email', userInfo.email)}}>이메일중복검사</button>}
         nickname : <input type="text" onChange={(e) => onChangeUserInfo('nickname', e.target.value)} /> {userInfoValidation.nickname ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
-        {duplicatedCheck.nickname ? <div>OK</div> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>닉네임중복검사</button>}
+        {duplicatedCheck.nickname ? <div>OK</div> : <button disabled={!userInfoValidation.nickname} onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>닉네임중복검사</button>}
         password : <input type="password" onChange={(e) => onChangeUserInfo('password', e.target.value)} /> {userInfoValidation.password ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
         password again : <input type="password" onChange={(e) => onChangeUserInfo('password_confirm', e.target.value)} /> {userInfoValidation.password_confirm ? <span style={{color : 'green'}}>OK</span> : <span>NO</span>} <br></br>
         allTrue : {isAllValid.toString()}
