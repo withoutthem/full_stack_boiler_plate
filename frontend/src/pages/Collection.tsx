@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { setInfoAll } from "../utils/set_info";
 import Card from "../components/Card";
 import { open_ShouldLoginPopup } from '../utils/open_pop';
+import { BsBagCheckFill } from 'react-icons/bs';
 
 const Collection = ():React.ReactElement=>{
 
@@ -30,19 +31,22 @@ const Collection = ():React.ReactElement=>{
   },[])
 
   return(
-    <div className="collection_page">
-      {
-        myCollection && myCollection.map((item:any) =>{
-          return(
-            <>
-            <div className="collection_card">
-              <Card {...item.Product} key={item.Product.id} ></Card>
-              <div className="count">가진 개수 : {item.count}</div>
-            </div>
-            </>
-          )
-        })
-      }
+    <div className="collection_page_wrap">
+      <h3>컬렉션</h3>
+      <div className="collection_page">
+        {
+          myCollection && myCollection.map((item:any) =>{
+            return(
+              <>
+              <div className="collection_card">
+                <div className="count"><BsBagCheckFill></BsBagCheckFill> <span>{item.count}</span></div>
+                <Card {...item.Product} key={item.Product.id} ></Card>
+              </div>
+              </>
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
