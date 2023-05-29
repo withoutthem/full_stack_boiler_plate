@@ -30,7 +30,7 @@ const Searcher = ()=>{
       </Link>
       <form action="GET" onSubmit={e=>{searchClickQuery(e)}}>
       <label htmlFor="searchInput" className={`searcher ${inputFocus && 'active'}`}>
-        <input id="searchInput" className="searchInput" onFocus={()=>{setInputFocus(true)}} onBlur={()=>{setInputFocus(false)}} value={searchInput} onChange={e =>{setSearchInput(e.target.value)}} type="text" />
+        <input id="searchInput" placeholder='제품을 검색해보세요!'  className="searchInput" onFocus={()=>{setInputFocus(true)}} onBlur={()=>{setInputFocus(false)}} value={searchInput} onChange={e =>{setSearchInput(e.target.value)}} type="text" />
         <div className="ripple_wrap">
           <Ripples>
           <button type="submit" className="search_button">

@@ -1079,14 +1079,25 @@ button {
 .detail_page .detail_content .detail_top h1 {
   padding-bottom: 15px;
   border-bottom: 1px solid #aaa;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .detail_page .detail_content .detail_top .explan {
-  margin-bottom: 30px;
+  line-height: 1.2;
+  color: #333;
+  padding-bottom: 15px;
+}
+
+.detail_page .detail_content .detail_top .small {
+  font-size: 14px;
   color: #aaa;
+  line-height: 1.2;
+}
+
+.detail_page .detail_content .detail_top .small:last-child {
+  padding-bottom: 15px;
 }
 
 .detail_page .detail_content .detail_bot .price {
@@ -1109,7 +1120,7 @@ button {
 
 .detail_page .detail_content .detail_bot .detail_btn_box button {
   cursor: pointer;
-  width: 80%;
+  width: 100%;
   padding: 15px;
   border: 1px solid #1872DF;
   background-color: #1872DF;
@@ -1118,14 +1129,7 @@ button {
   transition: 0.3s;
 }
 
-.detail_page .detail_content .detail_bot .detail_btn_box .plus:hover {
+.detail_page .detail_content .detail_bot .detail_btn_box button:hover {
   background-color: #fff;
   color: #1872DF;
-}
-
-.detail_page .detail_content .detail_bot .detail_btn_box .delete {
-  width: 17%;
-  border: 1px solid #aaa;
-  color: #aaa;
-  background-color: #fff;
 }/*# sourceMappingURL=App.css.map */
