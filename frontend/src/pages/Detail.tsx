@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 //module
 import { addCartOne } from '../utils/to_cart';
+import {BiWon} from 'react-icons/bi';
 //type
 import { ProductInterface } from '../types/product';
 import { unknownError, open_ShouldLoginPopup } from '../utils/open_pop';
@@ -48,13 +49,21 @@ const Detail = ():React.ReactElement => {
   }
 
   return (
-    <div>
+    <div className='detail_page'>
       <img src={product.imageuri} alt="" />
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
-      <button onClick={()=>{navigate(-1)}}>X</button>
-      <button onClick={()=>{addToCart()}}>장바구니에 담기</button>
+      <div className='detail_content'>
+        <div className='detail_top'>
+          <h1>{product.name}</h1>
+          <p className='explan'>{product.description}</p>
+        </div>
+        <div className='detail_bot'>
+          <p className='price'><BiWon></BiWon> <span>{product.price}</span></p>
+          <div className='detail_btn_box'>
+            <button className='plus' onClick={()=>{addToCart()}}>장바구니</button>
+            <button className='delete' onClick={()=>{navigate(-1)}}>삭제</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
