@@ -233,4 +233,27 @@
   height: 20px;
   color: #fff;
   fill: #fff;
+}
+
+.header_cart_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header .header_gnb a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.count_badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #eb1349;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=etc.css.map */
