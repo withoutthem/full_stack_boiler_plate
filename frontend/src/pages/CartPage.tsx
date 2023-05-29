@@ -117,6 +117,7 @@ const CartPage = ():React.ReactElement=>{
             .reduce((total, item) => total + item.Product.price, 0) 
         : 0
     )
+    if(cartItems && cartItems.length ===0){setCartState(false)}
   }, [cartItems]);
   
 
