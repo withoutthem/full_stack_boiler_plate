@@ -67,20 +67,21 @@
 .cart_page h3 svg{margin-right:5px; transform:translateY(1px)}
 .cart_page h3{ width:90%;margin:0px auto;font-weight:600;font-size:25px;margin-bottom:30px;}
 .cart_page .table_wrap{  width:90%;margin:0px auto;}
-.cart_page .inspect_wrap{width:90%;margin:0px auto; color:#101010; margin-bottom:30px; background:#fafafa; height:120px; @include flexAlign(); justify-content: flex-end;}
+.cart_page .inspect_wrap{width:90%;margin:0px auto; position:relative; color:#101010; margin-bottom:30px; background:#fafafa; height:120px; @include flexAlign(); justify-content: flex-end;}
 .cart_page .inspect_wrap .my_point{font-size:22px; font-weight:600; margin:0px 24px;}
 .cart_page .inspect_wrap .my_point span{font-size:14px; font-weight:400;}
 .cart_page .inspect_wrap .final_payment{font-size:26px; font-weight:700; margin:0px 24px;}
 .cart_page .inspect_wrap .final_payment span{font-size:14px; font-weight:400; color:#101010}
 .cart_page .inspect_wrap .remain{font-size:22px; font-weight:600; margin-left:24px; margin-right:40px;}
 .cart_page .inspect_wrap .remain span{font-size:14px; font-weight:400;}
-.cart_page .final_button_wrap{@include flexCenter();}
+.cart_page .final_button_wrap{@include flexCenter(); position:relative;}
 .cart_page .final_button_wrap button{width:200px; height:50px; border-radius:5px; color:#333; background:#fff;}
 .cart_page .final_button_wrap button:last-of-type{background:#4287f5; color:#fff; border:none}
 .cart_page .final_button_wrap button:last-of-type:hover{background:#fff; color:#101010; border:2px solid #101010;}
 .cart_page .final_button_wrap button:last-of-type:disabled{background:#fefefe; color:#e2e2e2; cursor:not-allowed; border:2px solid #e1e1e1}
 .cart_page .final_button_wrap button:last-of-type:disabled:hover{background:#fefefe; color:#e2e2e2; cursor:not-allowed;border:2px solid #e1e1e1}
 .cart_page .final_button_wrap button:first-of-type{margin-right:30px;}
+.cart_page .no_point{position:absolute; bottom:10px; right:40px; color:#f2355e; font-weight:600;}
 .swiper-button-next, .swiper-button-prev{color:#666 !important;}
 .swiper-pagination-bullet-active{background:#101010 !important;}
 
