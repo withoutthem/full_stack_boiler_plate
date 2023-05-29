@@ -13,7 +13,7 @@ const data = [
     imgUri : '/images/cart_ill.webp',
     title : 'PICK!',
     description : '마음에 드는 상품을 장바구니에 담으세요!',
-    button : '장바구니 보기',
+    button : '상품 보러가기',
     buttonUrl : '/all_products',
     disclaimer : '상품은 허위이며 배송되지 않아요.'
   },
@@ -21,7 +21,7 @@ const data = [
     imgUri : '/images/question_ill.jpg',
     title : '의미 없기!',
     description : '의미는 없습니다! 나만의 상품들을 모아서 컬렉션을 모아보세요!',
-    button : '컬렉션 보기',
+    button : '나의 컬렉션 보기',
     buttonUrl : '/collection',
     disclaimer : '의미는 딱히 없습니다!'
   },

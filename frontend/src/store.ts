@@ -57,10 +57,10 @@ const userInfo = createSlice({
       state.point = null;
     },
     earnPoint_reducer(state) {
-      state.point && (state.point += 50);
+      state.point && (state.point = state.point + 50);
     },
     lostPoint_reducer(state){
-      state.point && (state.point -= 30);
+      state.point && (state.point = state.point - 30);
     },
     lostPointByPayment(state, action:PayloadAction<number>){
       if(state.point){

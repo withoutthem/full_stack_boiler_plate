@@ -45,6 +45,7 @@ export const onSubmitButton_SignUp = async (e:React.FormEvent, userInfo:InputTyp
       console.log(result.data.data)
       dispatch(setUserInfo_reducer(result.data.data))
       navigate('/')
+      window.location.reload();
     }
     else{
       throw new Error('통신 도중 에러가 발생했어요.')
@@ -63,6 +64,7 @@ export const logOutButton = async (navigate:(root:string)=>void, dispatch:Functi
       alert(result.data.message)
       clearAllInfo(dispatch)
       navigate('/')
+      window.location.reload();
     }
     else throw new Error('통신 도중 에러가 발생했어요.')
   }

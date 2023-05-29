@@ -54,8 +54,7 @@ const SignInPage = ():React.ReactElement=>{
       if(result.data.stat) setDuplicatedCheck(state => {return {...state, [data.type] : true}})
     }
     catch(err){
-      alert(err);
-      navigate('/')
+      alert(`${type} 이 중복되었어요. 다른 ${type}을 사용해주세요.`);
     }
   }
 

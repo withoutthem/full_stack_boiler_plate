@@ -35,6 +35,7 @@ const MainPage = ():React.ReactElement=>{
   const setPopularsData = async ()=>{
     try{
       const result = await getPopularProducts();
+      console.log(result)
       setPopulars(result)
     }
     catch(err){

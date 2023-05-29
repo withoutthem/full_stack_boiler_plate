@@ -19,7 +19,7 @@ const QuizPage = ():React.ReactElement =>{
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const storeState:any = useSelector(state => state);
-
+  const [nowPoint, setNowPoint] = useState<number>(0)
   const [nowQuiz, setNowQuiz] = useState<Quiz>(
     {
       id:'',
@@ -68,19 +68,20 @@ const QuizPage = ():React.ReactElement =>{
 
   const submitAnswer = async (idx:number)=>{
     try{
-      console.log({id:nowQuiz.id, answer:nowQuiz.options[idx]})
       const result = await axios.post('/api/quiz/answer_check', {id:nowQuiz.id, answer:nowQuiz.options[idx]})
       console.log(result);
       const message = result.data.message;
       if(!result.data.stat) openPop({...errorPopUp, description:message}, dispatch) //서버err
       if(result.data.result) {
-        openPop({...correctPopUp, title:message}, dispatch); //정답
         dispatch(earnPoint_reducer())
+        setNowPoint(state => state+=50)
+        openPop({...correctPopUp, title:message}, dispatch); //정답
         await getQuizData()
       }
       else if(!result.data.result){
-        openPop({...inCorrectPopUp, title:message}, dispatch) //오답
         dispatch(lostPoint_reducer())
+        setNowPoint(state => state-=30)
+        openPop({...inCorrectPopUp, title:message}, dispatch) //오답
         await getQuizData()
       }
       else{
@@ -93,22 +94,21 @@ const QuizPage = ():React.ReactElement =>{
     }
   }
 
-  useEffect(()=>{ // get Info setting with 
-    const getMyInfo = async ():Promise<void>=>{
-      try{
-        const result:any = await axios.get('/api/auth/get_my_info')
-        if(result.data.stat) dispatch(setUserInfo_reducer(result.data.data))
-      }
-      catch(err){
-        open_ShouldLoginPopup(dispatch)
-        dispatch(deleteUserInfo_reducer())
-      }
+  const getMyInfo = async ():Promise<void>=>{
+    try{
+      const result:any = await axios.get('/api/auth/get_my_info')
+      if(result.data.stat) dispatch(setUserInfo_reducer(result.data.data))
+      setNowPoint(result.data.data.point);
     }
-    getMyInfo();
-  },[dispatch])
+    catch(err){
+      open_ShouldLoginPopup(dispatch)
+      dispatch(deleteUserInfo_reducer())
+    }
+  }
 
   useEffect(()=>{
-    getQuizData()
+    getQuizData();
+    getMyInfo();
   },[])
 
   return (
@@ -139,7 +139,7 @@ const QuizPage = ():React.ReactElement =>{
         <div className="quiz_img_box flex">
           <div className="my_info">
             <div className="nickname">{storeState.userInfo.nickname}</div>
-            <p className="point">현재 포인트<br /> <span>{storeState.userInfo.point}</span></p>
+            <p className="point">현재 포인트<br /> <span>{nowPoint}</span></p>
           </div>
           <img src="/images/quizImg2.png" alt="" />
         </div>
