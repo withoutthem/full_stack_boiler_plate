@@ -50,9 +50,9 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding-left: 10px;
+  padding-left: 15px;
   border: 1px solid #ddd;
-  color: #ddd;
+  color: #222;
   font-size: 16px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -134,6 +134,7 @@
   flex: 1;
   height: 40px;
   border: 1px solid #ddd;
+  padding-left: 10px;
 }
 .sign_up_page .inner .join_list > li > div .inp input::-moz-placeholder {
   color: #999;

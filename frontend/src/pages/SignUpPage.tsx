@@ -106,7 +106,7 @@ const SignInPage = ():React.ReactElement=>{
                       <input type="text" placeholder='닉네임을 입력하세요.' onChange={(e) => onChangeUserInfo('nickname', e.target.value)} />
                       {duplicatedCheck.nickname ? <IoMdCheckmarkCircle></IoMdCheckmarkCircle> : <button onClick={ e =>{onDuplicatedButton_SignUp(e, 'nickname', userInfo.nickname)}}>중복확인</button>}
                     </div>
-                    {userInfoValidation.nickname ? <p style={{color : 'green'}}>사용가능한 닉네임 입니다.</p> : <p>사용불가능한 닉네임 입니다.</p>}
+                    {userInfoValidation.nickname ? <p style={{color : 'green'}}>사용가능한 닉네임 입니다.</p> :<p style={{color : 'red'}}>사용불가능한 닉네임 입니다.</p>}
                   </div>
                 </li>
                 <li>
@@ -115,7 +115,7 @@ const SignInPage = ():React.ReactElement=>{
                     <div className="inp">
                       <input type="password" placeholder='비밀번호를 입력하세요.' onChange={(e) => onChangeUserInfo('password', e.target.value)} />
                     </div>
-                    {userInfoValidation.password ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p>사용불가능한 비밀번호 입니다.</p>}
+                    {userInfoValidation.password ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p style={{color : 'red'}}>사용불가능한 비밀번호 입니다.</p>}
                   </div>
                 </li>
                 <li>
@@ -124,7 +124,7 @@ const SignInPage = ():React.ReactElement=>{
                     <div className="inp">
                       <input type="password" placeholder='비밀번호를 입력하세요.' onChange={(e) => onChangeUserInfo('password_confirm', e.target.value)} />
                     </div>
-                    {userInfoValidation.password_confirm ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p>사용불가능한 비밀번호 입니다.</p>}
+                    {userInfoValidation.password_confirm ? <p style={{color : 'green'}}>사용가능한 비밀번호 입니다.</p> : <p style={{color : 'red'}}>사용불가능한 비밀번호 입니다.</p>}
                   </div>
                 </li>
             </ul>

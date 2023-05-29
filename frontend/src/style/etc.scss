@@ -30,7 +30,7 @@
 .cell{flex-shrink:0; flex-grow:0;}
 .cart_page .table_wrap .thead .row .cell{background:#fafafa; height:80px; border-top:1px solid #dddddd; border-right:none; font-weight:600; @include flexCenter();}
 .cart_page .table_wrap .thead .row .cell:first-of-type{padding-left:10px; width:100px;}
-.cart_page .table_wrap .thead .row .cell:nth-of-type(2){width:750px;}
+.cart_page .table_wrap .thead .row .cell:nth-of-type(2){flex:1}
 .cart_page .table_wrap .thead .row .cell:last-of-type{width:200px;}
 .cart_page .table_wrap .row{@include flexAlign;}
 .cart_page .table_wrap .cell{@include flexAlign(); border-right:1px solid #ddd;border-bottom:1px solid #ddd;box-sizing:border-box;}
@@ -44,14 +44,16 @@
 .cart_page .table_wrap .tbody .cell .price{font-size:20px; @include flexAlign();}
 .cart_page .table_wrap .tbody .price_cell button{@include flexCenter(); background:none;border:none; cursor:pointer;}
 .cart_page .table_wrap .tbody .price_cell button svg{width:20px; height:20px;}
-.cart_page .table_wrap .tbody .cell.cell.info_cell{width:821px}
+.cart_page .table_wrap .tbody .cell.cell.info_cell{flex:1}
 .cart_page .table_wrap .tbody .cell.cell.info_cell .cart_box .description{cursor:pointer;}
 .cart_page .table_wrap .tbody .cell.info_cell img{margin-right:30px;}
 .cart_page .table_wrap .tbody .cell.price_cell{width:200px; justify-content: space-around;}
 .cart_page .table_wrap .tbody .cell.price_cell .price svg{margin-right:10px; transform:translateY(-2px)}
 .cart_page .table_wrap .cell input[type=checkbox]{margin-right:10px; transform:translateY(-1px)}
 
-.cart_page .nothing_in_here{width:100%; height:500px; @include flexCenter; }
+.cart_page .nothing_in_here{width:100%; height:300px; @include flexCenter; flex-direction: column;}
+.cart_page .nothing_in_here svg{width:150px; height:150px; margin-bottom:40px}
+.cart_page .nothing_in_here p{color:#666; font-weight:600; font-size:30px;}
 .cart_page .pay_pop_wrap{@include flexCenter(); position:fixed; top:0; left:0; bottom:0; right:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); }
 .cart_page .pay_pop_wrap img{width:50px; height:50px; margin-bottom:26px;}
 .cart_page .pay_pop_wrap .sure_to_pay_pop{border-radius:5px; padding:25px; background:#fff; @include flexCenter(); flex-direction: column; }
