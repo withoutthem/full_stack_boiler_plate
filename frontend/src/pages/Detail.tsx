@@ -55,12 +55,14 @@ const Detail = ():React.ReactElement => {
         <div className='detail_top'>
           <h1>{product.name}</h1>
           <p className='explan'>{product.description}</p>
+          <p className='small'>Brand : {product.brand}</p>
+          <p className='small'>Type : {product.furnitureType}</p>
+          <p className='small'>Theme : {product.theme}</p>
         </div>
         <div className='detail_bot'>
-          <p className='price'><BiWon></BiWon> <span>{product.price}</span></p>
+        <p className='price'><BiWon></BiWon> <span>{product.price}</span></p>
           <div className='detail_btn_box'>
             <button className='plus' onClick={()=>{addToCart()}}>장바구니</button>
-            <button className='delete' onClick={()=>{navigate(-1)}}>삭제</button>
           </div>
         </div>
       </div>
