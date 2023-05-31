@@ -24,9 +24,7 @@ class User extends Model implements InterfaceUser {
 
   // 모델의 외부 관계 정리
   static associate(db:any){
-    db.User.belongsTo(db.Privilege, {foreignKey : 'roles', sourceKey: 'roles_type'})
-    db.User.hasMany(db.Cart, {foreignKey: 'userId', sourceKey : 'id'})
-    db.User.hasMany(db.Collection, {foreignKey: 'userId', sourceKey : 'id'})
+    
   } 
 }
 
@@ -55,16 +53,6 @@ export const modelAttributes = {
     type : DataTypes.STRING(30),
     allowNull : false,
     defaultValue : 'family'
-  },
-  rank : {
-    type : DataTypes.STRING(30),
-    allowNull : true,
-    defaultValue : 'Employee'
-  },
-  point : {
-    type : DataTypes.INTEGER,
-    allowNull : false,
-    defaultValue : 0
   }
 };
 

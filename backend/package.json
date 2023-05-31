@@ -5,7 +5,6 @@
   "main": "./src/server.ts",
   "scripts": {
     "test": "jest --watch",
-    "test:int": "jest --config jest.integration.config.js /test/integration",
     "start": "nodemon --watch '/**/*.ts' --exec 'ts-node' ./src/server.ts",
     "query": "ts-node ./test/RUNQUERYNOW/runQuery.ts"
   },

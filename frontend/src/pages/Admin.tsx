@@ -1,31 +1,15 @@
-import { useState } from "react";
-import DataPanel from "../components/Admin/DataPanel";
-import TestPanel from '../components/Admin/TestPanel';
+import useStore from '../store';
 
 const Admin = ():React.ReactElement=>{
 
-  const panelMap:{[string:string] : React.ReactElement} = {
-    'DataPanel' : <DataPanel/>,
-    'TestPanel' : <TestPanel/>
-  }
-  const [nowPanel, setNowPanel] = useState<string>('DataPanel')
+  const user = useStore(state => state.user)
+
+  const storeCheck = ()=>{console.log(user)}
 
   return (
     <div className="admin_panel">
-      <h1>admin Panel</h1>
-      {
-        Object.keys(panelMap).map(item => {
-          return(
-            <button onClick={()=>{setNowPanel(item)}} key={item}>go To {item}</button>
-          )
-        })
-      }
-      <h2>
-        {nowPanel}
-      </h2>
-      <div className="now_panel">
-        {panelMap[nowPanel]}
-      </div>
+      ADMIN
+      <button onClick={storeCheck}>STATE CHECK</button>
     </div>
   )
 }

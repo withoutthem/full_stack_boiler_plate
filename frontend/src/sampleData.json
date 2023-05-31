@@ -1,0 +1,73 @@
+{
+  "sampleUser": {
+    "email": "sampleuser@example.com",
+    "nickname": "Sample User",
+    "age": 25
+  },
+  "sampleData": [
+    {
+      "id": "1",
+      "dataType": "temperature",
+      "data": 24.5,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "dataType": "humidity",
+      "data": 60,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "3",
+      "dataType": "pressure",
+      "data": 1013,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "4",
+      "dataType": "wind_speed",
+      "data": 5.5,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "5",
+      "dataType": "rainfall",
+      "data": 10,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "6",
+      "dataType": "sunshine",
+      "data": 8.5,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "7",
+      "dataType": "uv_index",
+      "data": 5,
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "8",
+      "dataType": "air_quality",
+      "data": "Good",
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "9",
+      "dataType": "dust_level",
+      "data": "Low",
+      "expireDate": "2023-12-01T12:00:00Z"
+    },
+    {
+      "id": "10",
+      "dataType": "pollen_count",
+      "data": "High",
+      "expireDate": "2023-12-01T12:00:00Z"
+    }
+  ],
+  "sampleType": {
+    "type": "warning",
+    "message": "This is a sample warning message."
+  }
+}
