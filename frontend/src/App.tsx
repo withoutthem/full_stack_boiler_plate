@@ -13,10 +13,12 @@ import Admin from './pages/Admin';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+//TESTCOMPONENT
+import TESTBUTTONCOMPONENT from './components/TESTBUTTONCOMPONENT';
+
 //modules
 
-function App() {
-
+function App():React.ReactElement {
   return (
     <div className="all_wrapper">
       <Header></Header>
@@ -25,6 +27,7 @@ function App() {
         <Route path='/admin' element={<Admin></Admin>}></Route>
         <Route path='*' element={<SagongSa></SagongSa>}></Route>
       </Routes>
+      <TESTBUTTONCOMPONENT></TESTBUTTONCOMPONENT>  {/* ONLY TEST */}
       <Footer></Footer>
     </div>
   );
