@@ -1,4 +1,3 @@
-import { useCallback } from 'react';
 import useStore from '../store';
 import { SampleDataType } from '../types/StoreTypes';
 import {v4 as uuidv4} from 'uuid';

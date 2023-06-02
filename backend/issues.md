@@ -1,20 +1,20 @@
 # ISSUES - BACKEND
 
 ## 단위테스트
-
+- JEST
 ***
 ## 통합테스트
-
+- POSTMAN
 ***
 
 ## 리팩터링
-
+- 확장성
+- 의존성관리
 ***
 
-## Rate Limiting (SignUp, In)
+## 보안
+- Rate Limiting
+- https
+- cors
 
 ***
-
-## Dup Check Controller 
-**< 0525 >**
-- DupCheck 완료

@@ -33,3 +33,4 @@ export interface Actions {
   setSampleData : (data:SampleDataType[]) => void;
   setBannerType : (type:BannerType) => void;
 }
+
